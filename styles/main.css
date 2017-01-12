@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  /*border: 1px solid black; */
 }
 
 html {
@@ -20,33 +20,52 @@ header img {
   padding-bottom: 15px;
 }
 
-#intro {
-  max-width: 700px;
+.intro {
+  max-width: 600px;
   min-width: 450px;
   overflow: hidden;
   padding: 40px;
   margin: auto;
 }
 
+.intro .content {
+  font-size: 100%;
+  padding-left: 3%;
+}
+
 .greeting img, h1 {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  font-size: 300%;
+  font-size: 250%;
 }
 
-ul#intro {
+.greeting h1 {
+  padding-left: 4%;
+}
+
+.greeting {
+  margin-left: 15%;
+}
+
+ul.intro {
   padding-top: 0px;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   text-align: center;
 }
 
-li#nav {
+li.nav {
   display: inline-block;
   padding: 5px 15px;
   margin-top: 10px;
   border: 1px solid rgba(245, 245, 245, .3);
   margin: auto;
+  font-size: 100%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .content {
@@ -55,10 +74,53 @@ li#nav {
   min-width: 450px;
   overflow: hidden;
   padding: 10px 0px;
+  margin-left: 50px;
 }
 
-#intro .content {
-  font-size: 120%;
+.tier img {
+  margin: 5px 50px;
+}
+
+.tier h2 { /* main tier heading */
+  margin: 20px 20px 20px 20px;
+  font-size: 180%;
+}
+
+.tier h3 { /* tier sub-heading */
+  margin: 5px 50px;
+  font-size: 125%;
+}
+
+footer {
+  background-color: DarkSlateGray;
+  color: white;
+}
+
+.footer-info {
+  padding: 20px;
+  max-width: 600px;
+  min-width: 200px;
+  width: 600px;
+  margin: auto;
+}
+
+footer ul {
+  margin: auto;
+  text-align: center;
+
+}
+
+footer li {
+  display: inline-block;
+  margin: 0px 8px;
+}
+
+
+
+
+
+.dead-space {
+  margin-bottom: 15px;
 }
 
 @font-face {
@@ -68,8 +130,4 @@ li#nav {
 
 .fun {
   font-family: "CS", cursive;
-}
-
-.span-img {
-
 }

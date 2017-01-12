@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <div id="intro">
+    <div class="intro">
       <div class="greeting">
         <img src="resources\wl.jpg" alt="William Lorey" height=200 width=200/>
         <h1>Hello!</h1>
@@ -21,24 +21,24 @@
       </div>
     </div>
 
-    <ul id="intro">
-      <li id="nav">Experience</li>
-      <li id="nav">Achievements</li>
-      <li id="nav">Resume</li>
+    <ul class="intro">
+      <li class="nav"><a href="#experience">Experience</a></li>
+      <li class="nav"><a href="#achievements">Achievements</a></li>
+      <li class="nav"><a href="#resume">Resume</a></li>
     </ul>
   </header>
 
   <div class="tier">
-    <h2>Experience</h2>
+    <h2 id="experience">Experience</h2>
 
     <h3>Missouri S&T Solar Car Team</h3>
-    <img class="span-img" src="resources\sc.jpg" alt="Solar Car" height=211 width=360/>
+    <img src="resources\sc.jpg" alt="Solar Car" height=211 width=360/>
     <div class="content">
-      <p>I have been on the Missouri S&T Solar Car Team since I began attending the university
+      <p>I have been on the <a href="https://solarcar.mst.edu/" target="_blank">Missouri S&T Solar Car Team</a> since I began attending the university
         and it has proven to be a very fun and rewarding activity. This team of students
         designs and builds solar powered vehicles for competition on world stages: most
-        notably the <a href="http://americansolarchallenge.org/">American Solar Challenge</a>
-        and the <a href="https://www.worldsolarchallenge.org/">World Solar Challenge</a>.
+        notably the <a href="http://americansolarchallenge.org/" target="_blank">American Solar Challenge</a>
+        and the <a href="https://www.worldsolarchallenge.org/" target="_blank">World Solar Challenge</a>.
       </p>
     </div>
     <img src="resources\dr.jpg" alt="Design Review" height=200 width=324>
@@ -54,7 +54,7 @@
   </div>
 
   <div class="tier">
-    <h2>Achievements</h2>
+    <h2 id="achievements">Achievements</h2>
 
     <h3>Eagle Scout</h3>
     <div class="content">
@@ -68,11 +68,25 @@
   </div>
 
   <div class="tier">
-    <h2>Resume</h2>
+    <h2 id="resume">Resume</h2>
     <div class="content">
       <p>Download my resume <a class="fun" href="resources\lorey_resume.pdf" download>here</a></p>
     </div>
   </div>
+
+  <div class="dead-space">
+  </div>
+
+  <footer>
+    <div class="footer-info">
+      <ul>
+        <li>Contact:</li>
+        <li>University | wwlytc@mst.edu</li>
+        <li>Personal | wwlorey@gmail.com</li>
+      </ul>
+    </div>
+  </footer>
+
 
 </body>
 </html>
