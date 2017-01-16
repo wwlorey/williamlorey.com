@@ -25,13 +25,16 @@ header  {
   margin: auto;
 }
 
-.content {
-  font-family: "Open Sans";
+.content, .tier-pic {
+  max-height: 100%;
   max-width: 70%;
   min-width: 30%;
-  max-height: 100%;
-  overflow: visible;
   margin-left: 10%;
+}
+
+.content {
+  font-family: "Open Sans";
+  overflow: visible;
   padding: 2%;
   font-size: 1.2em;
 }
@@ -41,7 +44,7 @@ header  {
   height: auto;
   width: auto;
   margin: auto;
-  padding: 3% 0% 3.8% 7%;
+  padding: 3% 0% 5% 7%;
 }
 
 .face-greeting {
@@ -81,7 +84,7 @@ li.nav {
   padding: 2% 4%;
   border: 1px solid rgba(245, 245, 245, .3);
   margin: auto;
-  font-size: .8em;
+  font-size: .9em;
 }
 
 a {
@@ -103,10 +106,11 @@ a {
 }
 
 .tier img {
-  margin-left: 10%;
-  max-height: 70%;
   max-width: 70%;
+  max-height: 70%;
   padding: 0% 6%;
+  margin: auto;
+  display: block;
   height: auto;
   width: auto;
 }
@@ -122,7 +126,7 @@ a {
 }
 
 .tier h3 { /* tier sub-heading */
-  margin: 2% 0% 2% 9.2%;
+  margin: 2% 0% 2% 12%;
   font-size: 1.7em;
 }
 
@@ -136,7 +140,6 @@ footer {
 footer ul {
   font-size: 1em;
   padding: 1.5% 0%;
-  max-width: 65%;
   margin: auto;
   text-align: center;
   white-space: nowrap;
@@ -144,7 +147,7 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  margin: 0% 1.5%;
+  margin: 0% 1%;
 }
 
 @font-face {
