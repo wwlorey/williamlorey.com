@@ -10,116 +10,86 @@ html {
   font-family: Roboto;
 }
 
-header  {
+header, footer  {
   background-color: DarkSlateGray;
   color: white;
 }
 
-.intro {
-  max-width: 40%;
-  max-height: 35%;
-  min-width: 20em;
-  overflow: visible;
-  padding-top: 4%;
-  padding-bottom: 3%;
-  margin: auto;
-}
-
-.content, .tier-pic, .tier h3 {
-  margin: auto;
-  max-height: 100%;
-  max-width: 70%;
-  min-width: 30%;
+.content, .tier h2, hr, .achiev, .exp, header .inline-mid {
+  min-width: 200px;
 }
 
 .content {
   font-family: "Open Sans";
-  overflow: visible;
-  padding: 2%;
+  padding: 2% 1.5%;
   font-size: 1.2em;
 }
 
-.intro .content {
-  max-width: 100%;
-  height: auto;
-  width: auto;
+.content, .tier h2, hr, .achiev, .exp {
+  max-width: 1000px;
   margin: auto;
-  padding: 3% 0% 5% 7%;
 }
 
-.face-greeting {
+.inline-mid {
   margin: auto;
-  max-width: 80%;
   white-space: nowrap;
   text-align: center;
 }
 
-.face-greeting img, .face-greeting h1 {
-  margin: auto;
+.inline-mid * {
   display: inline-block;
   vertical-align: middle;
 }
 
-.face-greeting img {
+header .inline-mid {
+  max-width: 500px;
+  padding: .8em;
+}
+
+.face {
+  width: 40%;
+  height: 40%;
   border-radius: 100%;
-  max-height: 40%;
-  max-width: 40%;
-  width: auto;
-  height: auto;
 }
 
-.face-greeting h1 {
-  margin-left: 4%;
+.greeting {
   font-size: 3.5em;
+  margin-left: 4%;
 }
 
-header ul {
-  white-space: nowrap;
-  text-align: center;
-  overflow: visible;
-}
-
-li.nav {
-  display: inline-block;
-  padding: 2% 4%;
-  border: 1px solid rgba(245, 245, 245, .3);
-  margin: auto;
-  font-size: .9em;
+header .content {
+  max-width: 750px;
+  padding: 1% 0% 1% 3%;
 }
 
 a {
   text-decoration: none;
   font-size: inherit;
+  color: inherit;
 }
 
-.nav a, footer ul li a {
-  color: inherit;
+header a {
+  margin: 0px 5px;
+  padding: .7em;
+  border: 1px solid rgba(245, 245, 245, .4);
+  font-size: 1em;
 }
 
 .content a {
   color: DarkCyan;
 }
 
-.tier {
-  max-width: 90%;
-  min-width: 28em;
+.tier { /* tiers make up the three main site categories: experience, achievements, and resume */
   margin: auto;
   display: block;
+  padding: 0% 1.2%;
 }
 
 .tier img {
-  max-width: 70%;
-  max-height: 70%;
-  padding: 0% 6%;
+  max-width: 42%;
+  max-height: 42%;
   margin: auto;
   display: block;
-  height: auto;
-  width: auto;
-}
-
-.tier h2, hr {
-  margin: auto;
-  max-width: 80%;
 }
 
 .tier h2 { /* main tier heading */
@@ -127,33 +97,23 @@ a {
   font-size: 2.25em;
 }
 
-.tier h3 { /* tier sub-heading */
+.exp { /* experience section sub-heading */
   font-size: 1.7em;
   padding: 2% 0%;
 }
 
-.no-details h3 {
+.achiev { /* achievements section sub-heading */
   font-size: 1.5em;
-}
-
-footer {
-  background-color: DarkSlateGray;
-  color: white;
-  margin-top: 1%;
-  width: 100%;
+  padding: 1% 0%;
 }
 
 footer ul {
   font-size: 1em;
   padding: 1.5% 0%;
-  margin: auto;
-  text-align: center;
-  white-space: nowrap;
 }
 
 footer ul li {
-  display: inline-block;
-  margin: 0% 1%;
+  padding: 0% .4%;
 }
 
 @font-face {
