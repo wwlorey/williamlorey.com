@@ -15,6 +15,10 @@ header, footer  {
   color: white;
 }
 
+header {
+  padding: 10px 0px;
+}
+
 .content, .tier h2, hr, .achiev, .exp, header .inline-mid {
   min-width: 200px;
 }
