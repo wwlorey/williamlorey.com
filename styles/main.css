@@ -50,6 +50,11 @@ header .inline-mid {
   padding: .8em;
 }
 
+header a:active, footer a:active {
+  position: relative;
+  top: 1px;
+}
+
 .face {
   width: 40%;
   height: 40%;
@@ -68,19 +73,45 @@ header .content {
 
 a {
   text-decoration: none;
+  position: relative;
   font-size: inherit;
   color: inherit;
 }
 
 header a {
+  transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
   margin: 0px 5px;
   padding: .7em;
   border: 1px solid rgba(245, 245, 245, .4);
   font-size: 1em;
 }
 
+header a:hover {
+  background-color: white;
+  color: DarkSlateGray;
+  transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+}
+
 .content a {
   color: DarkCyan;
+}
+
+.content a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid DarkCyan;
+  transition: 0.4s;
+}
+
+.content a:hover:after {
+  width: 100%;
 }
 
 .tier { /* tiers make up the three main site categories: experience, achievements, and resume */
@@ -116,8 +147,21 @@ footer ul {
   padding: 1.5% 0%;
 }
 
-footer ul li {
+footer li {
   padding: 0% .4%;
+}
+
+footer a {
+  transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+}
+
+footer a:hover {
+  color: #E0E0E0;
+  transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
 }
 
 @font-face {
