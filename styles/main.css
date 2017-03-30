@@ -18,13 +18,13 @@ header {
   padding-bottom: 20px;
 }
 
-.content, .tier h2, hr, .achiev, .exp, .tier img { /* everything that spans the page */
-  min-width: 600px;                                /* needs to behave similarly      */
+.content, .tier h2, hr, .achiev, .exp { /* everything that spans the page */
+  max-width: 90%;                           /* needs to behave similarly      */
+  margin: auto;
 }
 
-.content, .tier h2, hr, .achiev, .exp { /* everything except images sould behave similarly */
-  max-width: 1000px;
-  margin: auto;
+.tier img {
+  width: 100%;
 }
 
 .inline-mid {
@@ -39,7 +39,7 @@ header {
 }
 
 .greeting {
-  width: 500px;
+  width: 55%;
   height: 100%;
   padding: .8em;
   font-size: 2em;
@@ -58,8 +58,8 @@ header {
 .intro {
   font-family: "Open Sans";
   font-size: 1.2em;
-  max-width: 750px;
-  padding: 0% 0% 1.5% 3%;
+  max-width: 70%;
+  padding: 0% 0% 3% 3%;
   margin: auto;
 }
 
@@ -67,13 +67,6 @@ header {
   margin: auto;
   display: block;
   padding: 0% 1.2%;
-}
-
-.tier img {
-  max-width: 42%;
-  max-height: 42%;
-  margin: auto;
-  display: block;
 }
 
 .tier h2 { /* main tier heading */
@@ -172,4 +165,56 @@ footer a:hover:after, .content a:hover:after {
 
 .fun {
   font-family: "CS", cursive;
+}
+
+/* Screen width is less than 700px (mobile devices) */
+@media only screen and (max-width: 700px) {
+  .greeting {
+    width: 80%;
+  }
+
+  .greeting h1 {
+    font-size: 1.3em;
+  }
+
+
+  .intro {
+    max-width: 100%;
+    padding: 0% 3% 3% 3%;
+  }
+
+  footer {
+    height: 100%;
+    margin-top: 2%
+  }
+
+  .inline-mid.contact {
+    white-space: normal;
+    line-height: 30px;
+  }
+}
+
+/* Screen width is less than 370px (small mobile devices) */
+@media only screen and (max-width: 370px) {
+  .nav {
+    display: none;
+  }
+}
+
+/* Screen width is more than 700px (laptops/desktops) */
+@media only screen and (min-width: 700px) {
+  .intro {
+    max-width: 800px;
+  }
+
+  .face {
+    max-width: 200px;
+  }
+
+  .tier img {
+    max-width: 42%;
+    max-height: 42%;
+    margin: auto;
+    display: block;
+  }
 }
