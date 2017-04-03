@@ -12,7 +12,7 @@
   <header>
     <div class="inline-mid greeting">
       <img class="face" src="resources\wl.jpg" alt="William Lorey"/>
-      <h1>Hello!</h1>
+      <h1 id="text-greeting">Hello!</h1>
     </div>
     <p class="intro">My name is William Lorey and I am a Computer Engineering and Computer Science
       student at Missouri S&amp;T. I'm passionate about technology and am always
@@ -79,5 +79,10 @@
     </div>
   </footer>
 
+  <script>
+    var greetings = ["Hello", "Hi there", "Hi", "Howdy", "Welcome"];
+    var greet = greetings[Math.floor(Math.random() * 5)];
+    document.getElementById("text-greeting").innerHTML = greet + "!";
+  </script>
 </body>
 </html>

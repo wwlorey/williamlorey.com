@@ -23,10 +23,6 @@ header {
   margin: auto;
 }
 
-.tier img {
-  width: 100%;
-}
-
 .inline-mid {
   margin: auto;
   white-space: nowrap;
@@ -43,6 +39,10 @@ header {
   height: 100%;
   padding: .8em;
   font-size: 2em;
+}
+
+.greeting h1 {
+  padding-left: 3%;
 }
 
 .face {
@@ -72,6 +72,10 @@ header {
 .tier h2 { /* main tier heading */
   margin-top: 3%;
   font-size: 2.25em;
+}
+
+.tier img {
+  width: 100%;
 }
 
 .content { /* elaboration under main tier headings */
@@ -167,6 +171,13 @@ footer a:hover:after, .content a:hover:after {
   font-family: "CS", cursive;
 }
 
+/* Screen width is less than 370px (small mobile devices) */
+@media only screen and (max-width: 370px) {
+  .nav {
+    display: none;
+  }
+}
+
 /* Screen width is less than 700px (mobile devices) */
 @media only screen and (max-width: 700px) {
   .greeting {
@@ -177,10 +188,9 @@ footer a:hover:after, .content a:hover:after {
     font-size: 1.3em;
   }
 
-
   .intro {
-    max-width: 100%;
-    padding: 0% 3% 3% 3%;
+    max-width: 90%;
+    padding: 0% 3% 3% 3.5%;
   }
 
   footer {
@@ -190,14 +200,7 @@ footer a:hover:after, .content a:hover:after {
 
   .inline-mid.contact {
     white-space: normal;
-    line-height: 30px;
-  }
-}
-
-/* Screen width is less than 370px (small mobile devices) */
-@media only screen and (max-width: 370px) {
-  .nav {
-    display: none;
+    line-height: 40px;
   }
 }
 
