@@ -188,13 +188,25 @@ footer a:hover:after, .content a:hover:after {
     width: 80%;
   }
 
-  .greeting h1 {
+  #text-greeting {
     font-size: 1.3em;
   }
 
   .intro {
     max-width: 90%;
     padding: 0% 3% 3% 3.5%;
+  }
+
+  .tier h2 {
+    font-size: 1.9em;
+  }
+
+  .exp {
+    font-size: 1.5em;
+  }
+
+  .achiev {
+    font-size: 1.3em;
   }
 
   footer {
@@ -211,7 +223,7 @@ footer a:hover:after, .content a:hover:after {
 /* Screen width is more than 700px (laptops/desktops) */
 @media only screen and (min-width: 700px) {
   .intro {
-    max-width: 800px;
+    max-width: 70%;
   }
 
   .face {
@@ -219,9 +231,36 @@ footer a:hover:after, .content a:hover:after {
   }
 
   .tier img {
-    max-width: 42%;
-    max-height: 42%;
+    max-width: 50%;
+    max-height: 50%;
     margin: auto;
     display: block;
+  }
+}
+
+/* Large screens (width larger than 1250px) */
+@media only screen and (min-width: 1250px) {
+  .content, .tier h2, hr, .achiev, .exp {
+    max-width: 70%;
+  }
+
+  .intro {
+    max-width: 50%;
+  }
+
+  .tier img {
+    max-width: 42%;
+    max-height: 42%;
+  }
+}
+
+/* Really large screens (width larger than 1700px) */
+@media only screen and (min-width: 1700px) {
+  .content, .tier h2, hr, .achiev, .exp {
+    max-width: 62%;
+  }
+
+  .intro {
+    max-width: 40%;
   }
 }
