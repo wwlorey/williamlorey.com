@@ -18,8 +18,8 @@ header {
   padding-bottom: 20px;
 }
 
-.content, .tier h2, hr, .achiev, .exp { /* everything that spans the page */
-  max-width: 90%;                           /* needs to behave similarly      */
+.content, .tier h2, hr, .achiev, .exp { /* Everything that spans the page */
+  max-width: 90%;                       /* needs to behave similarly */
   margin: auto;
 }
 
@@ -63,13 +63,13 @@ header {
   margin: auto;
 }
 
-.tier { /* tiers make up the three main site categories: experience, achievements, and resume */
+.tier { /* Tiers make up the three main site categories: experience, achievements, and resume */
   margin: auto;
   display: block;
   padding: 0% 1.2%;
 }
 
-.tier h2 { /* main tier heading */
+.tier h2 { /* Main tier heading */
   margin-top: 3%;
   font-size: 2.25em;
 }
@@ -78,24 +78,24 @@ header {
   width: 100%;
 }
 
-.content { /* elaboration under main tier headings */
+.content { /* Elaboration under main tier headings */
   font-family: "Open Sans";
   padding: 2% 1.5%;
   font-size: 1.2em;
 }
 
-.exp { /* experience section sub-heading */
+.exp { /* Experience section sub-heading */
   font-size: 1.7em;
   padding: 2% 0%;
 }
 
-.achiev { /* achievements section sub-heading */
+.achiev { /* Achievements section sub-heading */
   font-size: 1.5em;
   padding: 1% 0%;
 }
 
 footer {
-  height: 70px;
+  height: 72px; /* Compensate for the 2px we gain from the contact info. */
 }
 
 .contact {
@@ -173,6 +173,10 @@ footer a:hover:after, .content a:hover:after {
 
 /* Screen width is less than 370px (small mobile devices) */
 @media only screen and (max-width: 370px) {
+  #text-greeting {
+    font-size: 1em;
+  }
+
   .nav {
     display: none;
   }
