@@ -1,3 +1,3 @@
 # wwlorey.github.io
 My personal website
-williamlorey.com
+[williamlorey.com](http://williamlorey.com)
