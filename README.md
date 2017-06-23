@@ -1,3 +1,2 @@
 # wwlorey.github.io
-My personal website
-[williamlorey.com](http://williamlorey.com)
+My portfolio website [williamlorey.com](http://williamlorey.com)
