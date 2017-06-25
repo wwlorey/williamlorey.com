@@ -51,10 +51,6 @@ header {
   border-radius: 100%;
 }
 
-.nav {
-  font-size: 1em;
-}
-
 .intro {
   font-family: "Open Sans";
   font-size: 1.2em;
@@ -175,10 +171,6 @@ footer a:hover:after, .content a:hover:after {
 @media only screen and (max-width: 370px) {
   #text-greeting {
     font-size: 1em;
-  }
-
-  .nav {
-    display: none;
   }
 }
 
