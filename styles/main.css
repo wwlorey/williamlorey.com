@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*border: 1px solid black;*/
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 }
 
 header, footer  {
-  background-color: DarkSlateGray;
+  background-color: #448AFF;
   color: white;
 }
 
@@ -18,7 +19,7 @@ header {
   padding-bottom: 20px;
 }
 
-.content, .tier h2, hr, .achiev, .exp { /* Everything that spans the page */
+.content, .tier h2, hr, .achiev, .experience { /* Everything that spans the page */
   max-width: 90%;                       /* needs to behave similarly */
   margin: auto;
 }
@@ -34,26 +35,26 @@ header {
   vertical-align: middle;
 }
 
-.greeting {
-  width: 55%;
-  height: 100%;
-  padding: .8em;
-  font-size: 2em;
-}
-
-.greeting h1 {
-  padding-left: 3%;
+#greeting-text {
+  font-weight: bold;
+  color: #BBDEFB;
+  text-align: left;
+  padding-top: .8em;
+  padding-bottom: .4em;
+  font-size: 4em;
+  margin: auto;
 }
 
 .face {
   width: 40%;
   height: 40%;
   border-radius: 100%;
+  text-align: center;
 }
 
-.intro {
+.intro-text {
   font-family: "Open Sans";
-  font-size: 1.2em;
+  font-size: 1.7em;
   max-width: 70%;
   padding: 0% 0% 3% 3%;
   margin: auto;
@@ -66,6 +67,7 @@ header {
 }
 
 .tier h2 { /* Main tier heading */
+  color: #448AFF;
   margin-top: 3%;
   font-size: 2.25em;
 }
@@ -80,9 +82,10 @@ header {
   font-size: 1.2em;
 }
 
-.exp { /* Experience section sub-heading */
+.experience { /* Experience section sub-heading */
   font-size: 1.7em;
   padding: 2% 0%;
+  color: #82B1FF;
 }
 
 .achiev { /* Achievements section sub-heading */
@@ -111,34 +114,33 @@ a {
   color: inherit;
 }
 
-header a {
+header .name {
+  font-weight: bold;
+  color: #BBDEFB;
   transition: .5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
-  margin: 0px 5px;
-  padding: .7em;
-  border: 1px solid rgba(245, 245, 245, .4);
   font-size: 1em;
+  cursor: default;
 }
 
 footer a {
   line-height: 1.5em;
 }
 
-header a:hover {
-  background-color: white;
-  color: DarkSlateGray;
+header .name:hover {
+  color: #2962FF;
   transition: .5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
 }
 
 .content a {
-  color: DarkCyan;
+  color: #448AFF;
 }
 
 .content a:after {
-  border-bottom: 1px solid DarkCyan;
+  border-bottom: 1px solid #448AFF;
 }
 
 footer a:after {
@@ -169,31 +171,28 @@ footer a:hover:after, .content a:hover:after {
 
 /* Screen width is less than 370px (small mobile devices) */
 @media only screen and (max-width: 370px) {
-  #text-greeting {
+  #greeting-text {
     font-size: 1em;
   }
 }
 
 /* Screen width is less than 700px (mobile devices) */
 @media only screen and (max-width: 700px) {
-  .greeting {
-    width: 80%;
+  #greeting-text {
+    font-size: 3em;
   }
 
-  #text-greeting {
-    font-size: 1.3em;
-  }
-
-  .intro {
+  .intro-text {
     max-width: 90%;
     padding: 0% 3% 3% 3.5%;
+    font-size: 1.4em;
   }
 
   .tier h2 {
     font-size: 1.9em;
   }
 
-  .exp {
+  .experience {
     font-size: 1.5em;
   }
 
@@ -214,7 +213,7 @@ footer a:hover:after, .content a:hover:after {
 
 /* Screen width is more than 700px (laptops/desktops) */
 @media only screen and (min-width: 700px) {
-  .intro {
+  .intro-text {
     max-width: 70%;
   }
 
@@ -232,12 +231,12 @@ footer a:hover:after, .content a:hover:after {
 
 /* Large screens (width larger than 1250px) */
 @media only screen and (min-width: 1250px) {
-  .content, .tier h2, hr, .achiev, .exp {
+  .content, .tier h2, hr, .achiev, .experience {
     max-width: 70%;
   }
 
-  .intro {
-    max-width: 50%;
+  .intro-text {
+    max-width: 70%;
   }
 
   .tier img {
@@ -248,11 +247,11 @@ footer a:hover:after, .content a:hover:after {
 
 /* Really large screens (width larger than 1700px) */
 @media only screen and (min-width: 1700px) {
-  .content, .tier h2, hr, .achiev, .exp {
+  .content, .tier h2, hr, .achiev, .experience {
     max-width: 62%;
   }
 
-  .intro {
+  .intro-text {
     max-width: 40%;
   }
 }
