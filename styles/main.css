@@ -42,14 +42,14 @@ header {
   text-align: center;
 }
 
-.intro-text {
+.intro {
   font-family: "Open Sans";
   max-width: 70%;
   padding: 0% 0% 3% 3%;
   margin: auto;
 }
 
-h1.intro-text {
+h1.intro {
   font-weight: bold;
   color: #BBDEFB;
   text-align: left;
@@ -59,7 +59,7 @@ h1.intro-text {
   margin: auto;
 }
 
-p.intro-text {
+p.intro {
   font-size: 1.7em;
 }
 
@@ -192,23 +192,23 @@ header .name:hover {
 
 /* Screen width is less than 370px (small mobile devices) */
 @media only screen and (max-width: 370px) {
-  p.intro-text {
+  p.intro {
     font-size: 1.2em;
   }
 }
 
 /* Screen width is less than 430px (mobile devices) */
 @media only screen and (max-width: 430px) {
-  .intro-text {
+  .intro {
     max-width: 90%;
     padding: 0% 3% 3% 3.5%;
   }
 
-  h1.intro-text {
+  h1.intro {
     font-size: 3em;
   }
 
-  p.intro-text {
+  p.intro {
     font-size: 1.4em;
   }
 
@@ -250,7 +250,7 @@ header .name:hover {
     font-size: 3.3em;
   }
 
-  .intro-text {
+  .intro {
     max-width: 90%;
     padding: 0% 3% 3% 3.5%;
     font-size: 1.5em;
@@ -276,7 +276,7 @@ header .name:hover {
 
 /* Screen width is more than 700px (laptops/desktops) */
 @media only screen and (min-width: 700px) {
-  .intro-text {
+  .intro {
     max-width: 70%;
   }
 
@@ -298,7 +298,7 @@ header .name:hover {
     max-width: 70%;
   }
 
-  .intro-text {
+  .intro {
     max-width: 70%;
   }
 
@@ -314,7 +314,7 @@ header .name:hover {
     max-width: 62%;
   }
 
-  .intro-text {
+  .intro {
     max-width: 40%;
   }
 }
