@@ -35,7 +35,21 @@ header {
   vertical-align: middle;
 }
 
-#greeting-text {
+.face {
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.intro {
+  font-family: "Open Sans";
+  max-width: 70%;
+  padding: 0% 0% 3% 3%;
+  margin: auto;
+}
+
+h1.intro {
   font-weight: bold;
   color: #BBDEFB;
   text-align: left;
@@ -45,19 +59,8 @@ header {
   margin: auto;
 }
 
-.face {
-  width: 40%;
-  height: 40%;
-  border-radius: 100%;
-  text-align: center;
-}
-
-.intro-text {
-  font-family: "Open Sans";
+p.intro {
   font-size: 1.7em;
-  max-width: 70%;
-  padding: 0% 0% 3% 3%;
-  margin: auto;
 }
 
 .tier { /* Tiers make up the three main site categories: experience, achievements, and resume */
@@ -69,7 +72,7 @@ header {
 .tier h2 { /* Main tier heading */
   color: #448AFF;
   margin-top: 3%;
-  font-size: 2.25em;
+  font-size: 2.7em;
 }
 
 .tier img {
@@ -79,17 +82,18 @@ header {
 .content { /* Elaboration under main tier headings */
   font-family: "Open Sans";
   padding: 2% 1.5%;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
-.experience { /* Experience section sub-heading */
-  font-size: 1.7em;
+.experience { /* Experience section sub-headings */
+  font-size: 2em;
   padding: 2% 0%;
-  color: #82B1FF;
+  /*color: #82B1FF;*/
+  color: black;
 }
 
-.achiev { /* Achievements section sub-heading */
-  font-size: 1.5em;
+.achiev { /* Achievements section sub-headings */
+  font-size: 1.7em;
   padding: 1% 0%;
 }
 
@@ -107,9 +111,6 @@ footer {
   width: auto;
   height: auto;
   margin: 0em 1em 0em 1em;
-}
-
-.link-pics img {
   -webkit-filter: opacity(100%);
   filter: opacity(100%);
   transition: 0.4s;
@@ -191,21 +192,28 @@ header .name:hover {
 
 /* Screen width is less than 370px (small mobile devices) */
 @media only screen and (max-width: 370px) {
-  #greeting-text {
-    font-size: 1em;
+  p.intro {
+    font-size: 1.2em;
   }
 }
 
-/* Screen width is less than 700px (mobile devices) */
-@media only screen and (max-width: 700px) {
-  #greeting-text {
+/* Screen width is less than 430px (mobile devices) */
+@media only screen and (max-width: 430px) {
+  .intro {
+    max-width: 90%;
+    padding: 0% 3% 3% 3.5%;
+  }
+
+  h1.intro {
     font-size: 3em;
   }
 
-  .intro-text {
-    max-width: 90%;
-    padding: 0% 3% 3% 3.5%;
+  p.intro {
     font-size: 1.4em;
+  }
+
+  .content {
+    font-size: 1.2em;
   }
 
   .tier h2 {
@@ -221,6 +229,46 @@ header .name:hover {
   }
 
   footer {
+    height: 80px;
+    margin-top: 3%
+  }
+
+  .link-pics {
+    line-height: 80px;
+  }
+
+  .link-pics img {
+    max-width: 45px;
+    max-height: 45px;
+    margin: 0em .7em 0em .7em;
+  }
+}
+
+/* Screen width is less than 700px (tablets) */
+@media only screen and (max-width: 700px) {
+  #greeting-text {
+    font-size: 3.3em;
+  }
+
+  .intro {
+    max-width: 90%;
+    padding: 0% 3% 3% 3.5%;
+    font-size: 1.5em;
+  }
+
+  .tier h2 {
+    font-size: 2.4em;
+  }
+
+  .experience {
+    font-size: 1.7em;
+  }
+
+  .achiev {
+    font-size: 1.5em;
+  }
+
+  footer {
     height: 100%;
     margin-top: 2%
   }
@@ -228,7 +276,7 @@ header .name:hover {
 
 /* Screen width is more than 700px (laptops/desktops) */
 @media only screen and (min-width: 700px) {
-  .intro-text {
+  .intro {
     max-width: 70%;
   }
 
@@ -250,7 +298,7 @@ header .name:hover {
     max-width: 70%;
   }
 
-  .intro-text {
+  .intro {
     max-width: 70%;
   }
 
@@ -266,7 +314,7 @@ header .name:hover {
     max-width: 62%;
   }
 
-  .intro-text {
+  .intro {
     max-width: 40%;
   }
 }
