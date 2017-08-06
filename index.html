@@ -15,26 +15,21 @@
 
 <body>
   <header>
-    <div class="inline-mid greeting">
-      <img class="face" src="resources\wl.jpg" alt="William Lorey"/>
-      <h1 id="text-greeting">Hello!</h1>
-    </div>
+    <h1 class="intro" id="greeting-text">Hello!</h1>
+    <!--<img class="face" src="resources\wl.jpg" alt="William Lorey"/>-->
     <p class="intro">
-      My name is William Lorey. I'm a Computer Engineering and Computer Science student that's passionate
+      My name is <span class="name">William Lorey</span>. I'm a Computer Engineering and Computer Science student that's passionate
       about all things tech.
+      <br/>
+      Here you'll find my experiences, projects, and resume.
     </p>
-    <div class="inline-mid nav">
-      <a href="#experience">Experience</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#resume">Resume</a>
-    </div>
   </header>
 
   <div class="tier">
-    <h2 id="experience">Experience</h2>
+    <h2>Experience</h2>
     <hr/>
 
-    <h3 class="exp">Missouri S&amp;T Solar Car Team</h3>
+    <h3 class="experience">Missouri S&amp;T Solar Car Team</h3>
     <img src="resources\sc.jpg" alt="Solar Car" title="2016 S&amp;T Solar Car | &#34;Solar Miner&#34;"/>
     <p class="content">
         The <a href="https://solarcar.mst.edu/" target="_blank">S&amp;T Solar Car Team</a> is an entirely student run organization
@@ -49,7 +44,7 @@
       now include managing the Logistics Sub-Team, writing embedded software, and contributing to the car's telemetry code base. I also make a lot of wires.
     </p>
 
-    <h3 class="exp">Boeing</h3>
+    <h3 class="experience">Boeing</h3>
     <img src="resources\itcs_interns.jpg" alt="Edwin Tan, William Lorey, and Juwel Khan" title="Edwin Tan, William Lorey, and Juwel Khan"/>
     <p class="content">
       The summer after my Freshman year I interned in Information Technology at Boeing. Most notably during my time at the company,
@@ -61,7 +56,7 @@
   </div>
 
   <div class="tier">
-    <h2 id="achievements">Achievements</h2>
+    <h2>Achievements</h2>
     <hr/>
     <h3 class="achiev">Eagle Scout</h3>
     <h3 class="achiev">Missouri S&amp;T Dean's List</h3>
@@ -69,23 +64,22 @@
   </div>
 
   <div class="tier">
-    <h2 id="resume">Resume</h2>
+    <h2>Resume</h2>
     <hr/>
     <p class="content">Check out my <a href="resources\lorey_resume.pdf" target="_blank">resume</a>.</p>
   </div>
 
   <footer>
-    <div class="inline-mid contact">
-      <div>Contact me:</div>
-      <div>University | <a href="mailto:wwlytc@mst.edu" target="_blank">wwlytc@mst.edu</a></div>
-      <div>Personal | <a href="mailto:wwlorey@gmail.com" target="_blank">wwlorey@gmail.com</a></div>
-    </div>
+    <div class="inline-mid link-pics no-select">
+      <a href="mailto:wwlorey@gmail.com" target="_blank" style="margin-top: .5%"><img src="resources/link-pictures/email2.png"/></a>
+      <a href="https://www.linkedin.com/in/williamlorey/" target="_blank"><img src="resources/link-pictures/linkedin.png"/></a>
+      <a href="https://github.com/wwlorey" target="_blank"><img src="resources/link-pictures/github.png"/></a>
   </footer>
 
   <script>
-    var greetings = ["Hello", "Hi there", "Hi", "Howdy", "Welcome"];
-    var greet = greetings[Math.floor(Math.random() * 5)];
-    document.getElementById("text-greeting").innerHTML = greet + "!";
+    var greetings = ["Hello", "Hi there", "Hi", "Welcome"];
+    var greet = greetings[Math.floor(Math.random() * 4)];
+    document.getElementById("greeting-text").innerHTML = greet + "!";
   </script>
 </body>
 </html>
