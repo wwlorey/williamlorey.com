@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: 1px solid black;*/
 }
 
 html {
@@ -10,30 +9,20 @@ html {
   font-family: Roboto;
 }
 
-header, footer  {
+#splash-header, footer  {
   background-color: #448AFF;
   color: white;
 }
 
-header {
-  padding-bottom: 20px;
-}
-
-.content, .tier h2, hr, .achiev, .experience { /* Everything that spans the page */
-  max-width: 90%;                       /* needs to behave similarly */
-  margin: auto;
-}
-
-.inline-mid {
-  margin: auto;
-  white-space: nowrap;
-  text-align: center;
-}
-
-.inline-mid * {
+/* #splash-greeting {
+  text-align: left;
   display: inline-block;
-  vertical-align: middle;
+  max-width: 70%;
 }
+
+#splash-greeting * {
+  display: block;
+} */
 
 .face {
   width: 40%;
@@ -42,14 +31,14 @@ header {
   text-align: center;
 }
 
-.intro {
+#splash-header h1, #splash-header p {
   font-family: "Open Sans";
   max-width: 70%;
   padding: 0% 0% 3% 3%;
   margin: auto;
 }
 
-h1.intro {
+#splash-header h1 {
   font-weight: bold;
   color: #BBDEFB;
   text-align: left;
@@ -59,8 +48,13 @@ h1.intro {
   margin: auto;
 }
 
-p.intro {
+#splash-header p {
   font-size: 1.7em;
+}
+
+.content, .tier h2, hr, .achiev, .experience { /* Everything that spans the page */
+  max-width: 90%;                              /* needs to behave similarly */
+  margin: auto;
 }
 
 .tier { /* Tiers make up the three main site categories: experience, achievements, and resume */
@@ -99,24 +93,38 @@ p.intro {
 
 footer {
   height: 100px;
+  margin: auto;
+  white-space: nowrap;
+  text-align: center;
 }
 
-.link-pics {
+footer * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.link-wrapper {
   line-height: 100px;
 }
 
-.link-pics img {
-  max-height: 50px;
-  max-width: 50px;
-  width: auto;
-  height: auto;
-  margin: 0em 1em 0em 1em;
+footer img {
+  width: 100%;
+  height: 100%;
   -webkit-filter: opacity(100%);
   filter: opacity(100%);
   transition: 0.4s;
 }
 
-.link-pics img:hover {
+footer a {
+  max-height: 50px;
+  max-width: 50px;
+  width: auto;
+  height: auto;
+  line-height: 1.5em; 
+  margin: 0em 1em 0em 1em;
+}
+
+footer img:hover {
   -webkit-filter: opacity(50%);
   filter: opacity(50%);
   transition: 0.4s;
@@ -130,7 +138,7 @@ a {
   color: inherit;
 }
 
-header .name {
+.name {
   font-weight: bold;
   color: #BBDEFB;
   transition: .5s;
@@ -140,11 +148,7 @@ header .name {
   cursor: default;
 }
 
-footer a {
-  line-height: 1.5em;
-}
-
-header .name:hover {
+.name:hover {
   color: #2962FF;
   transition: .5s;
   -moz-transition: .5s;
@@ -192,23 +196,23 @@ header .name:hover {
 
 /* Screen width is less than 370px (small mobile devices) */
 @media only screen and (max-width: 370px) {
-  p.intro {
+  #splash-header p {
     font-size: 1.2em;
   }
 }
 
 /* Screen width is less than 430px (mobile devices) */
 @media only screen and (max-width: 430px) {
-  .intro {
+  #splash-header h1, #splash-header p {
     max-width: 90%;
     padding: 0% 3% 3% 3.5%;
   }
 
-  h1.intro {
+  #splash-header h1 {
     font-size: 3em;
   }
 
-  p.intro {
+  #splash-header p {
     font-size: 1.4em;
   }
 
@@ -233,11 +237,11 @@ header .name:hover {
     margin-top: 3%
   }
 
-  .link-pics {
+  .link-wrapper {
     line-height: 80px;
   }
 
-  .link-pics img {
+  .link-wrapper img {
     max-width: 45px;
     max-height: 45px;
     margin: 0em .7em 0em .7em;
@@ -246,15 +250,19 @@ header .name:hover {
 
 /* Screen width is less than 700px (tablets) */
 @media only screen and (max-width: 700px) {
-  #greeting-text {
+
+  #splash-header h1, #splash-header p {
+    max-width: 90%;
+    padding: 0% 3% 3% 3.5%;
+  }
+
+  #splash-header h1 {
     font-size: 3.3em;
   }
 
-  .intro {
-    max-width: 90%;
-    padding: 0% 3% 3% 3.5%;
+  #splash-header p {
     font-size: 1.5em;
-  }
+  }   
 
   .tier h2 {
     font-size: 2.4em;
@@ -276,10 +284,6 @@ header .name:hover {
 
 /* Screen width is more than 700px (laptops/desktops) */
 @media only screen and (min-width: 700px) {
-  .intro {
-    max-width: 70%;
-  }
-
   .face {
     max-width: 200px;
   }
@@ -298,10 +302,10 @@ header .name:hover {
     max-width: 70%;
   }
 
-  .intro {
+  #splash-header h1, #splash-header p {
     max-width: 70%;
   }
-
+  
   .tier img {
     max-width: 42%;
     max-height: 42%;
@@ -314,7 +318,7 @@ header .name:hover {
     max-width: 62%;
   }
 
-  .intro {
+  #splash-header h1, #splash-header p {
     max-width: 40%;
   }
 }
