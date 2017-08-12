@@ -9,47 +9,50 @@ html {
   font-family: Roboto;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 #splash-header, footer  {
   background-color: #448AFF;
   color: white;
 }
 
-/* #splash-greeting {
-  text-align: left;
-  display: inline-block;
-  max-width: 70%;
+#splash-header {
+  text-align: center;
 }
 
-#splash-greeting * {
-  display: block;
-} */
-
-.face {
+#splash-header img {
   width: 40%;
   height: 40%;
   border-radius: 100%;
-  text-align: center;
+  margin-bottom: 1em;
 }
 
 #splash-header h1, #splash-header p {
   font-family: "Open Sans";
-  max-width: 70%;
+  width: 100%;
   padding: 0% 0% 3% 3%;
-  margin: auto;
+  text-align: left;
 }
 
 #splash-header h1 {
   font-weight: bold;
   color: #BBDEFB;
-  text-align: left;
   padding-top: .8em;
   padding-bottom: .4em;
   font-size: 4em;
-  margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #splash-header p {
   font-size: 1.7em;
+}
+
+#splash-greeting-and-text {
+  max-width: 60%;
+  display: inline-block;
 }
 
 .content, .tier h2, hr, .achiev, .experience { /* Everything that spans the page */
@@ -115,6 +118,12 @@ footer img {
   transition: 0.4s;
 }
 
+footer img:hover {
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
+  transition: 0.4s;
+}
+
 footer a {
   max-height: 50px;
   max-width: 50px;
@@ -122,12 +131,6 @@ footer a {
   height: auto;
   line-height: 1.5em; 
   margin: 0em 1em 0em 1em;
-}
-
-footer img:hover {
-  -webkit-filter: opacity(50%);
-  filter: opacity(50%);
-  transition: 0.4s;
 }
 
 a {
@@ -194,22 +197,67 @@ a {
   user-select: none;
 }
 
-/* Screen width is less than 370px (small mobile devices) */
-@media only screen and (max-width: 370px) {
-  #splash-header p {
-    font-size: 1.2em;
+/* Screen width is less than 700px (tablets) */
+@media only screen and (max-width: 700px) {
+  #splash-header img {
+    width: 7em;
+    height: 7em;
+    float: left;
+    margin-left: 2.1em;
+    margin-top: 2em;
+    position: absolute;
+    top: 0;
   }
-}
 
-/* Screen width is less than 430px (mobile devices) */
-@media only screen and (max-width: 430px) {
-  #splash-header h1, #splash-header p {
+  #splash-greeting-and-text {
     max-width: 90%;
     padding: 0% 3% 3% 3.5%;
   }
 
   #splash-header h1 {
-    font-size: 3em;
+    font-size: 3.3em;
+    padding-left: 2.8em;
+  }
+
+  #splash-header p {
+    font-size: 1.5em;
+    padding-top: 1em;
+  }   
+
+  .tier h2 {
+    font-size: 2.4em;
+  }
+
+  .experience {
+    font-size: 1.7em;
+  }
+
+  .achiev {
+    font-size: 1.5em;
+  }
+
+  footer {
+    height: 100%;
+    margin-top: 2%;
+  }
+}
+
+/* Screen width is less than 430px (mobile devices) */
+@media only screen and (max-width: 430px) {
+  #splash-header img {
+    width: 6em;
+    height: 6em;
+    margin-left: 1.7em;
+    margin-top: 1.7em;
+  }
+
+  #splash-greeting-and-text {
+    max-width: 90%;
+    padding: 0% 3% 3% 3.5%;
+  }
+
+  #splash-header h1 {
+    font-size: 2.8em;
   }
 
   #splash-header p {
@@ -248,44 +296,45 @@ a {
   }
 }
 
-/* Screen width is less than 700px (tablets) */
-@media only screen and (max-width: 700px) {
-
-  #splash-header h1, #splash-header p {
-    max-width: 90%;
-    padding: 0% 3% 3% 3.5%;
+/* Screen width is less than 400px (small mobile devices) */
+@media only screen and (max-width: 400px) {
+  #splash-header img {
+    width: 4.8em;
+    height: 4.8em;
   }
 
   #splash-header h1 {
-    font-size: 3.3em;
+    font-size: 2.5em;
+    padding-left: 2.5em;
   }
 
   #splash-header p {
-    font-size: 1.5em;
-  }   
-
-  .tier h2 {
-    font-size: 2.4em;
+    font-size: 1.2em;
+    padding-top: .6em;
   }
 
-  .experience {
-    font-size: 1.7em;
-  }
-
-  .achiev {
-    font-size: 1.5em;
-  }
-
-  footer {
-    height: 100%;
-    margin-top: 2%
+  footer a {
+    max-height: 40px;
+    max-width: 40px;
+    margin: 0em .8em 0em .8em;
   }
 }
 
-/* Screen width is more than 700px (laptops/desktops) */
+/* Screen width is less than 330px (really small mobile devices) */
+@media only screen and (max-width: 330px) {
+  #splash-header h1 {
+    padding-top: 1em;
+    padding-left: 2.6em;
+    font-size: 2.3em;
+  }
+}
+
+/* Screen width is more than 700px */
 @media only screen and (min-width: 700px) {
-  .face {
+  #splash-header img {
     max-width: 200px;
+    margin-bottom: 3em;
+    margin-right: 1em;
   }
 
   .tier img {
@@ -296,29 +345,35 @@ a {
   }
 }
 
-/* Large screens (width larger than 1250px) */
-@media only screen and (min-width: 1250px) {
+/* Large screens (width larger than 1200px) */
+@media only screen and (min-width: 1200px) {
   .content, .tier h2, hr, .achiev, .experience {
     max-width: 70%;
   }
 
-  #splash-header h1, #splash-header p {
-    max-width: 70%;
+  #splash-header img {
+    margin-bottom: 1.5em;
   }
-  
+
   .tier img {
     max-width: 42%;
     max-height: 42%;
   }
 }
 
-/* Really large screens (width larger than 1700px) */
-@media only screen and (min-width: 1700px) {
+/* 
+
+/* Really large screens (width larger than 1600px) */
+@media only screen and (min-width: 1600px) {
   .content, .tier h2, hr, .achiev, .experience {
     max-width: 62%;
   }
 
-  #splash-header h1, #splash-header p {
+  #splash-header img {
+    margin-bottom: 1.5em;
+  }
+
+  #splash-greeting-and-text {
     max-width: 40%;
   }
 }
