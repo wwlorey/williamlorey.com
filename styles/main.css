@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 html {
@@ -20,6 +21,7 @@ html, body {
 
 #splash-header {
   text-align: center;
+  padding-bottom: 1.5em;
 }
 
 #splash-header img {
@@ -30,7 +32,7 @@ html, body {
 }
 
 #splash-header h1, #splash-header p {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   padding: 0% 0% 3% 3%;
   text-align: left;
@@ -54,6 +56,76 @@ html, body {
   max-width: 60%;
   display: inline-block;
 }
+
+#splash-body {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em; 
+}
+
+#splash-body div {
+  width: 30em;
+  height: 14em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin: .5em;
+  border-radius: 8px;
+
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;      
+
+}
+
+#splash-body div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  border-radius: 8px;
+  transition: .4s;
+}
+
+#splash-body div:hover:before {
+  background: rgba(0,0,0,0.2);
+  transition: .4s;
+}
+
+#splash-body h1 {
+  position: relative;
+  width: 100%;
+}
+
+#button1 {
+  background-image: url("../resources/button-pictures/img1.jpg");
+}
+
+#button2 {
+  background-image: url("../resources/button-pictures/sc.jpg");
+}
+
+#button3 {
+  background-image: url("../resources/button-pictures/itcs_interns.jpg");
+}
+
+#button4 {
+  background-image: url("../resources/button-pictures/top_view_desk.jpg");
+}
+
+
+
+
+
+
 
 .content, .tier h2, hr, .achiev, .experience { /* Everything that spans the page */
   max-width: 90%;                              /* needs to behave similarly */
