@@ -3,6 +3,7 @@
 <head>
   <title>William Lorey</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="styles/main.css" type="text/css" rel="stylesheet"/>
   <link href="resources/icon.png" rel="icon"/>
 
@@ -11,6 +12,13 @@
     Missouri S&amp;T, Missouri University of Science and Technology">
   <meta name="author" content="William Lorey">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    $(function(){
+      $("#footer-include").load("footer.html");
+    });
+  </script> 
+
 </head>
 
 <body>
@@ -35,14 +43,7 @@
     <a href=""><div id="button4"><h1>Resume</h1></div></a>
   </div>
 
-  <footer>
-      <div class="link-wrapper no-select">
-        <a href="mailto:wwlorey@gmail.com" target="_blank" style="margin-top: .5%"><img src="resources/link-pictures/email.png"/></a>
-        <a href="https://www.linkedin.com/in/williamlorey/" target="_blank"><img src="resources/link-pictures/linkedin.png"/></a>
-        <a href="https://github.com/wwlorey" target="_blank"><img src="resources/link-pictures/github.png"/></a>
-        <a href="https://gitlab.com/wwlorey" target="_blank"><img src="resources/link-pictures/gitlab.png"/></a>
-      </div>      
-  </footer>
+  <div id="footer-include"></div>
 
   <script>
     var greetings = ["Hello", "Hi there", "Hi", "Welcome"];
