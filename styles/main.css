@@ -164,83 +164,6 @@ header {
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.content, .tier h2, hr, .achiev, .experience { /* Everything that spans the page */
-  max-width: 90%;                              /* needs to behave similarly */
-  margin: auto;
-}
-
-.tier { /* Tiers make up the three main site categories: experience, achievements, and resume */
-  margin: auto;
-  display: block;
-  padding: 0% 1.2%;
-}
-
-.tier h2 { /* Main tier heading */
-  color: #448AFF;
-  margin-top: 3%;
-  font-size: 2.7em;
-}
-
-.tier img {
-  width: 100%;
-}
-
-.content { /* Elaboration under main tier headings */
-  font-family: "Open Sans";
-  padding: 2% 1.5%;
-  font-size: 1.3em;
-}
-
-.experience { /* Experience section sub-headings */
-  font-size: 2em;
-  padding: 2% 0%;
-  /*color: #82B1FF;*/
-  color: black;
-}
-
-.achiev { /* Achievements section sub-headings */
-  font-size: 1.7em;
-  padding: 1% 0%;
-}
-
 footer {
   height: 100px;
   margin: auto;
@@ -305,27 +228,6 @@ a {
   -webkit-transition: .5s;
 }
 
-.content a {
-  color: #448AFF;
-}
-
-.content a:after {
-  border-bottom: 1px solid #448AFF;
-}
-
-.content a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  transition: 0.5s;
-}
-
-.content a:hover:after {
-  width: 100%;
-}
-
 @font-face {
   font-family: "CS";
   src: url(comic.ttf) format("truetype");
@@ -371,20 +273,8 @@ a {
     padding-top: 1em;
   }   
 
-  iframe {
+  object {
     width: 300px;
-  }
-
-  .tier h2 {
-    font-size: 2.4em;
-  }
-
-  .experience {
-    font-size: 1.7em;
-  }
-
-  .achiev {
-    font-size: 1.5em;
   }
 
   footer {
@@ -511,22 +401,6 @@ a {
     font-size: .8em;
   }
 
-  .content {
-    font-size: 1.2em;
-  }
-
-  .tier h2 {
-    font-size: 1.9em;
-  }
-
-  .experience {
-    font-size: 1.5em;
-  }
-
-  .achiev {
-    font-size: 1.3em;
-  }
-
   footer {
     height: 80px;
     margin-top: 3%
@@ -597,39 +471,17 @@ a {
     margin-bottom: 3em;
     margin-right: 1em;
   }
-
-  .tier img {
-    max-width: 50%;
-    max-height: 50%;
-    margin: auto;
-    display: block;
-  }
 }
 
 /* Large screens (width larger than 1200px) */
 @media only screen and (min-width: 1200px) {
-  .content, .tier h2, hr, .achiev, .experience {
-    max-width: 70%;
-  }
-
   #splash-header img {
     margin-bottom: 1.5em;
   }
-
-  .tier img {
-    max-width: 42%;
-    max-height: 42%;
-  }
 }
-
-/* 
 
 /* Really large screens (width larger than 1600px) */
 @media only screen and (min-width: 1600px) {
-  .content, .tier h2, hr, .achiev, .experience {
-    max-width: 62%;
-  }
-
   #splash-header img {
     margin-bottom: 1.5em;
   }
