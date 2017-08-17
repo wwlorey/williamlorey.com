@@ -1,3 +1,20 @@
+:root {
+  /* define variables */
+  --main-color: #448AFF;
+  --aux-color-dark: #2962FF;
+  --aux-color-light: #BBDEFB;
+  --fast-transition-time: .2s;
+  --slow-transition-time: .4s;
+}
+
+/* set text-select color */
+::selection {
+  background: var(--aux-color-light); 
+}
+::-moz-selection {
+  background: var(--aux-color-light);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +23,7 @@
 
 html {
   background-color: WhiteSmoke;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -14,7 +31,7 @@ html, body {
 }
 
 #splash-header, footer  {
-  background-color: #448AFF;
+  background-color: var(--main-color);
   color: white;
 }
 
@@ -31,7 +48,6 @@ html, body {
 }
 
 #splash-header h1, #splash-header p {
-  font-family: "Open Sans", sans-serif;
   width: 100%;
   padding: 0% 0% 3% 3%;
   text-align: left;
@@ -39,7 +55,7 @@ html, body {
 
 #splash-header h1 {
   font-weight: bold;
-  color: #BBDEFB;
+  color: var(--aux-color-light);
   padding-top: .8em;
   padding-bottom: .4em;
   font-size: 4em;
@@ -49,6 +65,7 @@ html, body {
 
 #splash-header p {
   font-size: 1.7em;
+  font-family: "Open Sans", sans-serif;
 }
 
 #splash-greeting-and-text {
@@ -72,7 +89,6 @@ html, body {
   display: inline-block;
   margin: .5em;
   border-radius: 8px;
-  font-family: 'Open Sans', sans-serif;
   color: white;
   position: relative;
   display: inline-flex;
@@ -88,12 +104,12 @@ html, body {
   bottom: 0;
   background: rgba(0,0,0,0.4);
   border-radius: 8px;
-  transition: .4s;
+  transition: var(--slow-transition-time);
 }
 
 #splash-body div:hover:before {
   background: rgba(0,0,0,0.2);
-  transition: .4s;
+  transition: var(--slow-transition-time);
 }
 
 #splash-body h1 {
@@ -120,17 +136,25 @@ html, body {
 header {
   width: 100%;
   height: 50px;
-  background-color: #448AFF;
+  background-color: var(--main-color);
   color: white;
 }
 
 #title {
   display: inline-block;
   position: relative;
-  top: 12px;
+  top: 9px;
   left: 15px;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.2em;
+  padding: .2%;
+  border: 1px solid var(--main-color);
+  border-radius: 7px;
+  color: var(--aux-color-light);
+}
+
+#title:hover {
+  border: 1px solid var(--aux-color-light);
 }
 
 #nav-wrapper {
@@ -150,19 +174,55 @@ header {
 
 .nav a {
   padding: 5px;
-  border: 1px solid white; 
+  border: 1px solid var(--aux-color-light); 
   border-radius: 7px;
+  transition: var(--fast-transition-time);
+  color: var(--aux-color-light);
 }
 
 .nav a:hover {
-  background-color: white;
-  color: #448AFF
+  background-color: var(--aux-color-light);
+  color: var(--main-color);
 }
 
 .page-body {
   padding: 2em 0em 2em 0em;
   text-align: center;
 }
+
+.page-heading, .page-text {
+  max-width: 70%;
+  text-align: left;
+  margin: auto;
+}
+
+.page-heading {
+  font-size: 2.5em;
+  padding-left: .2em;
+  border-bottom: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.page-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  padding: 1em;
+}
+
+.page-text a {
+  color: var(--main-color);
+  padding: 0% .2% 0% .2%;
+  transition: var(--fast-transition-time);
+  border-radius: 7px;
+}
+
+.page-text a:hover {
+  background-color: var(--main-color);
+  border-radius: 7px;
+  color: var(--aux-color-light);
+}
+
 
 footer {
   height: 100px;
@@ -185,13 +245,12 @@ footer img {
   height: 100%;
   -webkit-filter: opacity(100%);
   filter: opacity(100%);
-  transition: 0.4s;
+  transition: var(--slow-transition-time);
 }
 
 footer img:hover {
   -webkit-filter: opacity(50%);
   filter: opacity(50%);
-  transition: 0.4s;
 }
 
 footer a {
@@ -213,19 +272,14 @@ a {
 
 .name {
   font-weight: bold;
-  color: #BBDEFB;
-  transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
+  color: var(--aux-color-light);
+  transition: var(--slow-transition-time);
   font-size: 1em;
   cursor: default;
 }
 
 .name:hover {
-  color: #2962FF;
-  transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
+  color: var(--aux-color-dark);
 }
 
 @font-face {
@@ -273,6 +327,29 @@ a {
     padding-top: 1em;
   }   
 
+  #title:hover {
+    border: 1px solid var(--main-color);
+  }
+
+  .nav a:hover {
+    border: 1px solid var(--aux-color-light);
+    background-color: var(--main-color);    
+    color: var(--aux-color-light);
+  }
+
+  .page-text a {
+    border-radius: 0px;
+    border-bottom: 1px solid var(--main-color);
+    transition: 0;
+    padding: 0;
+  }
+
+  .page-text a:hover {
+    border-radius: 0px;
+    color: var(--main-color);
+    background-color: WhiteSmoke;
+  }
+
   object {
     width: 300px;
   }
@@ -280,6 +357,11 @@ a {
   footer {
     height: 100%;
     margin-top: 2%;
+  }
+
+  footer img:hover {
+    -webkit-filter: opacity(100%);
+    filter: opacity(100%);
   }
 }
 
@@ -316,6 +398,14 @@ a {
   .nav {
     padding: none;
     margin: none;
+  }
+
+  .page-heading, .page-text {
+    max-width: 90%;
+  }
+
+  .page-heading {
+    font-size: 2.2em;
   }
 }
 
@@ -360,6 +450,18 @@ a {
   #splash-body div:before {
     border-radius: 0px;
     margin-top: 0px;
+  }
+
+  .page-heading, .page-text {
+    max-width: 95%;
+  }
+
+  .page-heading {
+    font-size: 2em;
+  }
+
+  .page-text {
+    font-size: .9em;
   }
 }
 
