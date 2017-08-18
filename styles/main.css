@@ -1,5 +1,4 @@
 :root {
-  /* define variables */
   --main-color: #448AFF;
   --aux-color-dark: #2962FF;
   --aux-color-light: #BBDEFB;
@@ -7,10 +6,10 @@
   --slow-transition-time: .4s;
 }
 
-/* set text-select color */
 ::selection {
   background: var(--aux-color-light); 
 }
+
 ::-moz-selection {
   background: var(--aux-color-light);
 }
