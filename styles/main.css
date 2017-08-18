@@ -116,20 +116,20 @@ html, body {
   width: 100%;
 }
 
-#button1 {
-  background-image: url("../resources/button-pictures/img1.jpg");
+#splash-button1 {
+  background-image: url("../resources/splash-button-pictures/sc.jpg");
 }
 
-#button2 {
-  background-image: url("../resources/button-pictures/sc.jpg");
+#splash-button2 {
+  background-image: url("../resources/splash-button-pictures/st_pat.jpg");
 }
 
-#button3 {
-  background-image: url("../resources/button-pictures/itcs_interns.jpg");
+#splash-button3 {
+  background-image: url("../resources/splash-button-pictures/itcs_interns.jpg");
 }
 
-#button4 {
-  background-image: url("../resources/button-pictures/top_view_desk.jpg");
+#splash-button4 {
+  background-image: url("../resources/splash-button-pictures/top_view_desk.jpg");
 }
 
 header {
