@@ -189,7 +189,7 @@ header {
   text-align: center;
 }
 
-.page-heading, .page-text {
+.page-heading, .page-subheading, .page-text {
   max-width: 70%;
   text-align: left;
   margin: auto;
@@ -198,9 +198,18 @@ header {
 .page-heading {
   font-size: 2.5em;
   padding-left: .2em;
+  margin-bottom: .2em;
   border-bottom: 1px solid var(--main-color);
   color: var(--main-color);
   font-weight: bold;
+}
+
+.page-subheading-text {
+  font-size: 2em;
+  padding: .5em 0em .2em .2em;
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
 }
 
 .page-text {
@@ -211,7 +220,7 @@ header {
 
 .page-text a {
   color: var(--main-color);
-  padding: 0% .2% 0% .2%;
+  padding: 0% .3% 0% .3%;
   transition: var(--fast-transition-time);
   border-radius: 7px;
 }
@@ -222,6 +231,26 @@ header {
   color: var(--aux-color-light);
 }
 
+.page-body img {
+  max-width: 45%;
+  margin-top: .7em;
+}
+
+.job-title, .img-desc {
+  font-family: "Roboto Mono", monospace;
+}
+
+.job-title {
+  font-size: 1.2em;
+  width: auto;
+  display: inline-block;
+  padding-left: .9em;
+}
+
+.img-desc {
+  font-size: .8em;
+  padding: 1.2em 0em .8em 0em;
+}
 
 footer {
   height: 100px;
