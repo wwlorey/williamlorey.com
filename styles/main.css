@@ -525,6 +525,10 @@ a {
     margin-top: 0px;
   }
 
+  #splash-body br {
+    display: none;
+  }
+
   .page-heading, .page-subheading, .page-text {
     max-width: 95%;
   }
@@ -689,6 +693,13 @@ a {
 
   .page-body img {
     max-width: 37%;
+  }
+}
+
+/* Width larger than 1450px */
+@media only screen and (min-width: 1450px) {
+  #splash-body br {
+    display: block;
   }
 }
 
