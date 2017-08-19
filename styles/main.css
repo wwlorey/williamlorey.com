@@ -328,6 +328,13 @@ a {
   user-select: none;
 }
 
+/* Screen width less than 800px */
+@media only screen and (max-width: 800px) {
+  .page-heading, .page-subheading {
+    max-width: 80%;
+  }
+}
+
 /* Screen width is less than 700px (tablets) */
 @media only screen and (max-width: 700px) {
   #splash-header img {
@@ -365,10 +372,15 @@ a {
     color: var(--aux-color-light);
   }
 
+  .page-subheading-text {
+    font-size: 1.7em; 
+  }
+
   .page-text a {
     border-radius: 0px;
+    border: none; 
     border-bottom: 1px solid var(--main-color);
-    transition: 0;
+    transition: 0s;
     padding: 0;
   }
 
@@ -376,6 +388,15 @@ a {
     border-radius: 0px;
     color: var(--main-color);
     background-color: WhiteSmoke;
+    transition: 0s;
+  }
+
+  .page-body img {
+    max-width: 55%; 
+  }
+
+  .job-title {
+    font-size: 1.1em;
   }
 
   object {
@@ -428,12 +449,20 @@ a {
     margin: none;
   }
 
-  .page-heading, .page-text {
+  .page-heading, .page-subheading, .page-text {
     max-width: 90%;
   }
 
   .page-heading {
     font-size: 2.2em;
+  }
+
+  .page-subheading-text {
+    font-size: 1.3em;
+  }
+
+  .job-title {
+    font-size: 1em;
   }
 }
 
@@ -480,7 +509,7 @@ a {
     margin-top: 0px;
   }
 
-  .page-heading, .page-text {
+  .page-heading, .page-subheading, .page-text {
     max-width: 95%;
   }
 
@@ -488,8 +517,23 @@ a {
     font-size: 2em;
   }
 
+  .page-subheading-text {
+    display: block;
+  }
+
   .page-text {
     font-size: .9em;
+  }
+
+  .job-title {
+    display: block;
+    padding-left: .2em;
+  }
+
+  .img-desc {
+    margin: auto;
+    max-width: 70%;
+    padding-bottom: 0;
   }
 }
 
@@ -529,6 +573,14 @@ a {
 
   .nav {
     font-size: .8em;
+  }
+
+  .page-body {
+    padding: .8em 0em .4em 0em;
+  }
+
+  .page-body img {
+    max-width: 100%;
   }
 
   footer {
@@ -608,6 +660,14 @@ a {
   #splash-header img {
     margin-bottom: 1.5em;
   }
+
+  .page-text {
+    font-size: 1.2em;
+  }
+
+  .page-body img {
+    max-width: 37%;
+  }
 }
 
 /* Really large screens (width larger than 1600px) */
@@ -618,5 +678,9 @@ a {
 
   #splash-greeting-and-text {
     max-width: 40%;
+  }
+
+  .page-body img {
+    max-width: 30%;
   }
 }
