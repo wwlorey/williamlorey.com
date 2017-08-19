@@ -509,6 +509,11 @@ a {
     height: 170px;
   }
 
+  #splash-body #splash-button3 {
+    /* Shift the Boeing Intern pic. down so heads aren't cutoff */
+    background-position: 50% 25%;
+  }
+
   #splash-body h1 {
     vertical-align: center;
     text-align: middle;
