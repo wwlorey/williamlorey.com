@@ -422,6 +422,46 @@ a {
   }
 
   footer {
+    height: 80px;
+    margin-top: 3%
+  }
+
+  .link-pics {
+    line-height: 80px;
+  }
+
+  .link-pics img {
+    max-width: 45px;
+    max-height: 45px;
+    margin: 0em .7em 0em .7em;
+  }
+}
+
+/* Screen width is less than 700px (tablets) */
+@media only screen and (max-width: 700px) {
+  #greeting-text {
+    font-size: 3.3em;
+  }
+
+  .intro {
+    max-width: 90%;
+    padding: 0% 3% 3% 3.5%;
+    font-size: 1.5em;
+  }
+
+  .tier h2 {
+    font-size: 2.4em;
+  }
+
+  .experience {
+    font-size: 1.7em;
+  }
+
+  .achiev {
+    font-size: 1.5em;
+  }
+
+  footer {
     height: 100%;
     margin-top: 2%;
   }
