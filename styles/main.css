@@ -303,7 +303,7 @@ a {
   color: inherit;
 }
 
-.name {
+.splash-accent {
   font-weight: bold;
   color: var(--aux-color-light);
   transition: var(--slow-transition-time);
@@ -311,8 +311,16 @@ a {
   cursor: default;
 }
 
-.name:hover {
+.splash-accent:hover {
   color: var(--aux-color-dark);
+}
+
+#splash-text a {
+  transition: var(--fast-transition-time);
+}
+
+#splash-text a:hover {
+  color: var(--aux-color-light);
 }
 
 @font-face {

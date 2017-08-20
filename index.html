@@ -27,10 +27,10 @@
     <div id="splash-greeting-and-text">
       <h1 id="splash-greeting">Hello!</h1>
       <p id="splash-text">
-        My name is <span class="name">William Lorey</span>. I'm a Computer Engineering and Computer Science student that's passionate
+        My name is <span class="splash-accent">William Lorey</span>. I'm a Computer Engineering and Computer Science student that's passionate
         about all things tech.
         <br/>
-        Here you'll find my experiences, projects, and resume.
+        <a href="#splash-body">Check out what I've been up to:</a>
       </p>
     </div>
   </div>
@@ -49,6 +49,15 @@
     var greetings = ["Hello", "Hi there", "Hi", "Welcome"];
     var greet = greetings[Math.floor(Math.random() * 4)];
     document.getElementById("splash-greeting").innerHTML = greet + "!";
+
+    // Smooth scroll on click of "Check out..." anchor
+    $(document).on('click', '#splash-text a', function(event){
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+    });
+
   </script>
 </body>
 </html>
