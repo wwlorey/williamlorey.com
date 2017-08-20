@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>William Lorey</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="styles/main.css" type="text/css" rel="stylesheet"/>
   <link href="resources/icon.png" rel="icon"/>
 
@@ -11,75 +12,52 @@
     Missouri S&amp;T, Missouri University of Science and Technology">
   <meta name="author" content="William Lorey">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    $(function(){
+      $("#footer-include").load("include/footer.html");
+    });
+  </script> 
 </head>
 
 <body>
-  <header>
-    <h1 class="intro" id="greeting-text">Hello!</h1>
-    <!--<img class="face" src="resources\wl.jpg" alt="William Lorey"/>-->
-    <p class="intro">
-      My name is <span class="name">William Lorey</span>. I'm a Computer Engineering and Computer Science student that's passionate
-      about all things tech.
-      <br/>
-      Here you'll find my experiences, projects, and resume.
-    </p>
-  </header>
-
-  <div class="tier">
-    <h2>Experience</h2>
-    <hr/>
-
-    <h3 class="experience">Missouri S&amp;T Solar Car Team</h3>
-    <img src="resources\sc.jpg" alt="Solar Car" title="2016 S&amp;T Solar Car | &#34;Solar Miner&#34;"/>
-    <p class="content">
-        The <a href="https://solarcar.mst.edu/" target="_blank">S&amp;T Solar Car Team</a> is an entirely student run organization
-        that designs and builds solar powered vehicles. We compete in races such as the
-        <a href="http://americansolarchallenge.org/about/american-solar-challenge/" target="_blank">American Solar Challenge</a> and
-        <a href="http://americansolarchallenge.org/about/formula-sun-grand-prix/" target="_blank">Formula Sun Grand Prix</a> that
-        draw competitors from all over the world.
-    </p>
-    <img src="resources\dr.jpg" alt="Design Review" title="Fall 2016 Design Review">
-    <p class="content">
-      I started out on the team as and Electrical Sub-Team member and took on the position of Logistics Manager during my Sophomore year. My responsibilities
-      now include managing the Logistics Sub-Team, writing embedded software, and contributing to the car's telemetry code base. I also make a lot of wires.
-    </p>
-
-    <h3 class="experience">Boeing</h3>
-    <img src="resources\itcs_interns.jpg" alt="Edwin Tan, William Lorey, and Juwel Khan" title="Edwin Tan, William Lorey, and Juwel Khan"/>
-    <p class="content">
-      The summer after my Freshman year I interned in Information Technology at Boeing. Most notably during my time at the company,
-      myself and a team of Boeing interns in St. Louis (pictured above) were tasked with finding a way to leverage innovation in our
-      department, IT Common Services (ITCS). Competing against another team in Seattle in the 'ITCS Intern Challenge', we designed and built a
-      social network for aggregating and cultivating innovation from IT employees. We presented our solution to our director and his leadership
-      team and won the competition.
-    </p>
+  <div id="splash-header">
+    <img class="no-select" src="resources\wl.jpg" alt="William Lorey"/>
+    
+    <div id="splash-greeting-and-text">
+      <h1 id="splash-greeting">Hello!</h1>
+      <p>
+        My name is <span class="splash-accent">William Lorey</span>. I'm a Computer Engineering and Computer Science student that's passionate
+        about all things tech.
+      </p>
+      <p id="lead-in">
+        <a href="#splash-body">Check out what I've been up to:</a>
+      </p>
+    </div>
   </div>
 
-  <div class="tier">
-    <h2>Achievements</h2>
-    <hr/>
-    <h3 class="achiev">Eagle Scout</h3>
-    <h3 class="achiev">Missouri S&amp;T Dean's List</h3>
-    <h3 class="achiev">Boeing ITCS Intern Challenge Winner</h3>
+  <div id="splash-body" class="no-select">
+    <a href="experience"><div id="splash-button1"><h1>Experience</h1></h1></div></a>
+    <a href="education"><div id="splash-button2"><h1>Education</h1></div></a>
+    <br/>
+    <a href="achievements"><div id="splash-button3"><h1>Achievements</h1></div></a>
+    <a href="resume"><div id="splash-button4"><h1>Resume</h1></div></a>
   </div>
 
-  <div class="tier">
-    <h2>Resume</h2>
-    <hr/>
-    <p class="content">Check out my <a href="resources\lorey_resume.pdf" target="_blank">resume</a>.</p>
-  </div>
-
-  <footer>
-    <div class="inline-mid link-pics no-select">
-      <a href="mailto:wwlorey@gmail.com" target="_blank" style="margin-top: .5%"><img src="resources/link-pictures/email2.png"/></a>
-      <a href="https://www.linkedin.com/in/williamlorey/" target="_blank"><img src="resources/link-pictures/linkedin.png"/></a>
-      <a href="https://github.com/wwlorey" target="_blank"><img src="resources/link-pictures/github.png"/></a>
-  </footer>
+  <div id="footer-include"></div>
 
   <script>
     var greetings = ["Hello", "Hi there", "Hi", "Welcome"];
     var greet = greetings[Math.floor(Math.random() * 4)];
-    document.getElementById("greeting-text").innerHTML = greet + "!";
+    document.getElementById("splash-greeting").innerHTML = greet + "!";
+
+    // Smooth scroll on click of "Check out..." anchor
+    $(document).on('click', '#lead-in a', function(event){
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+    });
   </script>
 </body>
 </html>
