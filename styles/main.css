@@ -240,11 +240,11 @@ header {
   margin-top: .7em;
 }
 
-.job-title, .img-desc {
+.subheading-note, .img-desc {
   font-family: "Roboto Mono", monospace;
 }
 
-.job-title {
+.subheading-note {
   font-size: 1.2em;
   width: auto;
   display: inline-block;
@@ -416,7 +416,7 @@ a {
     max-width: 55%; 
   }
 
-  .job-title {
+  .subheading-note {
     font-size: 1.1em;
   }
 
@@ -496,7 +496,7 @@ a {
     font-size: 1.3em;
   }
 
-  .job-title {
+  .subheading-note {
     font-size: 1em;
   }
 }
@@ -571,7 +571,7 @@ a {
     font-size: 1.1em;
   }
 
-  .job-title {
+  .subheading-note {
     display: block;
     padding-left: .2em;
     font-size: 1.1em;
