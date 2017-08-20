@@ -72,6 +72,10 @@ html, body {
   display: inline-block;
 }
 
+#lead-in {
+  padding-top: 0 !important;    
+}
+
 #splash-body {
   text-align: center;
   padding-top: 2em;
@@ -315,11 +319,11 @@ a {
   color: var(--aux-color-dark);
 }
 
-#splash-text a {
+#lead-in a {
   transition: var(--fast-transition-time);
 }
 
-#splash-text a:hover {
+#lead-in a:hover {
   color: var(--aux-color-light);
 }
 
@@ -350,6 +354,10 @@ a {
 
 /* Screen width is less than 700px (tablets) */
 @media only screen and (max-width: 700px) {
+  #splash-header {
+    padding-bottom: .1em;
+  }
+  
   #splash-header img {
     width: 7em;
     height: 7em;
@@ -430,6 +438,14 @@ a {
   footer img:hover {
     -webkit-filter: opacity(100%);
     filter: opacity(100%);
+  }
+
+  #lead-in a:hover {
+    color: inherit;
+  }
+
+  a {
+    white-space: normal;
   }
 }
 

@@ -26,10 +26,11 @@
     
     <div id="splash-greeting-and-text">
       <h1 id="splash-greeting">Hello!</h1>
-      <p id="splash-text">
+      <p>
         My name is <span class="splash-accent">William Lorey</span>. I'm a Computer Engineering and Computer Science student that's passionate
         about all things tech.
-        <br/>
+      </p>
+      <p id="lead-in">
         <a href="#splash-body">Check out what I've been up to:</a>
       </p>
     </div>
@@ -51,13 +52,12 @@
     document.getElementById("splash-greeting").innerHTML = greet + "!";
 
     // Smooth scroll on click of "Check out..." anchor
-    $(document).on('click', '#splash-text a', function(event){
+    $(document).on('click', '#lead-in a', function(event){
       event.preventDefault();
       $('html, body').animate({
           scrollTop: $( $.attr(this, 'href') ).offset().top
       }, 500);
     });
-
   </script>
 </body>
 </html>
