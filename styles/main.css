@@ -483,36 +483,7 @@ a {
 /* Screen width less than 600px; */
 @media only screen and (max-width: 600px) {
   header {
-    height: 100px;
-    text-align: center;
-  }
-
-  #title, #nav-wrapper {
-    display: block; 
-  }
-
-  #title {
-    margin: auto;
-    width: 8em;
-    font-size: 1.4em;
-    padding-top: .6em;
-    z-index: 1;
-    top: 0;
-    left: 0;
-  }
-
-  #nav-wrapper {
-    width: 26em;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-  }
-
-  .nav {
-    padding: none;
-    margin: none;
+    display: none;
   }
 
   .page-heading, .page-subheading, .page-text {
