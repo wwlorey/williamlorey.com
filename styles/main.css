@@ -176,9 +176,9 @@ header {
 }
 
 .nav a {
+  border-radius: 7px;
   padding: 5px;
   border: 1px solid var(--aux-color-light); 
-  border-radius: 7px;
   transition: var(--fast-transition-time);
   color: var(--aux-color-light);
 }
@@ -206,6 +206,59 @@ header {
   border-bottom: 1px solid var(--main-color);
   color: var(--main-color);
   font-weight: bold;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: WhiteSmoke;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: .2em;
+  text-decoration: none;
+  font-size: 2em;
+  color: var(--main-color);
+  display: block;
+  transition: 0.3s;
+}
+
+#name {
+  font-size: 2.1em;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  border: none;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: .3em;
+  right: .6em;
+  font-size: 60px;
+  border: none;
+}
+
+.menu-icon {
+  width: 2.5em;
+  position: absolute;
+  right: 1.8em;
+  top: 1.2em;
+  display: none;
+  cursor: pointer;
 }
 
 .page-subheading-text {
@@ -483,36 +536,11 @@ a {
 /* Screen width less than 600px; */
 @media only screen and (max-width: 600px) {
   header {
-    height: 100px;
-    text-align: center;
+    display: none;
   }
 
-  #title, #nav-wrapper {
-    display: block; 
-  }
-
-  #title {
-    margin: auto;
-    width: 8em;
-    font-size: 1.4em;
-    padding-top: .6em;
-    z-index: 1;
-    top: 0;
-    left: 0;
-  }
-
-  #nav-wrapper {
-    width: 26em;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-  }
-
-  .nav {
-    padding: none;
-    margin: none;
+  .menu-icon {
+    display: block;
   }
 
   .page-heading, .page-subheading, .page-text {
@@ -619,6 +647,16 @@ a {
   }
 }
 
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 /* Screen width is less than 430px (mobile devices) */
 @media only screen and (max-width: 430px) {
   #splash-header img {
@@ -659,6 +697,12 @@ a {
 
   .page-body {
     padding: .8em 0em .4em 0em;
+  }
+
+  .menu-icon {
+    width: 2em;
+    top: .7em;
+    right: 1.2em;
   }
 
   .page-body img {
