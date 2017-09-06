@@ -191,6 +191,7 @@ header {
 .page-body {
   padding: 2em 0em 2em 0em;
   text-align: center;
+  min-height: calc(100vh - 150px);
 }
 
 .page-heading, .page-subheading, .page-text {
@@ -441,6 +442,10 @@ a {
     color: var(--aux-color-light);
   }
 
+  .page-body {
+    min-height: calc(100vh - 130px);
+  }
+
   .page-subheading-text {
     font-size: 1.7em; 
   }
@@ -515,7 +520,6 @@ a {
   }
 
   footer {
-    height: 100%;
     margin-top: 2%;
   }
 
@@ -541,6 +545,10 @@ a {
 
   .menu-icon {
     display: block;
+  }
+
+  .page-body {
+    min-height: calc(100vh - 80px);
   }
 
   .page-heading, .page-subheading, .page-text {
