@@ -809,6 +809,11 @@ a {
   #splash-body br {
     display: block;
   }
+
+  object {
+    width: 750px;
+    height: 650px;
+  }
 }
 
 /* Really large screens (width larger than 1600px) */
