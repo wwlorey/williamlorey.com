@@ -368,12 +368,8 @@ a {
   color: var(--aux-color-dark);
 }
 
-#lead-in a {
-  transition: var(--fast-transition-time);
-}
-
-#lead-in a:hover {
-  color: var(--aux-color-light);
+#lead-in {
+  cursor: default;
 }
 
 @font-face {
@@ -829,4 +825,17 @@ a {
   .page-body img {
     max-width: 30%;
   }
+}
+
+.exp-nav *, .exp-nav a, .exp-nav-group {
+  color: black;
+  border:  none;
+  cursor: pointer;
+  transition: var(--slow-transition-time);
+}
+
+.exp-nav *:hover, .exp-nav a:hover, .exp-nav-group:hover {
+  -webkit-filter: opacity(66%);
+  filter: opacity(66%);
+  background-color: whitesmoke;
 }

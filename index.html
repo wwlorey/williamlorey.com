@@ -31,8 +31,8 @@
         My name is <span class="splash-accent">William Lorey</span>. I'm a Computer Engineering and Computer Science student that's passionate
         about all things tech.
       </p>
-      <p id="lead-in">
-        <a href="#splash-body">Check out what I've been up to:</a>
+      <p>
+        <span id="lead-in">Check out what I've been up to:</span>
       </p>
     </div>
   </div>
@@ -52,14 +52,6 @@
     var greetings = ["Hello", "Hi there", "Hi", "Welcome"];
     var greet = greetings[Math.floor(Math.random() * 4)];
     document.getElementById("splash-greeting").innerHTML = greet + "!";
-
-    // Smooth scroll on click of "Check out..." anchor
-    $(document).on('click', '#lead-in a', function(event){
-      event.preventDefault();
-      $('html, body').animate({
-          scrollTop: $( $.attr(this, 'href') ).offset().top
-      }, 500);
-    });
   </script>
 </body>
 </html>
