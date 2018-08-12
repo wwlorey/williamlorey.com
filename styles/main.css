@@ -76,6 +76,10 @@ html, body {
   padding-top: 0 !important;    
 }
 
+.splash-content {
+  font-size: 1em !important;
+}
+
 #splash-body {
   text-align: center;
   padding-top: 2em;
@@ -361,7 +365,6 @@ a {
   color: var(--aux-color-light);
   transition: var(--slow-transition-time);
   font-size: 1em;
-  cursor: default;
 }
 
 .splash-accent:hover {
@@ -399,10 +402,14 @@ a {
 
 /* Screen width is less than 700px (tablets) */
 @media only screen and (max-width: 700px) {
-  #splash-header {
-    padding-bottom: .1em;
+  #greeting-text {
+    font-size: 3.3em;
   }
-  
+
+  #splash-greeting {
+    padding-top: .5em !important;
+  }
+
   #splash-header img {
     width: 7em;
     height: 7em;
@@ -415,7 +422,16 @@ a {
 
   #splash-greeting-and-text {
     max-width: 90%;
-    padding: 0% 3% 3% 3.5%;
+    padding: 2em 3% 3% 3.5%;
+  }
+
+  #splash-greeting-and-text p {
+    padding-bottom: .3em !important;
+    padding-top: 0em !important;
+  }
+
+  #splash-header {
+    padding-bottom: .1em;
   }
 
   #splash-header h1 {
@@ -427,6 +443,10 @@ a {
     font-size: 1.5em;
     padding-top: 1em;
   }   
+
+  .splash-content {
+    margin-bottom: .3em !important;
+  }
 
   #title:hover {
     border: 1px solid var(--main-color);
@@ -488,13 +508,6 @@ a {
     max-width: 45px;
     max-height: 45px;
     margin: 0em .7em 0em .7em;
-  }
-}
-
-/* Screen width is less than 700px (tablets) */
-@media only screen and (max-width: 700px) {
-  #greeting-text {
-    font-size: 3.3em;
   }
 
   .intro {
@@ -575,12 +588,16 @@ a {
 
   #splash-header h1 {
     font-size: 2.9em;
-    padding-top: 1.1em;
+    padding-top: .7em !important;
     padding-left: 3em;
   }
 
   #splash-header p {
     font-size: 1.3em;
+  }
+
+  #splash-greeting {
+    margin-bottom: .3em;
   }
 
   #splash-body {
@@ -678,10 +695,19 @@ a {
 
   #splash-header h1 {
     font-size: 2.8em;
+    padding-top: 1.1em !important;
   }
 
   #splash-header p {
-    font-size: 1.4em;
+    font-size: 1.2em;
+  }
+
+  #splash-greeting {
+    margin-top: .1em;
+  }
+
+  .splash-content {
+    font-size: .9em !important;
   }
 
   #splash-body div {
@@ -752,6 +778,10 @@ a {
     padding-top: .6em;
   }
 
+  #splash-greeting {
+    margin-bottom: 0;
+  }
+
   #nav-wrapper {
     width: 20em;
   }
@@ -770,8 +800,9 @@ a {
 /* Screen width is less than 330px (really small mobile devices) */
 @media only screen and (max-width: 330px) {
   #splash-header h1 {
-    padding-top: 1em;
+    padding-top: 1.3em !important;
     padding-left: 2.6em;
+    padding-bottom:  .7em;
     font-size: 2.3em;
   }
 }
@@ -780,15 +811,26 @@ a {
 @media only screen and (min-width: 700px) {
   #splash-header img {
     max-width: 200px;
-    margin-bottom: 3em;
+    margin-bottom: 8em;
     margin-right: 1em;
+  }
+
+  #splash-greeting-and-text p {
+    padding-bottom: .5em !important;
+  }
+}
+
+/* Large screens (width larger than 1000px) */
+@media only screen and (min-width: 1000px) {
+  #splash-header img {
+    margin-bottom: 5em !important;
   }
 }
 
 /* Large screens (width larger than 1200px) */
 @media only screen and (min-width: 1200px) {
   #splash-header img {
-    margin-bottom: 1.5em;
+    margin-bottom: 5em !important;
   }
 
   .page-text {
@@ -814,10 +856,6 @@ a {
 
 /* Really large screens (width larger than 1600px) */
 @media only screen and (min-width: 1600px) {
-  #splash-header img {
-    margin-bottom: 1.5em;
-  }
-
   #splash-greeting-and-text {
     max-width: 40%;
   }
