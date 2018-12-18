@@ -811,7 +811,7 @@ a {
 @media only screen and (min-width: 700px) {
   #splash-header img {
     max-width: 200px;
-    margin-bottom: 8em;
+    margin-bottom: 1em;
     margin-right: 1em;
   }
 
@@ -820,19 +820,8 @@ a {
   }
 }
 
-/* Large screens (width larger than 1000px) */
-@media only screen and (min-width: 1000px) {
-  #splash-header img {
-    margin-bottom: 5em !important;
-  }
-}
-
 /* Large screens (width larger than 1200px) */
 @media only screen and (min-width: 1200px) {
-  #splash-header img {
-    margin-bottom: 5em !important;
-  }
-
   .page-text {
     font-size: 1.2em;
   }
