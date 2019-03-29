@@ -8,7 +8,6 @@ const REST_OF_NAME = 'iam Lorey';
 
 const STATIC_NICKNAME = 0;
 const TYPED_FULL_NAME = 1;
-const TYPED_NICKNAME = 2;
 
 // Cursor for TypedName
 const cursor = {
@@ -32,15 +31,12 @@ function TypedName(props) {
         </Typist>
       </div>
     );
-  } else {
-    // props.nameState === TYPED_NICKNAME
-    return <Typist cursor={cursor}>{NICKNAME}</Typist>;
   }
 }
 
 export default class Header extends Component {
   state = {
-    nameState: TYPED_NICKNAME,
+    nameState: TYPED_FULL_NAME,
   };
 
   expandName = () => {
@@ -54,12 +50,14 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <div className="header__hello">Hi there, I'm</div>
-        <div className="header__name" onMouseEnter={this.expandName}>
-          <TypedName
-            nameState={this.state.nameState}
-            onTypingDone={this.shrinkName}
-          />
+        <div className="header__text">
+          <div className="header__text__hello">Hi there, I'm</div>
+          <div className="header__text__name" onMouseEnter={this.expandName}>
+            <TypedName
+              nameState={this.state.nameState}
+              onTypingDone={this.shrinkName}
+            />
+          </div>
         </div>
       </div>
     );

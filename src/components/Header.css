@@ -1,21 +1,53 @@
 .header {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header__text {
+  display: table-cell;
   background-color: black;
   color: white;
-  height: 60vh;
   font-family: 'Roboto', sans-serif;
   cursor: default;
+  user-select: none;
 }
 
-.header__hello {
-  font-size: 5vw;
+.header__text__hello,
+.header__text__name {
+  margin-left: 5vw;
 }
 
-.header__name {
-  font-size: 20vw;
+.header__text__hello {
+  padding-top: 30vh;
+  font-size: 3vw;
+}
+
+.header__text__name {
+  font-size: 15vw;
   width: 0; /* Force hover to trigger over text only */
-  opacity: 1;
 }
 
-.header__name * {
-  display: inline; /* Keep the nickname continuation on the same line */
+.header__text__name * {
+  display: inline; /* Start the nickname continuation on the same line */
+}
+
+@media only screen and (max-width: 700px) {
+  .header__text__hello,
+  .header__text__name {
+    margin: auto;
+    text-align: center;
+    width: 70vw;
+  }
+
+  .header__text__hello {
+    font-size: 5vw;
+  }
+
+  .header__text__name {
+    font-size: 20vw;
+  }
 }
