@@ -1,0 +1,21 @@
+.header {
+  background-color: black;
+  color: white;
+  height: 60vh;
+  font-family: 'Roboto', sans-serif;
+  cursor: default;
+}
+
+.header__hello {
+  font-size: 5vw;
+}
+
+.header__name {
+  font-size: 20vw;
+  width: 0; /* Force hover to trigger over text only */
+  opacity: 1;
+}
+
+.header__name * {
+  display: inline; /* Keep the nickname continuation on the same line */
+}
