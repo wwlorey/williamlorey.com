@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Typist from 'react-typist';
+import '../../node_modules/react-typist/dist/Typist.css';
 import './Header.css';
 
 // Name & related states
@@ -12,9 +13,9 @@ const TYPED_FULL_NAME = 1;
 // Cursor for TypedName
 const cursor = {
   show: true,
-  blink: false,
+  blink: true,
   element: '|',
-  hideWhenDone: true,
+  hideWhenDone: false,
   hideWhenDoneDelay: 300,
 };
 
@@ -26,6 +27,7 @@ function TypedName(props) {
       <div>
         {NICKNAME}
         <Typist cursor={cursor} onTypingDone={props.onTypingDone}>
+          <Typist.Delay ms={1000} />
           {REST_OF_NAME}
           <Typist.Backspace count={REST_OF_NAME.length} delay={800} />
         </Typist>
@@ -40,7 +42,7 @@ export default class Header extends Component {
   };
 
   expandName = () => {
-    this.setState({ nameState: TYPED_FULL_NAME });
+    if (this.props.allowFullName) this.setState({ nameState: TYPED_FULL_NAME });
   };
 
   shrinkName = () => {

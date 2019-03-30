@@ -33,7 +33,7 @@
 
 .header__text__name {
   font-size: 15vw;
-  width: 0; /* Force hover to trigger over text only */
+  width: 50vw;
 }
 
 .header__text__name * {
