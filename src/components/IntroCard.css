@@ -19,14 +19,17 @@ hr {
 }
 
 .intro-card {
-  height: 40vh;
+  height: 24vw;
   width: 80vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 4vw;
   background-color: #eee;
   margin: auto;
   margin-top: 6vh;
-  margin-bottom: 40vh;
+  margin-bottom: 30vh;
   border-radius: 10px;
-  padding: 3vw;
+  padding: 5vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s;
 }
@@ -64,5 +67,26 @@ hr {
   to {
     opacity: 0;
     transform: translateY(20px);
+  }
+}
+
+.blue,
+.green {
+  font-weight: bold;
+  display: inline;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+@media only screen and (max-width: 700px) {
+  .intro-card {
+    height: 30vw;
+    font-size: 5vw;
   }
 }

@@ -21,8 +21,10 @@ export default function IntroCard(props) {
           animatePreScroll={false}
         >
           <div className="intro-card">
-            I'm a senior at Missouri S&T and an incoming software engineer at
-            Microsoft. I make stuff for the web.
+            I'm an incoming software engineer @
+            <div className="blue">Microsoft</div>, passionate minimalist,
+            runner, and soon to be <div className="green">S&amp;T</div> alum.
+            <br /> <br />I love building stuff for the web.
           </div>
         </ScrollAnimation>
       </div>
@@ -32,12 +34,14 @@ export default function IntroCard(props) {
       <ScrollAnimation animateIn="fade-out" duration={1}>
         <hr />
         <div className="intro-card">
-          I'm a senior at Missouri S&T and an incoming software engineer at
-          Microsoft. I make stuff for the web.
+          I'm an incoming software engineer @
+          <div className="blue">Microsoft</div>, passionate minimalist, runner,
+          and soon to be <div className="green">S&amp;T</div> alum.
+          <br /> <br />I love building stuff for the web.
         </div>
       </ScrollAnimation>
     );
   }
 
-  return <div style={{ height: '50vh' }} />;
+  return <div style={{ height: '80vh' }} />;
 }
