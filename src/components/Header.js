@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import disableScroll from 'disable-scroll';
 import Typist from 'react-typist';
 import '../../node_modules/react-typist/dist/Typist.css';
 import './Header.css';
@@ -23,11 +24,12 @@ function TypedName(props) {
   if (props.nameState === STATIC_NICKNAME) {
     return <div>{NICKNAME}</div>;
   } else if (props.nameState === TYPED_FULL_NAME) {
+    disableScroll.on();
     return (
       <div>
         {NICKNAME}
         <Typist cursor={cursor} onTypingDone={props.onTypingDone}>
-          <Typist.Delay ms={1000} />
+          <Typist.Delay ms={200} />
           {REST_OF_NAME}
           <Typist.Backspace count={REST_OF_NAME.length} delay={800} />
         </Typist>
@@ -47,6 +49,7 @@ export default class Header extends Component {
 
   shrinkName = () => {
     this.setState({ nameState: STATIC_NICKNAME });
+    disableScroll.off();
   };
 
   render() {
