@@ -50,7 +50,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <div className="header__text">
+        <div className="header__text black-on-white">
           <div className="header__text__hello">Hi there, I'm</div>
           <div className="header__text__name" onMouseEnter={this.expandName}>
             <TypedName

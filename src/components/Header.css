@@ -9,11 +9,19 @@
 
 .header__text {
   display: table-cell;
-  background-color: black;
-  color: white;
   font-family: 'Roboto', sans-serif;
   cursor: default;
   user-select: none;
+}
+
+.white-on-black {
+  background-color: black;
+  color: white;
+}
+
+.black-on-white {
+  background-color: white;
+  color: black;
 }
 
 .header__text__hello,
