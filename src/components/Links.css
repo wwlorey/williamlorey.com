@@ -3,38 +3,6 @@
   margin-bottom: 20vw;
 }
 
-.animate-pic-link {
-  opacity: 0;
-  animation: fade-in-left ease forwards;
-}
-
-@keyframes fade-in-left {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.fade-out {
-  opacity: 1;
-  animation: fade-out-bottom ease forwards;
-}
-
-@keyframes fade-out-bottom {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
-
 @media screen and (max-width: 700px) {
   .links-wrapper {
     margin-top: 15vw;

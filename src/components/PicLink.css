@@ -31,6 +31,39 @@ a {
   user-select: none;
 }
 
+.animate-pic-link-in {
+  opacity: 0;
+  animation: fade-in-left 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-pic-link-out {
+  opacity: 1;
+  animation: fade-out-bottom 1s ease forwards;
+}
+
+@keyframes fade-out-bottom {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
 @media screen and (max-width: 700px) {
   .pic-link-wrapper {
     padding: 6vw 7vw;

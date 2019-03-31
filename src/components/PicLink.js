@@ -3,7 +3,7 @@ import './PicLink.css';
 
 export default function PicLink(props) {
   return (
-    <div className="pic-link-wrapper">
+    <div className={`pic-link-wrapper ${props.className}`}>
       <a href={props.link} target="_blank" rel="noopener noreferrer">
         <div
           style={{
