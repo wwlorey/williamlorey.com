@@ -1,3 +1,5 @@
+// TODO: Something is broken w/ animating/showing the intro card & links
+
 import React, { Component } from 'react';
 import Header from './Header';
 import IntroCard from './IntroCard';
@@ -7,8 +9,8 @@ import './Home.css';
 export default class Home extends Component {
   state = {
     allowFullName: true,
-    showInfoCard: false,
-    animateInfoCardOut: false,
+    showNonHeaderContent: false,
+    animateNonHeaderContent: false,
   };
 
   componentDidMount() {
@@ -23,13 +25,13 @@ export default class Home extends Component {
     window.pageYOffset === 0
       ? this.setState({
           allowFullName: true,
-          showIntroCard: false,
-          animateInfoCardOut: true,
+          showNonHeaderContent: false,
+          animateNonHeaderContent: true,
         })
       : this.setState({
           allowFullName: false,
-          showIntroCard: true,
-          animateInfoCardOut: false,
+          showNonHeaderContent: true,
+          animateNonHeaderContent: false,
         });
   };
 
@@ -38,10 +40,13 @@ export default class Home extends Component {
       <div>
         <Header allowFullName={this.state.allowFullName} />
         <IntroCard
-          show={this.state.showIntroCard}
-          animateOut={this.state.animateInfoCardOut}
+          show={this.state.showNonHeaderContent}
+          animateOut={this.state.animateNonHeaderContent}
         />
-        <Links />
+        <Links
+          show={this.state.showNonHeaderContent}
+          animateOut={this.state.animateNonHeaderContent}
+        />
       </div>
     );
   }

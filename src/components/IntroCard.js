@@ -43,5 +43,5 @@ export default function IntroCard(props) {
     );
   }
 
-  return <div style={{ height: '80vh' }} />;
+  return <div style={{ height: '100vh' }} />;
 }
