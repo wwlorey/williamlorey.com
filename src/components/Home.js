@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import IntroCard from './IntroCard';
+import Links from './Links';
 import './Home.css';
 
 export default class Home extends Component {
@@ -40,6 +41,7 @@ export default class Home extends Component {
           show={this.state.showIntroCard}
           animateOut={this.state.animateInfoCardOut}
         />
+        <Links />
       </div>
     );
   }

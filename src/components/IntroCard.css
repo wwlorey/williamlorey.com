@@ -27,7 +27,7 @@ hr {
   background-color: #eee;
   margin: auto;
   margin-top: 6vh;
-  margin-bottom: 30vh;
+  margin-bottom: 10vh;
   border-radius: 10px;
   padding: 5vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
@@ -88,5 +88,6 @@ hr {
   .intro-card {
     height: 30vw;
     font-size: 5vw;
+    margin-bottom: 8vw;
   }
 }

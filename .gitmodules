@@ -1,0 +1,3 @@
+[submodule "src/assets/resume"]
+	path = src/assets/resume
+	url = git@github.com:wwlorey/resume.git

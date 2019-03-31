@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "relaxedjs": "^0.2.1"
+  },
+  "scripts": {
+    "relaxed": "relaxed"
+  }
+}

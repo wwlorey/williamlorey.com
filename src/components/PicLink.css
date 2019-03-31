@@ -1,0 +1,40 @@
+.pic-link-wrapper {
+  display: inline-block;
+  padding: 3vw 2vw;
+  width: 25vw;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.pic-link-wrapper * {
+  cursor: pointer;
+}
+
+.pic {
+  width: 10vw;
+  height: 10vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-bottom: 1.5vw;
+}
+
+.label {
+  width: inherit;
+  text-align: center;
+  user-select: none;
+}
+
+@media screen and (max-width: 700px) {
+  .pic-link-wrapper {
+    padding: 6vw 7vw;
+    width: 25vw;
+    font-size: 4vw;
+  }
+}
