@@ -3,7 +3,7 @@
   padding: 3vw 2vw;
   width: 25vw;
   font-family: 'Roboto', sans-serif;
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 500;
 }
 
@@ -17,8 +17,8 @@ a {
 }
 
 .pic {
-  width: 10vw;
-  height: 10vw;
+  width: 7vw;
+  height: 7vw;
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;

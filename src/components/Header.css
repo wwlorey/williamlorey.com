@@ -29,12 +29,12 @@
 
 .header__text__hello {
   padding-top: 30vh;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .header__text__name {
-  font-size: 15vw;
-  width: 50vw;
+  font-size: 10vw;
+  width: 40vw;
 }
 
 .header__text__name * {
