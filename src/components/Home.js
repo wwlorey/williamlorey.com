@@ -6,6 +6,8 @@ import IntroCard from './IntroCard';
 import Links from './Links';
 import './Home.css';
 
+let scrollOcurred = false;
+
 export default class Home extends Component {
   state = {
     allowFullName: true,
@@ -21,15 +23,22 @@ export default class Home extends Component {
   }
 
   handleScroll = event => {
-    window.pageYOffset === 0
-      ? this.setState({
-          allowFullName: true,
-          animateNonHeaderContent: true,
-        })
-      : this.setState({
+    if (window.pageYOffset === 0) {
+      scrollOcurred = false;
+      this.setState({
+        allowFullName: true,
+        animateNonHeaderContent: true,
+      });
+    } else {
+      // Avoid many calls to setState
+      if (!scrollOcurred) {
+        scrollOcurred = true;
+        this.setState({
           allowFullName: false,
           animateNonHeaderContent: false,
         });
+      }
+    }
   };
 
   render() {
