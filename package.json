@@ -5,10 +5,10 @@
   "dependencies": {
     "disable-scroll": "^0.4.1",
     "react": "^16.8.6",
-    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
-    "react-typist": "^2.0.5"
+    "react-typist": "^2.0.5",
+    "react-visibility-sensor": "^5.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

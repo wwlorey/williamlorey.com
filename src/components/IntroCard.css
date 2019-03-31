@@ -3,10 +3,10 @@ hr {
   color: black;
 }
 
-.animate-hr {
+.animate-hr-in {
   transform: scaleX(0);
   transform-origin: left;
-  animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+  animation: grow-left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
 }
 
 @keyframes grow-left {
@@ -15,6 +15,22 @@ hr {
   }
   to {
     transform: scaleX(1);
+  }
+}
+
+.animate-hr-out {
+  transform: scaleX(1);
+  transform-origin: left;
+  animation: shrink-left 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+  width: 90vw;
+}
+
+@keyframes shrink-left {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
   }
 }
 
@@ -40,7 +56,7 @@ hr {
 
 .animate-card-in {
   opacity: 0;
-  animation: fade-in-bottom ease forwards;
+  animation: fade-in-bottom 1s ease forwards;
 }
 
 @keyframes fade-in-bottom {
@@ -54,9 +70,9 @@ hr {
   }
 }
 
-.fade-out {
+.animate-card-out {
   opacity: 1;
-  animation: fade-out-bottom ease forwards;
+  animation: fade-out-bottom 1s ease forwards;
 }
 
 @keyframes fade-out-bottom {

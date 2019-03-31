@@ -10,8 +10,8 @@ let scrollOcurred = false;
 
 export default class Home extends Component {
   state = {
-    allowFullName: true,
-    animateNonHeaderContent: false,
+    initialLoad: true,
+    atTopOfPage: true,
   };
 
   componentDidMount() {
@@ -23,30 +23,38 @@ export default class Home extends Component {
   }
 
   handleScroll = event => {
+    this.setState({ initialLoad: false });
+
     if (window.pageYOffset === 0) {
       scrollOcurred = false;
-      this.setState({
-        allowFullName: true,
-        animateNonHeaderContent: true,
-      });
+      this.setState({ atTopOfPage: true });
     } else {
-      // Avoid many calls to setState
+      // Avoid tons of calls to setState
       if (!scrollOcurred) {
         scrollOcurred = true;
-        this.setState({
-          allowFullName: false,
-          animateNonHeaderContent: false,
-        });
+        this.setState({ atTopOfPage: false });
       }
     }
   };
 
   render() {
+    if (this.state.initialLoad) {
+      // Only load the header
+      return (
+        <div>
+          <Header allowFullName={this.state.atTopOfPage} />
+
+          {/* Ensure scrolling is possible after animation ends */}
+          <div style={{ marginBottom: '100vh' }} />
+        </div>
+      );
+    }
+
     return (
       <div>
-        <Header allowFullName={this.state.allowFullName} />
-        <IntroCard animateOut={this.state.animateNonHeaderContent} />
-        <Links animateOut={this.state.animateNonHeaderContent} />
+        <Header allowFullName={this.state.atTopOfPage} />
+        <IntroCard animateOut={this.state.atTopOfPage} />
+        <Links animateOut={this.state.atTopOfPage} />
       </div>
     );
   }
