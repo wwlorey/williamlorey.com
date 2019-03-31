@@ -1,4 +1,10 @@
 .links-wrapper {
   text-align: center;
-  padding-bottom: 5vw;
+  padding-bottom: 8vw;
+}
+
+@media screen and (max-width: 700px) {
+  .links-wrapper {
+    padding-bottom: 15vw;
+  }
 }
