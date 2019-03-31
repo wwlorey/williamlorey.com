@@ -1,10 +1,14 @@
 .pic-link-wrapper {
   display: inline-block;
-  padding: 3vw 2vw;
-  width: 25vw;
+  margin: 3vw 6vw;
+  vertical-align: middle;
+  width: 15vw;
+  height: 11vw;
   font-family: 'Roboto', sans-serif;
   font-size: 2vw;
   font-weight: 500;
+  white-space: nowrap;
+  transition: font-size 0.2s;
 }
 
 a {
@@ -23,6 +27,7 @@ a {
   background-repeat: no-repeat;
   margin: auto;
   margin-bottom: 1.5vw;
+  transition: width 0.2s, height 0.2s;
 }
 
 .label {
@@ -31,10 +36,24 @@ a {
   user-select: none;
 }
 
+.pic-link-wrapper:hover {
+  font-size: 2.2vw;
+}
+
+.pic-link-wrapper:hover .pic {
+  width: 7.5vw;
+  height: 7.5vw;
+}
+
+.no-transitions,
+.no-transitions * {
+  transition: none;
+}
+
 .animate-pic-link-in {
   opacity: 0;
   animation: fade-in-left 1s ease forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 @keyframes fade-in-left {
@@ -66,8 +85,23 @@ a {
 
 @media screen and (max-width: 700px) {
   .pic-link-wrapper {
-    padding: 6vw 7vw;
-    width: 25vw;
+    margin: 6vw 7vw;
+    width: 28vw;
+    height: 15vw;
     font-size: 4vw;
+  }
+
+  .pic {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+
+  .pic-link-wrapper:hover {
+    font-size: 4.3vw;
+  }
+
+  .pic-link-wrapper:hover .pic {
+    width: 8vw;
+    height: 8vw;
   }
 }
