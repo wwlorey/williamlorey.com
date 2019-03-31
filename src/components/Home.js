@@ -9,7 +9,6 @@ import './Home.css';
 export default class Home extends Component {
   state = {
     allowFullName: true,
-    showNonHeaderContent: false,
     animateNonHeaderContent: false,
   };
 
@@ -25,12 +24,10 @@ export default class Home extends Component {
     window.pageYOffset === 0
       ? this.setState({
           allowFullName: true,
-          showNonHeaderContent: false,
           animateNonHeaderContent: true,
         })
       : this.setState({
           allowFullName: false,
-          showNonHeaderContent: true,
           animateNonHeaderContent: false,
         });
   };
@@ -39,14 +36,8 @@ export default class Home extends Component {
     return (
       <div>
         <Header allowFullName={this.state.allowFullName} />
-        <IntroCard
-          show={this.state.showNonHeaderContent}
-          animateOut={this.state.animateNonHeaderContent}
-        />
-        <Links
-          show={this.state.showNonHeaderContent}
-          animateOut={this.state.animateNonHeaderContent}
-        />
+        <IntroCard animateOut={this.state.animateNonHeaderContent} />
+        <Links animateOut={this.state.animateNonHeaderContent} />
       </div>
     );
   }
