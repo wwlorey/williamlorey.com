@@ -1,5 +1,3 @@
-// TODO: Something is broken w/ animating/showing the intro card & links
-
 import React, { Component } from 'react';
 import Header from './Header';
 import IntroCard from './IntroCard';
