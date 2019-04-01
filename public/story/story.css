@@ -1,33 +1,40 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 21px;
   margin: 0;
   padding: 0;
 }
 
-.text {
-  padding: 0 4vw;
-}
-
 .header {
+  display: table;
+  width: 95vw;
   text-align: center;
-  margin: 1.5vw 0;
-  padding-right: 3vw;
+  margin: 3vw;
 }
 
 .header * {
-  display: inline-block;
+  display: table-cell;
   vertical-align: middle;
 }
 
-.header__icon {
-  margin-right: 2vw;
+.header__text {
+  font-size: 23px;
   font-weight: 700;
+  width: 22vw;
 }
 
-.header hr {
-  width: 60vw;
+.hr * {
+  display: block;
+}
+
+.top-border {
+  border-top: 2px solid black;
+  width: 90%;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 21px;
+  padding: 0 4vw;
 }
 
 .fade-in-left {
@@ -49,7 +56,7 @@ body {
 .fade-in-bottom {
   opacity: 0;
   animation: fade-in-bottom 1s ease forwards;
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
 }
 
 @keyframes fade-in-bottom {
@@ -62,6 +69,7 @@ body {
     transform: translateY(0);
   }
 }
+
 .grow-left {
   transform: scaleX(0);
   transform-origin: left;
@@ -79,16 +87,16 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  body {
+  .text {
     font-size: 18px;
   }
 
-  .header {
-    margin: 4vw 0;
-    padding-right: 5vw;
+  .header__text {
+    font-size: 20px;
+    width: 45vw;
   }
 
-  .header__icon {
-    margin-right: 4vw;
+  .top-border {
+    width: 80%;
   }
 }
