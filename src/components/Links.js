@@ -13,16 +13,18 @@ export default class Links extends Component {
   };
 
   render() {
+    // TODO: condense PicLink components
     return (
       <VisibilitySensor onChange={this.onVisSensorChange}>
         <div className="links-wrapper">
           <PicLink
             pic="story.svg"
             label="My story"
-            link=""
+            link={process.env.PUBLIC_URL + '/story/'}
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+            newTab={false}
           />
           <PicLink
             pic="github.png"
@@ -31,6 +33,7 @@ export default class Links extends Component {
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+            newTab={true}
           />
           <PicLink
             pic="linkedin.png"
@@ -39,6 +42,7 @@ export default class Links extends Component {
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+            newTab={true}
           />
           <PicLink
             pic="email.png"
@@ -47,6 +51,7 @@ export default class Links extends Component {
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+            newTab={true}
           />
           <PicLink
             pic="resume.svg"
@@ -55,6 +60,7 @@ export default class Links extends Component {
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+            newTab={true}
           />
           <PicLink
             pic="music.svg"
@@ -63,6 +69,7 @@ export default class Links extends Component {
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+            newTab={true}
           />
         </div>
       </VisibilitySensor>

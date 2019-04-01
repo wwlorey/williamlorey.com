@@ -36,7 +36,11 @@ export default class PicLink extends Component {
           this.state.transitions ? '' : 'no-transitions'
         }`}
       >
-        <a href={this.props.link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={this.props.link}
+          target={this.props.newTab ? '_blank' : ''}
+          rel={this.props.newTab ? 'noopener noreferrer' : ''}
+        >
           <div
             style={{
               backgroundImage:
