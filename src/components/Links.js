@@ -64,7 +64,7 @@ export default class Links extends Component {
           />
           <PicLink
             pic="music.svg"
-            label="Jams"
+            label="Music"
             link="https://open.spotify.com/artist/5Y1KFkwis810gbRuL8ffOs?si=wfH6tbDvSnKaWTHV6pB9zA"
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''

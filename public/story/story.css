@@ -46,7 +46,7 @@ a:hover {
 .text {
   font-weight: 400;
   font-size: 21px;
-  padding: 0 4vw;
+  padding: 0 4vw 4vw 4vw;
 }
 
 .fade-in-left {

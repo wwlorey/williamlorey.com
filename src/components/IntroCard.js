@@ -28,9 +28,9 @@ export default class IntroCard extends Component {
             } ${this.props.animateOut ? 'animate-card-out' : ''}`}
           >
             I'm an incoming software engineer @
-            <div className="blue">Microsoft</div>, passionate minimalist,
-            runner, and soon to be <div className="green">S&amp;T</div> alum.
-            <br /> <br />I love building stuff for the web.
+            <div className="blue">Microsoft</div>, minimalist, fitness fanboy,
+            and soon to be <div className="green">S&amp;T</div> alum.
+            <br /> <br />I build stuff for the web.
           </div>
         </VisibilitySensor>
       </div>
