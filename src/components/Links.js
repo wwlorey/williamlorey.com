@@ -47,7 +47,7 @@ export default class Links extends Component {
           <PicLink
             pic="email.png"
             label="Get in touch"
-            link="mailto:mail@williamlorey.com"
+            link="mailto:will@williamlorey.com"
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
