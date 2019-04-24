@@ -34,27 +34,41 @@ hr {
   }
 }
 
-.intro-card {
-  height: 15vw;
-  width: 75vw;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 2.8vw;
-  background-color: #eee;
-  margin: auto;
+.intro-meat {
   margin-top: 6vh;
   margin-bottom: 7vh;
-  border-radius: 10px;
-  padding: 5vw;
+  text-align: center;
+  height: 30vw;
+}
+
+.intro-meat * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.headshot {
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s;
 }
 
-.intro-card:hover {
+.headshot:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
-.animate-card-in {
+.intro-text {
+  width: 45vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2.8vw;
+  text-align: left;
+  padding-left: 7vw;
+}
+
+.animate-meat-in {
   opacity: 0;
   animation: fade-in-bottom 1s ease forwards;
 }
@@ -70,7 +84,7 @@ hr {
   }
 }
 
-.animate-card-out {
+.animate-meat-out {
   opacity: 1;
   animation: fade-out-bottom 1s ease forwards;
 }
@@ -89,7 +103,7 @@ hr {
 .blue,
 .green {
   font-weight: bold;
-  display: inline;
+  vertical-align: top;
 }
 
 .blue {
@@ -101,8 +115,17 @@ hr {
 }
 
 @media only screen and (max-width: 700px) {
-  .intro-card {
-    height: 28vw;
-    font-size: 4.5vw;
+  .intro-meat {
+    margin-bottom: 11vh;
+  }
+
+  .headshot {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .intro-text {
+    font-size: 4vw;
+    padding-left: 4vw;
   }
 }

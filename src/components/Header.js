@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import disableScroll from 'disable-scroll';
 import Typist from 'react-typist';
-import '../../node_modules/react-typist/dist/Typist.css';
+import 'react-typist/dist/Typist.css';
 import './Header.css';
 
 // Name & related states

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import IntroCard from './IntroCard';
+import Intro from './Intro';
 import Links from './Links';
 import './Home.css';
 
@@ -51,7 +51,7 @@ export default class Home extends Component {
     return (
       <div>
         <Header allowFullName={this.state.atTopOfPage} />
-        <IntroCard animateOut={this.state.atTopOfPage} />
+        <Intro animateOut={this.state.atTopOfPage} />
         <Links animateOut={this.state.atTopOfPage} />
       </div>
     );
