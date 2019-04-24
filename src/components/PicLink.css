@@ -37,12 +37,12 @@ a {
 }
 
 .pic-link-wrapper:hover {
-  font-size: 2.2vw;
+  font-size: 2.1vw;
 }
 
 .pic-link-wrapper:hover .pic {
-  width: 7.5vw;
-  height: 7.5vw;
+  width: 7.3vw;
+  height: 7.3vw;
 }
 
 .no-transitions,
@@ -97,11 +97,11 @@ a {
   }
 
   .pic-link-wrapper:hover {
-    font-size: 4.3vw;
+    font-size: 4.1vw;
   }
 
   .pic-link-wrapper:hover .pic {
-    width: 8vw;
-    height: 8vw;
+    width: 7.9vw;
+    height: 7.9vw;
   }
 }
