@@ -10,9 +10,9 @@ function AppRouter() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/story' component={Story} />
-        <Route exact path='/error' component={ErrorPage} />
+        <Route exact path='/oops' component={ErrorPage} />
 
-        <Redirect to='/error' />
+        <Redirect to='/oops' />
       </Switch>
     </Router>
   );
