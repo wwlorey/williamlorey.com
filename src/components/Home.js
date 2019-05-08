@@ -9,7 +9,7 @@ let scrollOcurred = false;
 export default class Home extends Component {
   state = {
     initialLoad: true,
-    atTopOfPage: true,
+    atTopOfPage: true
   };
 
   componentDidMount() {
