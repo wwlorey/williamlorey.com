@@ -4,6 +4,9 @@ import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import './Header.css';
 
+// Hit that type animation on hover?
+let typeNameOnHover = false;
+
 // Name & related states
 const NICKNAME = 'Will';
 const REST_OF_NAME = 'iam Lorey';
@@ -44,7 +47,7 @@ export default class Header extends Component {
   };
 
   expandName = () => {
-    if (this.props.allowFullName) this.setState({ nameState: TYPED_FULL_NAME });
+    if (this.props.allowFullName && typeNameOnHover) this.setState({ nameState: TYPED_FULL_NAME });
   };
 
   shrinkName = () => {
