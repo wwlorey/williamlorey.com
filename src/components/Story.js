@@ -5,9 +5,10 @@ import './Story.css';
 
 function Story() {
   let images = ['cover.png', 'dog_normal.jpg', 'last_pats.png', 'dog_disturbed.jpg', 'space_needle.png'];
+  let titles = ['Music', 'Murphy', 'Rolla', 'Disturbed', 'Seattle'];
   let tiles = [];
   for (let i = 0; i < images.length; i++) {
-    tiles.push(<Tile pic={images[i]} />);
+    tiles.push(<Tile pic={images[i]} title={titles[i]} />);
   }
 
   return (

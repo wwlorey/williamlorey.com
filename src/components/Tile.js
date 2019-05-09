@@ -3,13 +3,15 @@ import './Tile.css';
 
 function Tile(props) {
   return (
-    <div
+    <h1
       style={{
         backgroundImage:
           'url(' + require('../assets/images/story/' + props.pic) + ')'
       }}
       className='tile'
-    />
+    >
+      {props.title}
+    </h1>
   );
 }
 
