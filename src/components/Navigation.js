@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import PicLink from './PicLink';
-import './Links.css';
+import './Navigation.css';
 
 export default class Links extends Component {
   state = {

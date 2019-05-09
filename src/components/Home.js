@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Intro from './Intro';
-import Links from './Links';
+import Navigation from './Navigation';
 
 let scrollOcurred = false;
 
@@ -51,7 +51,7 @@ export default class Home extends Component {
       <div>
         <Header allowFullName={this.state.atTopOfPage} />
         <Intro animateOut={this.state.atTopOfPage} />
-        <Links animateOut={this.state.atTopOfPage} />
+        <Navigation animateOut={this.state.atTopOfPage} />
       </div>
     );
   }
