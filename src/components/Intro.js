@@ -38,9 +38,9 @@ export default class Intro extends Component {
               } ${this.props.animateOut ? "animate-meat-out" : ""}`}
             >
               I'm an incoming software engineer @
-              <div className="blue">Microsoft</div>, minimalist, fitness fanboy,
+              <div className="blue">Microsoft</div>, minimalist, runner,
               and soon to be <div className="green">S&amp;T</div> alum.
-              <br /> <br />I build stuff for the web.
+              <br /> <br />I love living simply and the pursuit of meaning.
             </div>
           </div>
         </VisibilitySensor>
