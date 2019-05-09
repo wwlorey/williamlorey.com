@@ -10,9 +10,11 @@
   white-space: nowrap;
 }
 
-a {
+.pic-link-wrapper a {
   text-decoration: none;
   color: black;
+  transition: font-size 0.2s;
+  width: inherit;
 }
 
 .pic-link-wrapper * {
