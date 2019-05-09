@@ -20,16 +20,7 @@ export default class Navigation extends Component {
           <PicLink
             pic="experience.svg"
             label="Experience"
-            link={process.env.PUBLIC_URL + '/story/'}
-            className={`${
-              this.state.becameVisible ? 'animate-pic-link-in' : ''
-            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
-            newTab={false}
-          />
-          <PicLink
-            pic="things.png"
-            label="Things"
-            link={process.env.PUBLIC_URL + '/story/'}
+            link={process.env.PUBLIC_URL + '/experience/'}
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
@@ -45,6 +36,15 @@ export default class Navigation extends Component {
             newTab={true}
           />
           <PicLink
+            pic="resume.svg"
+            label="Resume"
+            link={process.env.PUBLIC_URL + '/resume/william_lorey_resume.pdf'}
+            className={`${
+              this.state.becameVisible ? 'animate-pic-link-in' : ''
+            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+            newTab={true}
+          />
+          <PicLink
             pic="linkedin.png"
             label="Let's connect"
             link="https://linkedin.com/in/williamlorey/"
@@ -54,22 +54,13 @@ export default class Navigation extends Component {
             newTab={true}
           />
           <PicLink
-            pic="email.png"
-            label="Get in touch"
-            link="mailto:will@williamlorey.com"
+            pic="things.png"
+            label="Things"
+            link={process.env.PUBLIC_URL + '/things/'}
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
-            newTab={true}
-          />
-          <PicLink
-            pic="resume.svg"
-            label="Resume"
-            link={process.env.PUBLIC_URL + '/resume/william_lorey_resume.pdf'}
-            className={`${
-              this.state.becameVisible ? 'animate-pic-link-in' : ''
-            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
-            newTab={true}
+            newTab={false}
           />
           <PicLink
             pic="music.svg"

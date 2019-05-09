@@ -18,8 +18,10 @@ h1 {
   font-size: 6vw;
 }
 
-.go-home {
+#error-link {
   font-size: 4vw;
   border: 1px solid black;
   padding: 1vw;
+  color: black;
+  text-decoration: none;
 }
