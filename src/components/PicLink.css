@@ -8,7 +8,6 @@
   font-size: 2vw;
   font-weight: 500;
   white-space: nowrap;
-  transition: font-size 0.2s;
 }
 
 a {
@@ -27,7 +26,7 @@ a {
   background-repeat: no-repeat;
   margin: auto;
   margin-bottom: 1.5vw;
-  transition: width 0.2s, height 0.2s;
+  transition: width 0.2s, height 0.2s, font-size 0.2s;
 }
 
 .label {

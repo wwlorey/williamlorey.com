@@ -22,7 +22,7 @@ export default class Home extends Component {
   handleScroll = event => {
     this.setState({ initialLoad: false });
 
-    if (window.pageYOffset === 0) {
+    if (window.pageYOffset <= 0) {
       scrollOcurred = false;
       this.setState({ atTopOfPage: true });
     } else {
