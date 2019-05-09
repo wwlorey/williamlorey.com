@@ -1,3 +1,7 @@
+.pic-link-wrapper * {
+  cursor: pointer;
+}
+
 .pic-link-wrapper {
   display: inline-block;
   margin: 3vw 6vw;
@@ -10,15 +14,8 @@
   white-space: nowrap;
 }
 
-.pic-link-link {
-  text-decoration: none;
-  color: black;
-  transition: font-size 0.2s;
-  width: inherit;
-}
-
-.pic-link-wrapper * {
-  cursor: pointer;
+.pic-link-wrapper:hover {
+  text-decoration: underline;
 }
 
 .pic {
@@ -31,24 +28,16 @@
   transition: width 0.2s, height 0.2s, font-size 0.2s;
 }
 
+.pic-link-link {
+  text-decoration: none;
+  color: black;
+  width: inherit;
+}
+
 .label {
   width: inherit;
   text-align: center;
   user-select: none;
-}
-
-.pic-link-wrapper:hover {
-  font-size: 2.1vw;
-}
-
-.pic-link-wrapper:hover .pic {
-  width: 7.3vw;
-  height: 7.3vw;
-}
-
-.no-transitions,
-.no-transitions * {
-  transition: none;
 }
 
 .animate-pic-link-in {
@@ -95,14 +84,5 @@
   .pic {
     width: 7.5vw;
     height: 7.5vw;
-  }
-
-  .pic-link-wrapper:hover {
-    font-size: 4.1vw;
-  }
-
-  .pic-link-wrapper:hover .pic {
-    width: 7.9vw;
-    height: 7.9vw;
   }
 }
