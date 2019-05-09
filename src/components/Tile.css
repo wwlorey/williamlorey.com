@@ -1,9 +1,10 @@
 .tile {
   cursor: default;
   user-select: none;
+  font-size: 5vw;
   width: 30vw;
-  height: 30vw;
-  line-height: 25vw;
+  height: 20vw;
+  padding-top: 10vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
@@ -21,8 +22,9 @@
 
 @media screen and (max-width: 700px) {
   .tile {
+    font-size: 8vw;
     width: 65vw;
-    height: 65vw;
-    line-height: 58vw;
+    height: 38vw;
+    padding-top: 27vw;
   }
 }

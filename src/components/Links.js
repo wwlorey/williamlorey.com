@@ -65,11 +65,13 @@ export default class Links extends Component {
           <PicLink
             pic="music.svg"
             label="Music"
-            link="https://open.spotify.com/artist/5Y1KFkwis810gbRuL8ffOs?si=wfH6tbDvSnKaWTHV6pB9zA"
+            // link="https://open.spotify.com/artist/5Y1KFkwis810gbRuL8ffOs?si=wfH6tbDvSnKaWTHV6pB9zA"
+            link={process.env.PUBLIC_URL + '/music/'}
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
-            newTab={true}
+            // newTab={true}
+            newTab={false}
           />
         </div>
       </VisibilitySensor>
