@@ -8,7 +8,7 @@ export default class PicLink extends Component {
   }
 
   state = {
-    transitions: true,
+    transitions: true
   };
 
   handleResize = () => {
@@ -40,15 +40,16 @@ export default class PicLink extends Component {
           href={this.props.link}
           target={this.props.newTab ? '_blank' : ''}
           rel={this.props.newTab ? 'noopener noreferrer' : ''}
+          className={'pic-link-link'}
         >
           <div
             style={{
               backgroundImage:
-                'url(' + require('../assets/images/' + this.props.pic) + ')',
+                'url(' + require('../assets/images/' + this.props.pic) + ')'
             }}
-            className="pic"
+            className='pic'
           />
-          <div className="label">{this.props.label}</div>
+          <div className='label'>{this.props.label}</div>
         </a>
       </div>
     );

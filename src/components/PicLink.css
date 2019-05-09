@@ -10,7 +10,7 @@
   white-space: nowrap;
 }
 
-.pic-link-wrapper a {
+.pic-link-link {
   text-decoration: none;
   color: black;
   transition: font-size 0.2s;
