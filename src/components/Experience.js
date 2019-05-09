@@ -1,9 +1,9 @@
 import React from 'react';
 import Tile from './Tile';
 
-import './Story.css';
+import './Experience.css';
 
-function Story() {
+function Experience() {
   let images = [
     'dog_normal.jpg',
     'last_pats.png',
@@ -33,4 +33,4 @@ function Story() {
   );
 }
 
-export default Story;
+export default Experience;

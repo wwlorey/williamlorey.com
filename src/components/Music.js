@@ -1,7 +1,8 @@
 import React from 'react';
 import Tile from './Tile';
 
-import './Story.css';
+// TODO: refactor this
+import './Experience.css';
 
 function Story() {
   let images = ['content.png', 'hidden_lanes.png', 'rear_view.png'];

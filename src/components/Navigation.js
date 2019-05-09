@@ -3,7 +3,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 import PicLink from './PicLink';
 import './Navigation.css';
 
-export default class Links extends Component {
+export default class Navigation extends Component {
   state = {
     becameVisible: false,
   };
@@ -18,8 +18,17 @@ export default class Links extends Component {
       <VisibilitySensor onChange={this.onVisSensorChange}>
         <div className="links-wrapper">
           <PicLink
-            pic="story.svg"
-            label="My story"
+            pic="experience.svg"
+            label="Experience"
+            link={process.env.PUBLIC_URL + '/story/'}
+            className={`${
+              this.state.becameVisible ? 'animate-pic-link-in' : ''
+            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+            newTab={false}
+          />
+          <PicLink
+            pic="things.png"
+            label="Things"
             link={process.env.PUBLIC_URL + '/story/'}
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
@@ -65,12 +74,10 @@ export default class Links extends Component {
           <PicLink
             pic="music.svg"
             label="Music"
-            // link="https://open.spotify.com/artist/5Y1KFkwis810gbRuL8ffOs?si=wfH6tbDvSnKaWTHV6pB9zA"
             link={process.env.PUBLIC_URL + '/music/'}
             className={`${
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
-            // newTab={true}
             newTab={false}
           />
         </div>
