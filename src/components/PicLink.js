@@ -13,7 +13,7 @@ function PicLink(props) {
         <div
           style={{
             backgroundImage:
-              'url(' + require('../assets/images/' + props.pic) + ')'
+              'url(' + require('../assets/images/icons/' + props.pic) + ')'
           }}
           className='pic'
         />

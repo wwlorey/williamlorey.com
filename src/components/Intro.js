@@ -37,10 +37,9 @@ export default class Intro extends Component {
                 this.state.becameVisible ? "animate-meat-in" : ""
               } ${this.props.animateOut ? "animate-meat-out" : ""}`}
             >
-              I'm an incoming software engineer @
-              <div className="blue">Microsoft</div>, minimalist, runner,
-              and soon to be <div className="green">S&amp;T</div> alum.
-              <br /> <br />I love living simply and the pursuit of meaning.
+              I'm an incoming software engineer at <div className="blue">Microsoft</div>, minimalist, runner,
+              and <a href="https://mst.edu" target="_blank"><div className="green">S&amp;T</div></a> alum.
+              <br /> <br />I love living simply and intentionally.
             </div>
           </div>
         </VisibilitySensor>

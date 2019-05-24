@@ -68,6 +68,10 @@ hr {
   padding-left: 7vw;
 }
 
+.intro-text a {
+  padding-bottom: .5vw;
+}
+
 .animate-meat-in {
   opacity: 0;
   animation: fade-in-bottom 1s ease forwards;

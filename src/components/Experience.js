@@ -1,9 +1,8 @@
 import React from 'react';
 import Tile from './Tile';
+import './General.css';
 
-import './Experience.css';
-
-function Experience() {
+function Things() {
   let images = [
     'dog_normal.jpg',
     'last_pats.png',
@@ -20,9 +19,7 @@ function Experience() {
     <div>
       <div className='story-header'>
         <div className='story-header__text fade-in-left'>
-          <a href='/'>
-            William Lorey
-          </a>
+          <a href='/'>William Lorey</a>
         </div>
         <div className='hr grow-left'>
           <div className='top-border' />
@@ -33,4 +30,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Things;

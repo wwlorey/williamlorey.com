@@ -17,7 +17,7 @@ export default class Navigation extends Component {
     return (
       <VisibilitySensor onChange={this.onVisSensorChange}>
         <div className="links-wrapper">
-          <PicLink
+          {/* <PicLink
             pic="experience.svg"
             label="Experience"
             link={process.env.PUBLIC_URL + '/experience/'}
@@ -25,7 +25,7 @@ export default class Navigation extends Component {
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
             newTab={false}
-          />
+          /> */}
           <PicLink
             pic="github.png"
             label="Projects"
@@ -53,7 +53,7 @@ export default class Navigation extends Component {
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
             newTab={true}
           />
-          <PicLink
+          {/* <PicLink
             pic="things.png"
             label="Things"
             link={process.env.PUBLIC_URL + '/things/'}
@@ -61,7 +61,7 @@ export default class Navigation extends Component {
               this.state.becameVisible ? 'animate-pic-link-in' : ''
             } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
             newTab={false}
-          />
+          /> */}
           <PicLink
             pic="music.svg"
             label="Music"

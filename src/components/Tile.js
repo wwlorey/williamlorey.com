@@ -7,7 +7,7 @@ function Tile(props) {
       <h1
         style={{
           backgroundImage:
-            'url(' + require('../assets/images/story/' + props.pic) + ')'
+            'url(' + require('../assets/images/' + props.pic) + ')'
         }}
         className='tile'
       >
@@ -20,7 +20,7 @@ function Tile(props) {
         <h1
           style={{
             backgroundImage:
-              'url(' + require('../assets/images/story/' + props.pic) + ')',
+              'url(' + require('../assets/images/' + props.pic) + ')',
                cursor: 'pointer'
           }}
           className='tile'

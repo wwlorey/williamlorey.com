@@ -1,5 +1,6 @@
 import React from 'react';
 import ErrorPage from './ErrorPage';
+import Things from './Things';
 import Experience from './Experience';
 import Home from './Home';
 import Music from './Music';
@@ -10,7 +11,8 @@ function AppRouter() {
     <Router>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/experience' component={Experience} />
+        {/* <Route exact path='/things' component={Things} /> */}
+        {/* <Route exact path='/experience' component={Experience} /> */}
         <Route exact path='/music' component={Music} />
         <Route exact path='/oops' component={ErrorPage} />
 
