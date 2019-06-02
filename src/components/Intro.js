@@ -16,17 +16,14 @@ export default class Intro extends Component {
       <div>
         <VisibilitySensor onChange={this.onVisSensorChange}>
           <hr
-            className={`${this.state.becameVisible ? "animate-hr-in" : ""} ${
-              this.props.animateOut ? "animate-hr-out" : ""
-            }`}
+            className={`${this.state.becameVisible ? "animate-hr-in" : ""}`}
           />
         </VisibilitySensor>
         <VisibilitySensor>
           <div class="intro-meat">
             <div
               className={`headshot ${
-                this.state.becameVisible ? "animate-meat-in" : ""
-              } ${this.props.animateOut ? "animate-meat-out" : ""}`}
+                this.state.becameVisible ? "animate-meat-in" : "" }`}
               style={{
                 backgroundImage:
                   "url(" + require("../assets/images/wl.jpg") + ")"
@@ -34,8 +31,7 @@ export default class Intro extends Component {
             />
             <div
               className={`intro-text ${
-                this.state.becameVisible ? "animate-meat-in" : ""
-              } ${this.props.animateOut ? "animate-meat-out" : ""}`}
+                this.state.becameVisible ? "animate-meat-in" : "" }`}
             >
               I'm an incoming software engineer at <div className="blue">Microsoft</div>, minimalist, runner,
               and <a href="https://mst.edu" target="_blank" rel="noopener noreferrer"><div className="green">S&amp;T</div></a> alum.

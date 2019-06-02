@@ -22,8 +22,7 @@ export default class Navigation extends Component {
             label="Experience"
             link={process.env.PUBLIC_URL + '/experience/'}
             className={`${
-              this.state.becameVisible ? 'animate-pic-link-in' : ''
-            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+              this.state.becameVisible ? 'animate-pic-link-in' : '' }`}
             newTab={false}
           /> */}
           <PicLink
@@ -31,8 +30,7 @@ export default class Navigation extends Component {
             label="Projects"
             link="https://github.com/wwlorey"
             className={`${
-              this.state.becameVisible ? 'animate-pic-link-in' : ''
-            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+              this.state.becameVisible ? 'animate-pic-link-in' : '' }`}
             newTab={true}
           />
           <PicLink
@@ -40,8 +38,7 @@ export default class Navigation extends Component {
             label="Resume"
             link={process.env.PUBLIC_URL + '/resume/william_lorey_resume.pdf'}
             className={`${
-              this.state.becameVisible ? 'animate-pic-link-in' : ''
-            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+              this.state.becameVisible ? 'animate-pic-link-in' : '' }`}
             newTab={true}
           />
           <PicLink
@@ -49,8 +46,7 @@ export default class Navigation extends Component {
             label="Let's connect"
             link="https://linkedin.com/in/williamlorey/"
             className={`${
-              this.state.becameVisible ? 'animate-pic-link-in' : ''
-            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+              this.state.becameVisible ? 'animate-pic-link-in' : '' }`}
             newTab={true}
           />
           {/* <PicLink
@@ -58,8 +54,7 @@ export default class Navigation extends Component {
             label="Things"
             link={process.env.PUBLIC_URL + '/things/'}
             className={`${
-              this.state.becameVisible ? 'animate-pic-link-in' : ''
-            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+              this.state.becameVisible ? 'animate-pic-link-in' : '' }`}
             newTab={false}
           /> */}
           <PicLink
@@ -67,8 +62,7 @@ export default class Navigation extends Component {
             label="Music"
             link={process.env.PUBLIC_URL + '/music/'}
             className={`${
-              this.state.becameVisible ? 'animate-pic-link-in' : ''
-            } ${this.props.animateOut ? 'animate-pic-link-out' : ''}`}
+              this.state.becameVisible ? 'animate-pic-link-in' : '' }`}
             newTab={false}
           />
         </div>

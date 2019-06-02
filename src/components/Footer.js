@@ -17,8 +17,7 @@ export default class Footer extends Component {
         <p
           id='footer'
           className={`${
-            this.state.becameVisible ? 'animate-footer-in' : ''
-          } ${this.props.animateOut ? 'animate-footer-out' : ''}`}
+            this.state.becameVisible ? 'animate-footer-in' : '' }`}
         >
           <span role="img" aria-label="lil email">📧</span> Get in touch:{' '}
           <a id='email' href='mailto:will@williamlorey.com'>

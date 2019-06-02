@@ -40,7 +40,7 @@ export default class Home extends Component {
       // Only load the header
       return (
         <div>
-          <Header allowFullName={this.state.atTopOfPage} />
+          <Header />
 
           {/* Ensure scrolling is possible after animation ends */}
           <div style={{ marginBottom: '100vh' }} />
@@ -50,10 +50,10 @@ export default class Home extends Component {
 
     return (
       <div>
-        <Header allowFullName={this.state.atTopOfPage} />
-        <Intro animateOut={this.state.atTopOfPage} />
-        <Navigation animateOut={this.state.atTopOfPage} />
-        <Footer animateOut={this.state.atTopOfPage} />
+        <Header />
+        <Intro />
+        <Navigation />
+        <Footer />
       </div>
     );
   }

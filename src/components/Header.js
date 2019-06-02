@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import disableScroll from 'disable-scroll';
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import './Header.css';
 
 // Hit that type animation on hover?
-let typeNameOnHover = false;
+let typeNameOnHover = true;
 
 // Name & related states
 const NICKNAME = 'Will';
@@ -27,7 +26,6 @@ function TypedName(props) {
   if (props.nameState === STATIC_NICKNAME) {
     return <div>{NICKNAME}</div>;
   } else if (props.nameState === TYPED_FULL_NAME) {
-    disableScroll.on();
     return (
       <div>
         {NICKNAME}
@@ -47,12 +45,11 @@ export default class Header extends Component {
   };
 
   expandName = () => {
-    if (this.props.allowFullName && typeNameOnHover) this.setState({ nameState: TYPED_FULL_NAME });
+    if (typeNameOnHover) this.setState({ nameState: TYPED_FULL_NAME });
   };
 
   shrinkName = () => {
     this.setState({ nameState: STATIC_NICKNAME });
-    disableScroll.off();
   };
 
   render() {
@@ -60,11 +57,13 @@ export default class Header extends Component {
       <div className="header">
         <div className="header__text black-on-white">
           <div className="header__text__hello">Hey there, I'm</div>
-          <div className="header__text__name" onMouseEnter={this.expandName}>
-            <TypedName
-              nameState={this.state.nameState}
-              onTypingDone={this.shrinkName}
-            />
+          <div className="header__text__name">
+            <div onMouseEnter={this.expandName}>
+              <TypedName
+                nameState={this.state.nameState}
+                onTypingDone={this.shrinkName}
+              />
+            </div>
           </div>
         </div>
       </div>

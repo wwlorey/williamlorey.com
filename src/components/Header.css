@@ -1,6 +1,5 @@
 .header {
   display: table;
-  height: 80vh;
   width: 100%;
 }
 
@@ -35,17 +34,15 @@
 .header__text__name {
   font-size: 10vw;
   width: 40vw;
+  height: 25vw;
 }
 
 .header__text__name * {
   display: inline; /* Start the nickname continuation on the same line */
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😜</text></svg>") 16 0,auto; /* emojicursor.app 🙏 */
 }
 
 @media only screen and (max-width: 700px) {
-  .header {
-    height: 50vh;
-  }
-
   .header__text__hello,
   .header__text__name {
     margin: auto;
@@ -59,5 +56,6 @@
 
   .header__text__name {
     font-size: 20vw;
+    height: 50vw;
   }
 }
