@@ -38,7 +38,7 @@ export default class Intro extends Component {
               } ${this.props.animateOut ? "animate-meat-out" : ""}`}
             >
               I'm an incoming software engineer at <div className="blue">Microsoft</div>, minimalist, runner,
-              and <a href="https://mst.edu" target="_blank"><div className="green">S&amp;T</div></a> alum.
+              and <a href="https://mst.edu" target="_blank" rel="noopener noreferrer"><div className="green">S&amp;T</div></a> alum.
               <br /> <br />I love living simply and intentionally.
             </div>
           </div>

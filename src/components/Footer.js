@@ -20,7 +20,7 @@ export default class Footer extends Component {
             this.state.becameVisible ? 'animate-footer-in' : ''
           } ${this.props.animateOut ? 'animate-footer-out' : ''}`}
         >
-          📧 Get in touch:{' '}
+          <span role="img" aria-label="lil email">📧</span> Get in touch:{' '}
           <a id='email' href='mailto:will@williamlorey.com'>
             will@williamlorey.com
           </a>

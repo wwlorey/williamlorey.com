@@ -8,7 +8,7 @@ function PageNotFound() {
       <div className='oops-inner-container'>
         <h1>Oops! Something went wrong...</h1>
         <Link id='error-link' to='/'>
-          Back to Safety 👷
+          Back to Safety <span role="img" aria-label="construction worker dude">👷</span>
         </Link>
       </div>
     </div>
