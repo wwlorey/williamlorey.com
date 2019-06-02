@@ -3,7 +3,7 @@ import Tile from './Tile';
 import './General.css';
 
 function Story() {
-  let images = ['content.png', 'hidden_lanes.png', 'rear_view.png'];
+  let images = ['album_covers/content.jpg', 'album_covers/hidden_lanes.jpg', 'album_covers/rear_view.jpg'];
   let titles = ['Content', 'Hidden Lanes', 'Rear-view'];
   let links = [
     '',
