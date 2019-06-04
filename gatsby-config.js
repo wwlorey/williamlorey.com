@@ -5,5 +5,8 @@
  */
 
 module.exports = {
-  /* Nothing to see here */
-}
+  siteMetadata: {
+    title: `William Lorey`,
+    description: `Will's home on the web.`
+  }
+};
