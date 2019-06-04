@@ -1,0 +1,80 @@
+.horizontalLine {
+  width: 90vw;
+  color: black;
+}
+
+.animateHrIn {
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: growLeft 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+
+@keyframes growLeft {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.introMeat {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.headshot {
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.headshot:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.introText {
+  width: 23rem;
+  font-size: 1.8rem;
+  text-align: left;
+  margin-left: 2.5rem;
+}
+
+.animateMeatIn {
+  opacity: 0;
+  animation: fadeInBottom 1s ease forwards;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .introMeat {
+    margin-bottom: 0;
+  }
+
+  .headshot {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .introText {
+    font-size: 1.2rem;
+    width: 20rem;
+    margin: 0;
+    padding: 1.5rem;
+  }
+}

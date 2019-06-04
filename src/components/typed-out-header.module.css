@@ -1,0 +1,61 @@
+.header {
+  display: table;
+  width: 100%;
+}
+
+.header__text {
+  display: table-cell;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900 !important;
+  cursor: default;
+  user-select: none;
+}
+
+.whiteOnBlack {
+  background-color: black;
+  color: white;
+}
+
+.blackOnWhite {
+  background-color: white;
+  color: black;
+}
+
+.header__text__hello,
+.header__text__name {
+  margin-left: 4rem;
+}
+
+.header__text__hello {
+  padding-top: 15rem;
+  font-size: 1.8rem;
+}
+
+.header__text__name {
+  font-size: 10rem;
+  width: 35rem;
+  height: 25rem;
+}
+
+.header__text__name * {
+  display: inline; /* Start the nickname continuation on the same line */
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😜</text></svg>") 16 0, auto; /* emojicursor.app 🙏 */
+}
+
+@media only screen and (max-width: 700px) {
+  .header__text__hello,
+  .header__text__name {
+    margin: auto;
+    text-align: center;
+    width: 18rem;
+  }
+
+  .header__text__hello {
+    font-size: 1.5rem;
+  }
+
+  .header__text__name {
+    font-size: 5rem;
+    height: 14rem;
+  }
+}

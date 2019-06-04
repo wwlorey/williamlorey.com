@@ -1,29 +1,29 @@
 import React from 'react';
-import './Tile.css';
+import styles from './tile.module.css';
 
-function Tile(props) {
+export default props => {
   if (props.link === '') {
     return (
       <h1
         style={{
           backgroundImage:
-            'url(' + require('../assets/images/' + props.pic) + ')'
+            'url(' + require('../images/' + props.pic) + ')'
         }}
-        className='tile'
+        className={styles.tile}
       >
         {props.title}
       </h1>
     );
   } else {
     return (
-      <a href={props.link} className='tile-link'>
+      <a href={props.link} className={styles.tileLink}>
         <h1
           style={{
             backgroundImage:
-              'url(' + require('../assets/images/' + props.pic) + ')',
+              'url(' + require('../images/' + props.pic) + ')',
                cursor: 'pointer'
           }}
-          className='tile'
+          className={styles.tile}
         >
           {props.title}
         </h1>
@@ -32,4 +32,3 @@ function Tile(props) {
   }
 }
 
-export default Tile;

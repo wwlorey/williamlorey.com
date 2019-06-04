@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,900');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  /* border: 1px solid black; */
+}
+
+Link, a {
+  color: black;
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.header__text a {
+  text-decoration: none;
+  color: black;
+  width: inherit;
+}
+
+.header__text a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: table;
+  width: 95vw;
+  text-align: center;
+  margin: 3vw;
+  height: 5vw;
+}
+
+.header * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header__text {
+  font-size: 23px;
+  font-weight: 700;
+  width: 22vw;
+}
+
+.hr * {
+  display: block;
+}
+
+.topBorder {
+  border-top: 2px solid black;
+  width: 90%;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 21px;
+  padding: 0 4vw 4vw 4vw;
+}
+
+.animateInLeft {
+  opacity: 0;
+  animation: fadeInLeft 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animateIn {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.growLeft {
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: growLeft 0.6s cubic-bezier(0.68, 0.11, 0.44, 0.41) forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes growLeft {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.tiles * {
+  margin: 2rem;
+  display: inline-block;
+}
+
+.header__link a {
+  margin: 0;
+}
+
+.tiles {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .text {
+    font-size: 18px;
+  }
+
+  .header {
+    height: 5rem;
+  }
+
+  .header__text {
+    font-size: 20px;
+    width: 45vw;
+  }
+
+  .topBorder {
+    width: 80%;
+  }
+
+  .tiles * {
+    margin: 1.4rem;
+  }
+}

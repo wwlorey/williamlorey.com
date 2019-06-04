@@ -1,32 +1,17 @@
-import React, { Component } from 'react';
-import VisibilitySensor from "react-visibility-sensor";
-import './Footer.css';
+import React from 'react';
+import Emoji from './emoji'
+import styles from './footer.module.css';
 
-export default class Footer extends Component {
-  state = {
-    becameVisible: false
-  };
-
-  onVisSensorChange = isVisible => {
-    if (!this.state.becameVisible) this.setState({ becameVisible: true });
-  };
-
-  render() {
-    return (
-      <VisibilitySensor onChange={this.onVisSensorChange}>
-        <p
-          id='footer'
-          className={`${
-            this.state.becameVisible ? 'animate-footer-in' : '' }`}
-        >
-          <span role="img" aria-label="lil email">📧</span> Get in touch:{' '}
-          <a id='email' href='mailto:will@williamlorey.com'>
-            will@williamlorey.com
-          </a>
-          <br />
-          &#169; {new Date().getFullYear()} William Lorey
-        </p>
-      </VisibilitySensor>
-    );
-  }
-}
+export default props => (
+  <p
+    className={`${styles.footer} ${props.scrollOcurred ? styles.animateFooterIn : 'hidden'}`}
+  >
+    <Emoji description='lil email' emoji='📧' />{' '}
+    Get in touch:{' '}
+    <a className={styles.email} href='mailto:will@williamlorey.com'>
+      will@williamlorey.com
+    </a>
+    <br />
+    &#169; {new Date().getFullYear()} William Lorey
+  </p>
+);

@@ -1,0 +1,44 @@
+.picLinkWrapper * {
+  cursor: pointer;
+}
+
+.picLinkWrapper {
+  display: inline-block;
+  margin: 2rem 1.8rem;
+  vertical-align: middle;
+  width: 7rem;
+  height: 5rem;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.picLinkWrapper:hover {
+  text-decoration: underline;
+}
+
+.pic {
+  width: 3.8rem;
+  height: 3.8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-bottom: .6rem;
+}
+
+.picLinkLink {
+  text-decoration: none;
+  color: black;
+  width: inherit;
+}
+
+.label {
+  width: inherit;
+  text-align: center;
+  user-select: none;
+}
+
+@media screen and (max-width: 700px) {
+  .picLinkWrapper {
+    margin: 2rem 9vw;
+  }
+}
