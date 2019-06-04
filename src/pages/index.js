@@ -3,7 +3,6 @@ import Header from '../components/typed-out-header';
 import Intro from '../components/intro';
 import Navigation from '../components/navigation-dash';
 import Footer from '../components/footer';
-import favicon from '../images/favicon.png';
 
 export default class Home extends React.Component {
   state = {
