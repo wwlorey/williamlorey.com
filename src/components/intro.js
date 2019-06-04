@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styles from './intro.module.css';
 
 export default props => (
@@ -29,8 +30,12 @@ export default props => (
             <strong style={{ color: 'green' }}>S&amp;T</strong>
           </a>{' '}
           alum.
-          {/* <br />
-          <br /> s'more */}
+          <br />
+          <br />
+          <Link style={{ textDecoration: 'underline' }} to='/about'>
+          Read s'more
+          </Link>{' '}
+          or check out the links below.
         </p>
       </div>
     </div>
