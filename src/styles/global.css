@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:500,900');
 
+/* * {
+  border: 1px solid black;
+} */
+
 html {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  /* border: 1px solid black; */
 }
 
 Link, a {

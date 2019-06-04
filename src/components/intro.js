@@ -19,6 +19,7 @@ export default props => (
           backgroundImage: 'url(' + require('../images/wl.jpg') + ')'
         }}
       />
+      <div className={styles.textSpacer} />
       <div style={{ display: 'inline-block', verticalAlign: 'middle' }}>
         <p className={styles.introText}>
           I'm an incoming software engineer at{' '}
