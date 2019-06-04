@@ -1,5 +1,6 @@
 import React from 'react';
 import Tile from '../components/tile';
+import PageWrapper from '../components/page-wrapper';
 
 export default () => {
   let images = ['album_covers/content.jpg', 'album_covers/hidden_lanes.jpg', 'album_covers/rear_view.jpg'];
@@ -15,16 +16,6 @@ export default () => {
   }
 
   return (
-    <div>
-      <div className='header'>
-        <div className='header__text animateInLeft'>
-          <a href='/'>William Lorey</a>
-        </div>
-        <div className='hr growLeft'>
-          <div className='topBorder' />
-        </div>
-      </div>
-      <div className='tiles animateIn'>{tiles}</div>
-    </div>
+    <PageWrapper classNames='tiles'>{tiles}</PageWrapper>
   );
 }
