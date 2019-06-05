@@ -38,6 +38,7 @@ export default () => (
       <img
         style={{ display: 'block', width: '12rem', height: 'auto' }}
         src={require('../images/sig.png')}
+        alt="Will's signature"
       />
       <p style={{ display: 'block', fontSize: '.8rem' }}>June `19</p>
     </div>
