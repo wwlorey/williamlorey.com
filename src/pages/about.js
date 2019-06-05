@@ -5,18 +5,41 @@ import Heading from '../components/heading';
 export default () => (
   <PostWrapper>
     <Heading>About Will</Heading>
-    Itaque similique recusandae alias molestias distinctio quae officiis sequi.
-    Quam quae ut non possimus eum commodi in cum. Consequatur sed debitis
-    ratione inventore. Consectetur fugit et quis. Consequatur sit nobis incidunt
-    excepturi. Impedit nulla et repudiandae laudantium sunt magnam aut. Ea
-    suscipit eius numquam est. Maiores quas est ut. Enim saepe officia enim
-    nemo. Aspernatur rerum consectetur esse. Aperiam qui commodi tenetur.
-    Dolores ipsum ut vel. Deserunt autem exercitationem nesciunt neque veritatis
-    aut quia. Ratione sed aperiam consectetur cupiditate aliquid eaque. Nam
-    dolor corrupti sequi odio et eveniet iusto. Velit deserunt deserunt tempora
-    eligendi et quasi. Eius sit officia ratione odio alias pariatur quae. Ut est
-    libero quisquam aut accusantium ut quae architecto. Sunt corrupti
-    accusantium assumenda et. Excepturi id voluptas dolores magnam quaerat
-    libero.
+    My path through life has been a lot like one of those{' '}
+    <a
+      href='https://www.youtube.com/watch?v=ToS-b1KQ8QE'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
+      mountaintop roads in a mid-nineties car commercial
+    </a>{' '}
+    - which is to say, it's had its ups and downs.
+    <br />
+    <br />
+    After coasting through life until my late teens, I graduated college this
+    spring and wrapped up what was by far the most transformative period in my
+    life. I had some big successes and <strong>big</strong> failures but I left
+    my college years a more focused and spiritually awake person than when I
+    started.
+    <br />
+    <br />
+    The biggest life lesson I've learned to date is that{' '}
+    <strong>I don't know what the hell to do with my life</strong> and I've set
+    out to find some answers.
+    <br />
+    <br />
+    That's what this website is about: me trying things out, seeing what I like,
+    what I hate, what fuels me, and what makes me want to quit my day job. So if
+    you're into that, stick around because that's my journey and I hope watching
+    it unfold won't disappoint.
+    <br />
+    <br />
+    <div style={{ marginTop: '1rem', width: '12rem' }}>
+      <img
+        style={{ display: 'block', width: '12rem', height: 'auto' }}
+        src={require('../images/sig.png')}
+      />
+      <p style={{ display: 'block', fontSize: '.8rem' }}>June `19</p>
+    </div>
   </PostWrapper>
 );

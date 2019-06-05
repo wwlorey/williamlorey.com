@@ -56,6 +56,10 @@ Link, a {
   width: 90%;
 }
 
+.text a {
+  text-decoration: underline;
+}
+
 h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
@@ -129,15 +133,9 @@ h2 {
     font-size: 18px;
   }
 
-  .header {
-  }
-
   .header__text {
     font-size: 20px;
     width: 220px;
-  }
-
-  .bottomBorder {
   }
 
   .tiles * {

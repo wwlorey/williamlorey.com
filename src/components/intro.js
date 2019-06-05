@@ -29,7 +29,7 @@ export default props => (
           <a href='https://mst.edu' target='_blank' rel='noopener noreferrer'>
             <strong style={{ color: 'green' }}>S&amp;T</strong>
           </a>{' '}
-          alum.
+          alum just trying to figure out what life's about.
           <br />
           <br />
           <Link style={{ textDecoration: 'underline' }} to='/about'>
