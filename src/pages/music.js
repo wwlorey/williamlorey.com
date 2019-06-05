@@ -9,7 +9,7 @@ export default () => {
     'album_covers/hidden_lanes.jpg',
     'album_covers/rear_view.jpg'
   ];
-  let titles = ['Content', 'Hidden Lanes', 'Rear-view'];
+  let titles = ['content', 'Hidden Lanes', 'Rear-view'];
   let links = [
     'https://open.spotify.com/album/7M4KYtLzfcnj0YekYrBQjh',
     'https://open.spotify.com/album/6G9G52Ma7W5xwnHJZInmvn',
