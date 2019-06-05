@@ -6,8 +6,7 @@ export default props => {
     return (
       <h1
         style={{
-          backgroundImage:
-            'url(' + require('../images/' + props.pic) + ')'
+          backgroundImage: 'url(' + require('../images/' + props.pic) + ')'
         }}
         className={styles.tile}
       >
@@ -16,12 +15,16 @@ export default props => {
     );
   } else {
     return (
-      <a href={props.link} className={styles.tileLink}>
+      <a
+        href={props.link}
+        target='_blank'
+        rel='noopener noreferrer'
+        className={styles.tileLink}
+      >
         <h1
           style={{
-            backgroundImage:
-              'url(' + require('../images/' + props.pic) + ')',
-               cursor: 'pointer'
+            backgroundImage: 'url(' + require('../images/' + props.pic) + ')',
+            cursor: 'pointer'
           }}
           className={styles.tile}
         >
@@ -30,5 +33,4 @@ export default props => {
       </a>
     );
   }
-}
-
+};
