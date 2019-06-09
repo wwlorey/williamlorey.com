@@ -1,4 +1,5 @@
 import React from 'react';
+import ExternalLink from './external-link';
 import styles from './tile.module.css';
 
 export default props => {
@@ -15,12 +16,7 @@ export default props => {
     );
   } else {
     return (
-      <a
-        href={props.link}
-        target='_blank'
-        rel='noopener noreferrer'
-        className={styles.tileLink}
-      >
+      <ExternalLink href={props.link} className={styles.tileLink}>
         <h1
           style={{
             backgroundImage: 'url(' + require('../images/' + props.pic) + ')',
@@ -30,7 +26,7 @@ export default props => {
         >
           {props.title}
         </h1>
-      </a>
+      </ExternalLink>
     );
   }
 };

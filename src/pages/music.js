@@ -2,6 +2,7 @@ import React from 'react';
 import Tile from '../components/tile';
 import PostWrapper from '../components/post-wrapper';
 import Heading from '../components/heading';
+import ExternalLink from '../components/external-link';
 
 export default () => {
   let images = [
@@ -25,24 +26,14 @@ export default () => {
       <Heading>Music</Heading>I started writing music after a particularly bad
       breakup and I'm glad I did. It's been a fun creative outlet and a good way
       to spend time with a good buddy of mine,{' '}
-      <a
-        href='https://twitter.com/Jschoonie52'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        Josh
-      </a>
+      <ExternalLink href='https://twitter.com/Jschoonie52'>Josh</ExternalLink>
       .
       <br />
       <br />
       Check out my favorite{' '}
-      <a
-        href='https://www.youtube.com/watch?v=zGaet4wmmeo'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
+      <ExternalLink href='https://www.youtube.com/watch?v=zGaet4wmmeo'>
         song
-      </a>{' '}
+      </ExternalLink>{' '}
       we wrote.
       <div className='tiles'>{tiles}</div>
     </PostWrapper>
