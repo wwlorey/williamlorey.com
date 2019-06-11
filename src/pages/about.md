@@ -32,7 +32,7 @@ you can do is learn from your experience and get better - at least that's what
 I'm trying to do.
 
 My work paid off when I landed my dream job as a 
-Software Engineer at **Microsoft**. I'll be starting in their Seattle office
+Software Engineer at **Microsoft**. I'll be starting in their Seattle HQ
 this fall and I couldn't be more grateful for the opportunity.
 
 At this point in my life, I did the work, I got the degree, the job, and the 
