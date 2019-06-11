@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'gatsby';
+import ExternalLink from './external-link'
 import styles from './intro.module.css';
 
 export default props => (
@@ -25,12 +27,16 @@ export default props => (
           I'm an incoming software engineer at{' '}
           <strong style={{ color: 'blue' }}>Microsoft</strong>, minimalist,
           runner, and{' '}
-          <a href='https://mst.edu' target='_blank' rel='noopener noreferrer'>
+          <ExternalLink href='https://mst.edu'>
             <strong style={{ color: 'green' }}>S&amp;T</strong>
-          </a>{' '}
-          alum.
-          {/* <br />
-          <br /> s'more */}
+          </ExternalLink>{' '}
+          alum just trying to figure out what life's about.
+          <br />
+          <br />
+          <Link style={{ textDecoration: 'underline' }} to='/about'>
+          Read s'more
+          </Link>{' '}
+          or check out the links below.
         </p>
       </div>
     </div>

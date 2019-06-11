@@ -24,12 +24,10 @@
 }
 
 .headshot {
-  max-width: 15rem;
-  max-height: 15rem;
-  width: 20vw;
-  height: 20vw;
+  width: 15rem;
+  height: 15rem;
   background-size: cover;
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s;
   vertical-align: middle;

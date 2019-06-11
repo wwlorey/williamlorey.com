@@ -29,8 +29,6 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <title>William Lorey</title>
-
         <Header />
         <Intro scrollOcurred={this.state.scrollOcurred} />
         <Navigation scrollOcurred={this.state.scrollOcurred} />
