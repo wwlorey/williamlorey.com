@@ -1,22 +1,58 @@
 import React from 'react';
 import PicLink from './piclink';
+import styles from './navigation-dash.module.css';
 
 // TODO: condense PicLink components
-export default props => 
-  <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+export default props => (
+  <div className={styles.picLinkContainer}>
     {/* <PicLink
-            pic="experience.svg"
-            label="Experience"
-            link={process.env.PUBLIC_URL + '/experience/'}
-            className={ props.scrollOcurred ? 'animateInLeft' : 'hidden' }
-            newTab={false}
-          /> */}
+      pic="experience.svg"
+      label="Experience"
+      link={process.env.PUBLIC_URL + '/experience/'}
+      className={ props.scrollOcurred ? 'animateInLeft' : 'hidden' }
+      newTab={false}
+    /> */}
     <PicLink
       pic='github.png'
       label='Projects'
       link='https://github.com/wwlorey'
       className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
       newTab={true}
+    />
+    {/* <PicLink
+      pic='linkedin.png'
+      label="Let's connect"
+      link='https://linkedin.com/in/williamlorey/'
+      className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
+      newTab={true}
+    /> */}
+    {/* <PicLink
+      pic="things.png"
+      label="Things"
+      link={process.env.PUBLIC_URL + '/things/'}
+      className={ props.scrollOcurred ? 'animateInLeft' : 'hidden' }
+      newTab={false}
+    /> */}
+    <PicLink
+      pic='music.svg'
+      label='Music'
+      link={'/music'}
+      className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
+      newTab={false}
+    />
+    <PicLink
+      pic='video.png'
+      label='Video'
+      link={'https://www.youtube.com/watch?v=98H_O-NTBdo'}
+      className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
+      newTab={true}
+    />
+    <PicLink
+      pic='writing.png'
+      label='Essays'
+      link={'/essays'}
+      className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
+      newTab={false}
     />
     <PicLink
       pic='resume.svg'
@@ -25,25 +61,5 @@ export default props =>
       className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
       newTab={true}
     />
-    <PicLink
-      pic='linkedin.png'
-      label="Let's connect"
-      link='https://linkedin.com/in/williamlorey/'
-      className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
-      newTab={true}
-    />
-    {/* <PicLink
-            pic="things.png"
-            label="Things"
-            link={process.env.PUBLIC_URL + '/things/'}
-            className={ props.scrollOcurred ? 'animateInLeft' : 'hidden' }
-            newTab={false}
-          /> */}
-    <PicLink
-      pic='music.svg'
-      label='Music'
-      link={'/music'}
-      className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
-      newTab={false}
-    />
   </div>
+);

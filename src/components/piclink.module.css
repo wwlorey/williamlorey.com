@@ -4,10 +4,9 @@
 
 .picLinkWrapper {
   display: inline-block;
-  margin: 2rem 1.8rem;
+  flex: 1;
+  margin: 2rem 0;
   vertical-align: middle;
-  width: 7rem;
-  height: 5rem;
   font-size: 1rem;
   white-space: nowrap;
 }
@@ -35,10 +34,11 @@
   width: inherit;
   text-align: center;
   user-select: none;
+  flex: 1;
 }
 
 @media screen and (max-width: 700px) {
   .picLinkWrapper {
-    margin: 2rem 9vw;
+    margin: 1rem 2.4rem;
   }
 }
