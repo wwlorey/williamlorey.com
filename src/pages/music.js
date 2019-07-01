@@ -23,7 +23,8 @@ export default () => {
 
   return (
     <PostWrapper>
-      <Heading>Music</Heading>I started writing music after a particularly bad
+      <Heading>Music</Heading>
+      {/* I started writing music after a particularly bad
       breakup and I'm glad I did. It's been a fun creative outlet and a good way
       to spend time with a good buddy of mine,{' '}
       <ExternalLink href='https://twitter.com/Jschoonie52'>Josh</ExternalLink>
@@ -34,7 +35,7 @@ export default () => {
       <ExternalLink href='https://www.youtube.com/watch?v=zGaet4wmmeo'>
         song
       </ExternalLink>{' '}
-      we wrote.
+      we wrote. */}
       <div className='tiles'>{tiles}</div>
     </PostWrapper>
   );

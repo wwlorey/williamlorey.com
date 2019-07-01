@@ -1,0 +1,16 @@
+.picLinkContainer {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 82vw;
+  max-width: 730px;
+}
+
+@media screen and (max-width: 660px) {
+  .picLinkContainer {
+    width: 350px;
+  }
+}
