@@ -28,7 +28,7 @@ or unfortunately, not the case with parishioners of the former mindset.
 Would this facade of meaningfully curated content collapse when faced with scrutiny? If 
 the kid met their hero face to face, would they be viewed differently?
 
-In this case I move to invoke Occam's razor and question which explanation
+In this case I question which explanation
 would be the simplest and perhaps the most valid: Would (a) these people 
 who on the surface appear, in my opinion, to be using social media well (i.e. using
 social media not for the benefit of themselves but instead for the
