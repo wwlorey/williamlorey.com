@@ -40,17 +40,18 @@ export default props => (
       className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
       newTab={false}
     />
-    <PicLink
+    {/* <PicLink
       pic='video.png'
       label='Video'
       link={'https://www.youtube.com/watch?v=98H_O-NTBdo'}
       className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
       newTab={true}
-    />
+    /> */}
     <PicLink
       pic='writing.png'
       label='Essays'
-      link={'/essays'}
+      // link={'/essays'}
+      link={'/social-media'}
       className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
       newTab={false}
     />

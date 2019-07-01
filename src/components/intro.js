@@ -33,10 +33,11 @@ export default props => (
           alum just trying to figure out what life's about.
           <br />
           <br />
+          Read s'more{' '}
           <Link style={{ textDecoration: 'underline' }} to='/about'>
-          Read s'more
-          </Link>{' '}
-          or check out the links below.
+            here
+          </Link>
+          .
         </p>
       </div>
     </div>
