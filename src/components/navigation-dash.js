@@ -51,7 +51,7 @@ export default props => (
       pic='writing.png'
       label='Essays'
       // link={'/essays'}
-      link={'/social-media'}
+      link={'/essays'}
       className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
       newTab={false}
     />
