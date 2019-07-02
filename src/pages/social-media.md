@@ -1,6 +1,10 @@
+---
+title: "The Optimization of Social Media"
+---
+
 ## The Optimization of Social Media
 
-I'm torn. All around me, people are leading two lives: Digital and otherwise
+All around me, people are leading two lives: Digital and otherwise
 and I'm wrestling with the idea of continuing to use the social technologies that 
 are second nature to many.
 
@@ -79,5 +83,3 @@ benefit of yourself. But fortunately, you have the choice of what
 kind of person you want to be. Do you want to be shallow and self serving,
 or would you rather derive meaning from the well that is helping
 your fellow man?
-
-I've made my mind up.

@@ -172,6 +172,10 @@ blockquote {
     font-size: 2.5rem;
   }
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   .tiles * {
     margin: 1.4rem;
   }
