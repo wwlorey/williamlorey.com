@@ -17,8 +17,5 @@
 .env.production.local
 /.cache
 /.public
-public/resume/
-
+/public
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
