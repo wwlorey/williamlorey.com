@@ -6,7 +6,7 @@ export default props => (
   <p
     className={`${styles.footer} ${props.scrollOcurred ? styles.animateFooterIn : 'hidden'}`}
   >
-    <Emoji description='lil email' emoji='📧' />{' '}
+    <Emoji description='love letter' emoji='💌' />{' '}
     Get in touch:{' '}
     <a className={styles.email} href='mailto:will@williamlorey.com'>
       will@williamlorey.com

@@ -14,7 +14,7 @@ export default props => (
     /> */}
     <PicLink
       pic='github.png'
-      label='Projects'
+      label='Work'
       link='https://github.com/wwlorey'
       className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
       newTab={true}
@@ -49,9 +49,8 @@ export default props => (
     /> */}
     <PicLink
       pic='writing.png'
-      label='Essays'
-      // link={'/essays'}
-      link={'/essays'}
+      label='Writing'
+      link={'/writing'}
       className={props.scrollOcurred ? 'animateInLeft' : 'hidden'}
       newTab={false}
     />

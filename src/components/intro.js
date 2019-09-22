@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import ExternalLink from './external-link'
+import Emoji from './emoji';
 import styles from './intro.module.css';
 
 export default props => (
@@ -24,20 +24,14 @@ export default props => (
       <div className={styles.textSpacer} />
       <div style={{ display: 'inline-block', verticalAlign: 'middle' }}>
         <p className={styles.introText}>
-          I'm an incoming software engineer at{' '}
-          <strong style={{ color: 'blue' }}>Microsoft</strong>, minimalist,
-          runner, and{' '}
-          <ExternalLink href='https://mst.edu'>
-            <strong style={{ color: 'green' }}>S&amp;T</strong>
-          </ExternalLink>{' '}
-          alum just trying to figure out what life's about.
+          I'm passionate about intentionality, mindfulness, and using tech to solve important problems.
+          I work as a software engineer at{' '}
+          <strong style={{ color: 'blue' }}>Microsoft</strong>.
           <br />
           <br />
-          Read s'more{' '}
           <Link style={{ textDecoration: 'underline' }} to='/about'>
-            here
+            Read more <Emoji description='right arrow' emoji='→' />
           </Link>
-          .
         </p>
       </div>
     </div>
