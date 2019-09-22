@@ -5,7 +5,7 @@ import PostWrapper from "../components/post-wrapper"
 export default ({ data }) => {
   return (
     <PostWrapper>
-        <h2>Essays</h2>
+        <h2>Writing</h2>
         {/* <h4>{data.allMarkdownRemark.totalCount} Posts</h4> */}
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
