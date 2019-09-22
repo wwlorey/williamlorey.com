@@ -1,8 +1,8 @@
 ---
-title: "The Optimization of Social Media"
+title: "Getting Social Media Right"
 ---
 
-## The Optimization of Social Media
+## Getting Social Media Right
 
 All around me, people are leading two lives: Digital and otherwise
 and I'm wrestling with the idea of continuing to use the social technologies that 
@@ -14,7 +14,7 @@ Park and there will be some poor soul posing like a Vogue model in a crude
 attempt to milk their 250 followers for the praise they need to feel ok.
 These are cases where the present moment, spent 
 in seemingly beautiful circumstances, is utterly forsaken while searching for
-the approval of others, as it seems increasingly difficult to take in a 
+the approval of others. It seems increasingly difficult to take in a 
 beautiful moment while resisting the urge to make it yours by 
 anchoring a two-dimensional version of it to your Instagram feed.
 
@@ -26,7 +26,7 @@ their followers of their newest creations, of collaborations, musings and insigh
 not to boost *their* ego, but to brighten to day of whoever made it into
 the orbit of their digital sun.
 
-I must concede that I don't know these people who seem to excel in 
+I don't know these people who seem to excel in 
 digital media personally which is, fortunately
 or unfortunately, not the case with parishioners of the former mindset.
 Would this facade of meaningfully curated content collapse when faced with scrutiny? If 
@@ -41,7 +41,7 @@ for the benefit of themselves.
 
 I believe that both explanations are in part true. 
 Whatever people do, they do it for themselves. This may sound unnecessarily
-harsh, but stick with me.
+harsh, but stick with me:
 
 Have you ever volunteered? This could have been any such donation - 
 helping to prepare a meal at a food kitchen, shoveling snow
