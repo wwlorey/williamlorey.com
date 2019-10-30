@@ -24,7 +24,7 @@ export default props => (
       <div className={styles.textSpacer} />
       <div style={{ display: 'inline-block', verticalAlign: 'middle' }}>
         <p className={styles.introText}>
-          I'm passionate about intentionality, mindfulness, and using tech to solve important problems.
+          I'm passionate about mindfulness and using tech to solve important problems.
           I work as a software engineer at{' '}
           <strong style={{ color: 'blue' }}>Microsoft</strong>.
           <br />
