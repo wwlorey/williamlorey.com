@@ -1,5 +1,6 @@
 ---
 title: "Getting Social Media Right"
+date: "2019-06-30"
 ---
 
 ## Getting Social Media Right
