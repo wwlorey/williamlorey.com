@@ -1,5 +1,6 @@
 .horizontalLine {
   width: 90vw;
+  max-width: 90rem;
   color: black;
 }
 
