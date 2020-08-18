@@ -27,11 +27,11 @@ export default props => (
           I'm passionate about mindfulness and using tech to solve important problems.
           I work as a software engineer at{' '}
           <strong style={{ color: 'blue' }}>Microsoft</strong>.
-          <br />
+          {/* <br />
           <br />
           <Link style={{ textDecoration: 'underline' }} to='/about'>
             Read more <Emoji description='right arrow' emoji='→' />
-          </Link>
+          </Link> */}
         </p>
       </div>
     </div>
