@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>William Lorey</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <h4>Hey there, I'm</h4>
+        <h1><span>Will<span id="iam">iam</span> Lorey</span></h1>
+
+        <hr/>
+
+        <table><tr>
+            <td>
+                <img src="images/will.jpeg" id="will">
+            </td>
+            <td style="padding-left: 2em;">
+                <p>
+                    I'm passionate about mindfulness and using tech to solve important problems.
+                </p>
+                <p>
+                    I work as a software engineer at
+                    <strong style="background-color: yellow;">Microsoft</strong>.
+                </p>
+            </td>
+        </tr></table>
+
+        <table id="nav">
+            <tr>
+                <td><a class="picLink" href="https://github.com/wwlorey" target="_blank">
+                    <img src="images/github.png">
+                </a></td>
+                <td><a class="picLink" href="https://github.com/wwlorey" target="_blank">
+                    <img src="images/writing.png">
+                </a></td>
+                <td><a class="picLink" href="https://github.com/wwlorey" target="_blank">
+                    <img src="images/resume.svg">
+                </a></td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/wwlorey" target="_blank">
+                    GitHub
+                </a></td>
+                <td><a href="https://github.com/wwlorey" target="_blank">
+                    Writing
+                </a></td>
+                <td><a href="https://github.com/wwlorey" target="_blank">
+                    Resume
+                </a></td>
+            </tr>
+        </table>
+
+        <footer>
+            <p>
+                💌 Get in touch: <a href='mailto:will@williamlorey.com'>will@williamlorey.com</a>
+            </p>
+            <p>
+                &copy; <span id="year"></span> William Lorey
+                <script>
+                    document.getElementById("year").innerHTML = new Date().getFullYear();
+                </script>
+            </p>
+        </footer>
+    </body>
+</html>

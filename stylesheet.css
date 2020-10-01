@@ -1,0 +1,96 @@
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: robotoBold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+* {
+    font-family: roboto, sans-serif;
+    /* border: 1px solid red; */
+}
+
+body {
+    padding: 1.5em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    font-family: robotoBold
+}
+
+h4 {
+    font-size: 1.35em;
+    margin-bottom: .5em;
+    font-family: robotoBold
+}
+
+p {
+    font-size: 1.35em;
+}
+
+a {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 3em;
+}
+
+footer p {
+    font-size: 1em;
+    margin: .4em;
+}
+
+strong {
+    font-family: robotoBold, sans-serif;
+    font-weight: bold;
+}
+
+hr {
+    margin: 1em 0 2em 0;
+}
+
+#iam {
+    color: black;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✂️</text></svg>") 16 0, auto; /* credit: emojicursor.app 🙏 */
+    transition: color .2s;
+}
+
+#iam:hover {
+    color: lightgray;
+}
+
+#will {
+    width: 20em;
+    height: auto;
+}
+
+#nav {
+    margin: auto;
+    padding-top: 1.5em;
+}
+
+#nav tr td {
+    width: 6em;
+    text-align: center;
+}
+
+.picLink {
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.picLink img {
+    width: inherit;
+    height: inherit;
+    padding-bottom: .4em;
+}
