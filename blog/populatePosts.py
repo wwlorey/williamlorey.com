@@ -42,7 +42,7 @@ def getMonthHeading(monthString):
     month = int(monthString[-2:])
     monthString = MONTH_NAMES[month]
     print('Found post(s) from %s %s' % (year, monthString))
-    return '<h4>%s %s</h4>\n<ul>' % (year, monthString)
+    return "<h3>%s %s</h3>\n<ul class='navList'>" % (year, monthString)
 
 class Post:
     def __init__(self, date, filePath, title):

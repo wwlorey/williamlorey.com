@@ -27,8 +27,8 @@ echo "<!DOCTYPE html>
         <link rel='icon' type='image/png' href='../images/love.png'>
     </head>
     <body>
-        <h3>$TITLE</h3>
+        <h2>$TITLE</h2>
 
-        <p>- <a href='../index.html'>Will</a></p>
+        <p id='signoff'>- <a href='../index.html'>Will</a></p>
     </body>
 </html>" > $FILE_PATH

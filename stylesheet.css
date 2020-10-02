@@ -14,7 +14,6 @@
 }
 
 * {
-    font-family: robotoMedium, sans-serif;
     /* border: 1px solid red; */
 }
 
@@ -25,42 +24,55 @@ body {
 }
 
 h1 {
-    font-size: 5em;
-    margin: 0;
-    font-family: robotoBold, sans-serif;
-}
-
-h2 {
     font-size: 4em;
     margin: 0;
     width: 100%;
     text-align: center;
+    font-family: robotoMedium, sans-serif;
 }
 
-h3 {
-    font-size: 3em;
-    margin: 0;
+h1.index {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2.5em;
     width: 100%;
     text-align: center;
+    font-family: robotoMedium, sans-serif;
 }
 
-h4 {
-    font-size: 1.5em;
-}
-
-h6 {
+h2.index {
     font-size: 1.35em;
-    margin-bottom: .5em;
+    margin: 1.3em 0 .5em 0;
+}
+
+h1.index, h2.index {
+    text-align: left;
     font-family: robotoBold, sans-serif;
 }
 
-p {
+h3 {
+    font-size: 1.5em;
+    font-family: robotoMedium, sans-serif;
+}
+
+p, ol, ul, blockquote {
     font-size: 1.2em;
     font-family: robotoSlab, serif;
 }
 
+blockquote {
+    color: darkgray;
+}
+
 p.index {
     font-size: 1.35em;
+    font-family: robotoMedium, sans-serif;
+}
+
+p#signoff {
+    font-size: 1.3em;
     font-family: robotoMedium, sans-serif;
 }
 
@@ -72,10 +84,10 @@ footer {
     width: 100%;
     text-align: center;
     margin-top: 3em;
+    font-size: .8em;
 }
 
 footer p {
-    font-size: 1em;
     margin: .4em;
     font-family: robotoMedium, sans-serif;
 }
@@ -107,6 +119,7 @@ hr {
 #nav {
     margin: auto;
     padding-top: 1.5em;
+    font-family: robotoMedium, sans-serif;
 }
 
 #nav tr td {
@@ -123,4 +136,8 @@ hr {
     width: inherit;
     height: inherit;
     padding-bottom: .4em;
+}
+
+.navList {
+    font-family: robotoMedium, sans-serif;
 }
