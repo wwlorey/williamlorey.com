@@ -25,6 +25,13 @@ h1 {
     font-family: robotoBold
 }
 
+h2 {
+    font-size: 4em;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
 h4 {
     font-size: 1.35em;
     margin-bottom: .5em;
