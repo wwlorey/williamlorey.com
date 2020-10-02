@@ -1,5 +1,10 @@
 @font-face {
-    font-family: roboto;
+    font-family: robotoSlab;
+    src: url(fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: robotoMedium;
     src: url(fonts/Roboto-Medium.ttf);
 }
 
@@ -9,7 +14,7 @@
 }
 
 * {
-    font-family: roboto, sans-serif;
+    font-family: robotoMedium, sans-serif;
     /* border: 1px solid red; */
 }
 
@@ -22,7 +27,7 @@ body {
 h1 {
     font-size: 5em;
     margin: 0;
-    font-family: robotoBold
+    font-family: robotoBold, sans-serif;
 }
 
 h2 {
@@ -40,13 +45,23 @@ h3 {
 }
 
 h4 {
+    font-size: 1.5em;
+}
+
+h6 {
     font-size: 1.35em;
     margin-bottom: .5em;
-    font-family: robotoBold
+    font-family: robotoBold, sans-serif;
 }
 
 p {
+    font-size: 1.2em;
+    font-family: robotoSlab, serif;
+}
+
+p.index {
     font-size: 1.35em;
+    font-family: robotoMedium, sans-serif;
 }
 
 a {
@@ -62,11 +77,12 @@ footer {
 footer p {
     font-size: 1em;
     margin: .4em;
+    font-family: robotoMedium, sans-serif;
 }
 
 strong {
-    font-family: robotoBold, sans-serif;
     font-weight: bold;
+    font-family: robotoBold, sans-serif;
 }
 
 hr {
