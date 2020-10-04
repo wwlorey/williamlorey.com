@@ -6,7 +6,7 @@ BEGIN_POSTS_STRING = 'BEGIN POSTS'
 END_POSTS_STRING = 'END POSTS'
 DATE_STRING = 'DATE:'
 TITLE_TAG = '<title>'
-BLOG_HOME_PATH = 'index.html'
+INDEX_PATH = 'index.html'
 MONTH_NAMES = [
     None,
     'January',
@@ -54,7 +54,7 @@ class Post:
         return '<li>%s: <a href="%s">%s</a></li>' % (self.date, self.filePath, self.title)
 
 ''' Get insert start and end indices '''
-blogHomeContent = open(BLOG_HOME_PATH, 'r').read().split('\n')
+blogHomeContent = open(INDEX_PATH, 'r').read().split('\n')
 for index, line in enumerate(blogHomeContent):
     if BEGIN_POSTS_STRING in line:
         insertStart = index + 1
@@ -68,7 +68,7 @@ print('Insert end:', insertEnd)
 blogHomeContent = blogHomeContent[:insertStart] + blogHomeContent[insertEnd:]
 
 ''' Generate and sort Post objects '''
-postFiles = [f for f in os.listdir('.') if '.html' in f and f != BLOG_HOME_PATH]
+postFiles = [f for f in os.listdir('.') if '.html' in f and f != INDEX_PATH]
 posts = []
 for postFile in postFiles:
     postContent = open(postFile, 'r').read()
@@ -97,5 +97,5 @@ for post in posts:
 
 blogHomeContent.insert(position, '</ul>\n')
 
-open(BLOG_HOME_PATH, 'w').write('\n'.join(blogHomeContent))
-print('Wrote %i blog post(s) to %s' % (len(postFiles), BLOG_HOME_PATH))
+open(INDEX_PATH, 'w').write('\n'.join(blogHomeContent))
+print('Wrote %i blog post(s) to %s' % (len(postFiles), INDEX_PATH))
