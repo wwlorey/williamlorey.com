@@ -31,6 +31,7 @@ body {
 h1 {
     font-size: 4em;
     margin: 0;
+    padding-top: .3em;
     width: 100%;
     text-align: center;
     font-family: robotoMedium, sans-serif;
@@ -38,6 +39,7 @@ h1 {
 
 h1.index {
     font-size: 5em;
+    padding-top: 0;
 }
 
 h2 {
@@ -125,6 +127,10 @@ hr {
     height: auto;
 }
 
+#introText {
+    padding-left: 2em;
+}
+
 #nav {
     margin: auto;
     padding-top: 1.5em;
@@ -149,4 +155,36 @@ hr {
 
 .navList {
     font-family: robotoMedium, sans-serif;
+}
+
+@media only screen and (max-width: 620px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h1.index {
+        font-size: 4.5em;
+    }
+
+    table#intro tr td {
+        display: block;
+    }
+
+    #introImage {
+        text-align: center;
+    }
+
+    #introText {
+        padding: 0;
+    }
+
+    #will {
+        width: 17em;
+    }
+
+    .picLink {
+        width: 2.8em;
+        height: 2.8em;
+        font-size: .9em;
+    }
 }

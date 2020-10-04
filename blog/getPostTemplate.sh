@@ -25,6 +25,7 @@ echo "<!DOCTYPE html>
         <title>$TITLE</title>
         <link rel='stylesheet' href='../stylesheet.css' type='text/css'>
         <link rel='icon' type='image/png' href='../images/love.png'>
+        <meta name='viewport' content='width=device-width,initial-scale=1'> 
     </head>
     <body>
         <h2>$TITLE</h2>
