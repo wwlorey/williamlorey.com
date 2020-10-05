@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: robotoSlabBold;
+    src: url(fonts/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
     font-family: robotoMedium;
     src: url(fonts/Roboto-Medium.ttf);
 }
@@ -90,7 +95,10 @@ footer p {
 }
 
 strong {
-    font-weight: bold;
+    font-family: robotoSlabBold, serif;
+}
+
+#introText strong {
     font-family: robotoBold, sans-serif;
 }
 
