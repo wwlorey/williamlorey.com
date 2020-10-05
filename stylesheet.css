@@ -1,0 +1,198 @@
+@font-face {
+    font-family: firaCode;
+    src: url(fonts/FiraCode-Regular.otf);
+}
+
+@font-face {
+    font-family: robotoSlab;
+    src: url(fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: robotoSlabBold;
+    src: url(fonts/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+    font-family: robotoMedium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: robotoBold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+* {
+    /* border: 1px solid red; */
+}
+
+body {
+    padding: 1.5em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+    padding-top: .3em;
+    width: 100%;
+    text-align: center;
+    font-family: robotoMedium, sans-serif;
+}
+
+#index h1 {
+    font-size: 5em;
+    padding-top: 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+    font-family: robotoMedium, sans-serif;
+}
+
+#index h2 {
+    font-size: 1.35em;
+    margin: 1.3em 0 .5em 0;
+}
+
+#index h1, #index h2 {
+    text-align: left;
+    font-family: robotoBold, sans-serif;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: robotoMedium, sans-serif;
+}
+
+p, ol, ul, blockquote {
+    font-size: 1.1em;
+    font-family: robotoSlab, serif;
+}
+
+blockquote {
+    color: darkgray;
+}
+
+a {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 3em;
+    font-size: .8em;
+}
+
+footer p {
+    margin: .4em;
+    font-family: robotoMedium, sans-serif;
+}
+
+strong {
+    font-family: robotoSlabBold, serif;
+}
+
+#introText strong {
+    font-family: robotoBold, sans-serif;
+}
+
+code {
+    font-family: firaCode, monospace;
+}
+
+hr {
+    margin: 1em 0 2em 0;
+}
+
+#iam {
+    color: black;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✂️</text></svg>") 16 0, auto; /* credit: emojicursor.app 🙏 */
+    transition: color .2s;
+}
+
+#iam:hover {
+    color: lightgray;
+}
+
+#will {
+    width: 20em;
+    height: auto;
+}
+
+#introText {
+    padding-left: 2em;
+}
+
+#introText p {
+    font-size: 1.35em;
+    font-family: robotoMedium, sans-serif;
+}
+
+#nav {
+    margin: auto;
+    padding-top: 1.5em;
+    font-family: robotoMedium, sans-serif;
+}
+
+#nav tr td {
+    width: 6em;
+    text-align: center;
+}
+
+#signoff {
+    font-size: 1.3em;
+    font-family: robotoMedium, sans-serif;
+}
+
+.picLink {
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.picLink img {
+    width: inherit;
+    height: inherit;
+    padding-bottom: .4em;
+}
+
+.navList {
+    font-family: robotoMedium, sans-serif;
+}
+
+@media only screen and (max-width: 620px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    #index h1 {
+        font-size: 4.5em;
+    }
+
+    #introTable tr td {
+        display: block;
+    }
+
+    #introImage {
+        text-align: center;
+    }
+
+    #introText {
+        padding: 0;
+    }
+
+    #will {
+        width: 17em;
+    }
+
+    .picLink {
+        width: 2.8em;
+        height: 2.8em;
+        font-size: .9em;
+    }
+}

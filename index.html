@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>William Lorey</title>
+        <link rel='stylesheet' href='stylesheet.css' type='text/css'>
+        <link rel='icon' type='image/png' href='images/love.png'>
+        <meta name='viewport' content='width=device-width,initial-scale=1'> 
+    </head>
+    <body id='index'>
+        <h2>Hey there, I'm</h2>
+        <h1><span>Will<span id='iam'>iam</span> Lorey</span></h1>
+
+        <hr/>
+
+        <table id='introTable'><tr>
+            <td id='introImage'>
+                <img src='images/will.jpeg' id='will'>
+            </td>
+            <td id='introText'>
+                <p>
+                    I'm passionate about mindfulness and using tech to solve important problems.
+                </p>
+                <p>
+                    I work as a software engineer at
+                    <strong style='background-color: yellow;'>Microsoft</strong>.
+                </p>
+            </td>
+        </tr></table>
+
+        <table id='nav'>
+            <tr>
+                <td><a class='picLink' href='https://github.com/wwlorey'>
+                    <img src='images/github.svg'>
+                </a></td>
+                <td><a class='picLink' href='blog/index.html'>
+                    <img src='images/pencil.png'>
+                </a></td>
+                <!-- <td><a class='picLink' href='https://github.com/wwlorey'>
+                    <img src='images/om.png'>
+                </a></td> -->
+                <td><a class='picLink' href='william_lorey_resume.pdf'>
+                    <img src='images/resume.svg'>
+                </a></td>
+            </tr>
+            <tr>
+                <td><a href='https://github.com/wwlorey'>
+                    GitHub
+                </a></td>
+                <td><a href='blog/index.html'>
+                    Blog
+                </a></td>
+                <!-- <td><a href='https://github.com/wwlorey'>
+                    Yoga
+                </a></td> -->
+                <td><a href='william_lorey_resume.pdf'>
+                    Resume
+                </a></td>
+            </tr>
+        </table>
+
+        <footer>
+            <p>
+                💌 Get in touch: <a href='mailto:will@williamlorey.com'>will@williamlorey.com</a>
+            </p>
+            <p>
+                &copy; <span id='year'></span> William Lorey
+                <script>
+                    document.getElementById('year').innerHTML = new Date().getFullYear();
+                </script>
+            </p>
+        </footer>
+    </body>
+</html>
