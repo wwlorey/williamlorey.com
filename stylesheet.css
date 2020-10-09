@@ -1,25 +1,25 @@
 @font-face {
-    font-family: firaCode;
+    font-family: monospaceRegular;
     src: url(fonts/FiraCode-Regular.otf);
 }
 
 @font-face {
-    font-family: robotoSlab;
+    font-family: serifRegular;
     src: url(fonts/RobotoSlab-Regular.ttf);
 }
 
 @font-face {
-    font-family: robotoSlabBold;
+    font-family: serifBold;
     src: url(fonts/RobotoSlab-Bold.ttf);
 }
 
 @font-face {
-    font-family: robotoMedium;
+    font-family: sansSerifMedium;
     src: url(fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
-    font-family: robotoBold;
+    font-family: sansSerifBold;
     src: url(fonts/Roboto-Bold.ttf);
 }
 
@@ -35,7 +35,7 @@ h1 {
     padding-top: .3em;
     width: 100%;
     text-align: center;
-    font-family: robotoMedium, sans-serif;
+    font-family: sansSerifMedium, sans-serif;
 }
 
 #index h1 {
@@ -47,7 +47,7 @@ h2 {
     font-size: 2.5em;
     width: 100%;
     text-align: center;
-    font-family: robotoMedium, sans-serif;
+    font-family: sansSerifMedium, sans-serif;
 }
 
 #index h2 {
@@ -57,17 +57,17 @@ h2 {
 
 #index h1, #index h2 {
     text-align: left;
-    font-family: robotoBold, sans-serif;
+    font-family: sansSerifBold, sans-serif;
 }
 
 h3 {
     font-size: 1.5em;
-    font-family: robotoMedium, sans-serif;
+    font-family: sansSerifMedium, sans-serif;
 }
 
 p, ol, ul, blockquote {
     font-size: 1.1em;
-    font-family: robotoSlab, serif;
+    font-family: serifRegular, serif;
 }
 
 blockquote {
@@ -87,19 +87,19 @@ footer {
 
 footer p {
     margin: .4em;
-    font-family: robotoMedium, sans-serif;
+    font-family: sansSerifMedium, sans-serif;
 }
 
 strong {
-    font-family: robotoSlabBold, serif;
+    font-family: serifBold, serif;
 }
 
 #introText strong {
-    font-family: robotoBold, sans-serif;
+    font-family: sansSerifBold, sans-serif;
 }
 
 code {
-    font-family: firaCode, monospace;
+    font-family: monospaceRegular, monospace;
 }
 
 hr {
@@ -117,13 +117,13 @@ hr {
 
 #introText p {
     font-size: 1.35em;
-    font-family: robotoMedium, sans-serif;
+    font-family: sansSerifMedium, sans-serif;
 }
 
 #nav {
     margin: auto;
     padding-top: 1.5em;
-    font-family: robotoMedium, sans-serif;
+    font-family: sansSerifMedium, sans-serif;
 }
 
 #nav tr td {
@@ -133,7 +133,7 @@ hr {
 
 #signoff {
     font-size: 1.3em;
-    font-family: robotoMedium, sans-serif;
+    font-family: sansSerifMedium, sans-serif;
 }
 
 .picLink {
@@ -148,7 +148,7 @@ hr {
 }
 
 .navList {
-    font-family: robotoMedium, sans-serif;
+    font-family: sansSerifMedium, sans-serif;
 }
 
 @media only screen and (max-width: 620px) {
