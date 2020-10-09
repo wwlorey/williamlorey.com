@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: sansSerifMedium;
-    src: url(fonts/Roboto-Medium.ttf);
+    src: url(fonts/Heebo-Medium.ttf);
 }
 
 @font-face {
     font-family: sansSerifBold;
-    src: url(fonts/Roboto-Bold.ttf);
+    src: url(fonts/Heebo-Bold.ttf);
 }
 
 body {
