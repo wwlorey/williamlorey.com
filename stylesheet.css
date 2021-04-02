@@ -1,184 +1,23 @@
-@font-face {
-    font-family: monospaceRegular;
-    src: url(fonts/FiraCode-Regular.otf);
-}
-
-@font-face {
-    font-family: serifRegular;
-    src: url(fonts/RobotoSlab-Regular.ttf);
-}
-
-@font-face {
-    font-family: serifBold;
-    src: url(fonts/RobotoSlab-Bold.ttf);
-}
-
-@font-face {
-    font-family: sansSerifMedium;
-    src: url(fonts/Heebo-Medium.ttf);
-}
-
-@font-face {
-    font-family: sansSerifBold;
-    src: url(fonts/Heebo-Bold.ttf);
-}
-
 body {
-    padding: 1.5em;
-    max-width: 1000px;
+    max-width: 700px;
     margin: auto;
-}
-
-h1 {
-    font-size: 4em;
-    margin: 0;
-    padding-top: .3em;
-    width: 100%;
-    text-align: center;
-    font-family: sansSerifMedium, sans-serif;
-}
-
-#index h1 {
-    font-size: 5em;
-    padding-top: 0;
-}
-
-h2 {
-    font-size: 2.5em;
-    width: 100%;
-    text-align: center;
-    font-family: sansSerifMedium, sans-serif;
-}
-
-#index h2 {
-    font-size: 1.35em;
-    margin: 1.3em 0 .5em 0;
-}
-
-#index h1, #index h2 {
-    text-align: left;
-    font-family: sansSerifBold, sans-serif;
-}
-
-h3 {
-    font-size: 1.5em;
-    font-family: sansSerifMedium, sans-serif;
-}
-
-p, ol, ul, blockquote {
-    font-size: 1.1em;
-    font-family: serifRegular, serif;
+    padding: 15px;
 }
 
 blockquote {
-    color: darkgray;
+    color: dimgray;
 }
 
-a {
-    color: black;
+.imgLink {
+    text-decoration: none;
 }
 
-footer {
-    width: 100%;
-    text-align: center;
-    margin-top: 3em;
-    font-size: .8em;
-}
-
-footer p {
-    margin: .4em;
-    font-family: sansSerifMedium, sans-serif;
-}
-
-strong {
-    font-family: serifBold, serif;
-}
-
-#introText strong {
-    font-family: sansSerifBold, sans-serif;
-}
-
-code {
-    font-family: monospaceRegular, monospace;
-}
-
-hr {
-    margin: 1em 0 2em 0;
-}
-
-#will {
-    width: 20em;
+.imgLink img {
+    width: 20px;
     height: auto;
 }
 
-#introText {
-    padding-left: 2em;
-}
-
-#introText p {
-    font-size: 1.35em;
-    font-family: sansSerifMedium, sans-serif;
-}
-
-#nav {
-    margin: auto;
-    padding-top: 1.5em;
-    font-family: sansSerifMedium, sans-serif;
-}
-
-#nav tr td {
-    width: 6em;
-    text-align: center;
-}
-
-#signoff {
-    font-size: 1.3em;
-    font-family: sansSerifMedium, sans-serif;
-}
-
-.picLink {
-    width: 3.5em;
-    height: 3.5em;
-}
-
-.picLink img {
-    width: inherit;
-    height: inherit;
-    padding-bottom: .4em;
-}
-
-.navList {
-    font-family: sansSerifMedium, sans-serif;
-}
-
-@media only screen and (max-width: 620px) {
-    h1 {
-        font-size: 3.5em;
-    }
-
-    #index h1 {
-        font-size: 4.5em;
-    }
-
-    #introTable tr td {
-        display: block;
-    }
-
-    #introImage {
-        text-align: center;
-    }
-
-    #introText {
-        padding: 0;
-    }
-
-    #will {
-        width: 17em;
-    }
-
-    .picLink {
-        width: 2.8em;
-        height: 2.8em;
-        font-size: .9em;
-    }
+.imgLink span {
+    /* Only underline the text part of imgLink */
+    text-decoration: underline;
 }
