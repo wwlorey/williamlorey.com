@@ -1,0 +1,129 @@
+#!/usr/bin/env python3
+
+import os, sys, re
+
+if len(sys.argv) == 2:
+    DIR_PATH = sys.argv[1]
+    INCLUDE_DATES = DIR_PATH == 'blog'
+else:
+    printAndExit('Required arguments:\n\t- DIR_PATH: string\n\t- INCLUDE_DATES: boolean')
+
+INDEX_FILE = 'index.html'
+INDEX_PATH = '%s/%s' % (DIR_PATH, INDEX_FILE)
+
+DATE_REGEX = 'name="dcterms\.date" content="(.*)"'
+TITLE_REGEX = '<title>(.*)</title>'
+
+START_UL = '<ul>\n'
+END_UL = '</ul>\n'
+
+BEGIN_LINKS_STRING = 'BEGIN LINKS'
+END_LINKS_STRING = 'END LINKS'
+
+MONTH_NAMES = [
+    None,
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]
+
+def getMonth(dateString):
+    return dateString[:len('YYYY-MM')]
+
+def getMonthHeading(monthString):
+    year = monthString[:len('YYYY')]
+    month = int(monthString[-2:])
+    monthString = MONTH_NAMES[month]
+    print('Found post(s) from %s %s' % (year, monthString))
+    return "<h3>%s %s</h3>\n%s" % (year, monthString, START_UL)
+
+def insertAndIncrement(list, position, value):
+    list.insert(position, value)
+    return position + 1
+
+def printAndExit(message):
+    print(message)
+    exit()
+
+class ListItemLink:
+    def __init__(self, filePath, title, date):
+        self.filePath = filePath
+        self.title = title
+        self.date = date
+
+    def getDateTitleLink(self):
+        return '<li>%s: <a href="%s">%s</a></li>' % (self.date, self.filePath, self.title)
+
+    def getTitleLink(self):
+        return '<li><a href="%s">%s</a></li>' % (self.filePath, self.title)
+
+indexFileContents = open(INDEX_PATH, 'r').read().split('\n')
+
+for index, line in enumerate(indexFileContents):
+    if BEGIN_LINKS_STRING in line:
+        insertStart = index + 1
+    elif END_LINKS_STRING in line:
+        insertEnd = index
+        break
+
+
+print('Insert start:', insertStart)
+print('Insert end:', insertEnd)
+
+indexFileLines = indexFileContents[:insertStart] + indexFileContents[insertEnd:]
+
+htmlFiles = [f for f in os.listdir(DIR_PATH) if '.html' in f and f != INDEX_FILE]
+links = []
+for htmlFile in htmlFiles:
+    htmlFilePath = '%s/%s' % (DIR_PATH, htmlFile)
+    content = open(htmlFilePath, 'r').read()
+    date = None
+
+    if INCLUDE_DATES:
+        dateMatch = re.search(DATE_REGEX, content)
+        date = dateMatch and dateMatch.group(1) or printAndExit('Failed to parse date in "' + htmlFile + '".')
+
+    titleMatch = re.search(TITLE_REGEX, content)
+    title = titleMatch and titleMatch.group(1) or printAndExit('Failed to parse title in "' + htmlFile + '".')
+
+    links.append(ListItemLink(htmlFile, title, date))
+
+position = insertStart
+
+if INCLUDE_DATES:
+    links.sort(key=lambda link: link.date, reverse=True)
+    prevMonth = None
+
+    for link in links:
+        currentMonth = getMonth(link.date)
+        if currentMonth != prevMonth:
+            if prevMonth != None:
+                position = insertAndIncrement(indexFileLines, position, END_UL)
+            
+            position = insertAndIncrement(indexFileLines, position, getMonthHeading(currentMonth))
+            prevMonth = currentMonth
+
+        position = insertAndIncrement(indexFileLines, position, link.getDateTitleLink())
+
+    insertAndIncrement(indexFileLines, position, END_UL)
+else:
+    links.sort(key=lambda link: link.title)
+    position = insertAndIncrement(indexFileLines, position, START_UL)
+
+    for link in links:
+        position = insertAndIncrement(indexFileLines, position, link.getTitleLink())
+
+    insertAndIncrement(indexFileLines, position, END_UL)
+
+open(INDEX_PATH, 'w').write('\n'.join(indexFileLines))
+print('Wrote %i link(s) to "%s"' % (len(links), INDEX_PATH))
+

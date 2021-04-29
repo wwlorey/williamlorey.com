@@ -1,0 +1,47 @@
+#!/bin/bash
+
+OVERWRITE=0
+
+while [[ "$#" -gt 0 ]]
+do
+    case $1 in
+        -o|--overwrite) OVERWRITE=1;;
+    esac
+    shift
+done
+
+BUILD_RESOURCES_PATH="$( pwd )/build-resources"
+POPULATE_LINKS_SCRIPT_PATH="$BUILD_RESOURCES_PATH/populate-links"
+TEMPLATE_PATH="$BUILD_RESOURCES_PATH/html-template.html"
+HEADER_REL_PATH=".header-include"
+AFTER_BODY_REL_PATH=".after-body-include"
+STYLESHEET_REL_PATH="../stylesheet.css"
+
+mdToHtml() {
+    for mdFile in *.md
+    do
+        htmlFile="${mdFile%.*}.html"
+    
+        if [[ $OVERWRITE -eq 1 ]] || ! [[ -f $htmlFile ]]
+        then
+            echo -e "\"$mdFile\" ➡️  \"$htmlFile\""
+            pandoc --output "$htmlFile" --standalone --template=$TEMPLATE_PATH --include-in-header=$HEADER_REL_PATH --include-after-body=$AFTER_BODY_REL_PATH --css=$STYLESHEET_REL_PATH $mdFile
+        fi
+    done
+}
+
+
+dirs=(blog recipes)
+
+for dir in "${dirs[@]}"
+do
+    echo -e "--------------------\nBuilding \"$dir\"\n--------------------"
+    echo "Converting files..."
+    ( cd $dir; mdToHtml )
+
+    echo "Populating links..."
+    python3 $POPULATE_LINKS_SCRIPT_PATH $dir
+
+    echo -e "Done in \"$dir\"\n"
+done
+
