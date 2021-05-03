@@ -8,7 +8,7 @@ if test -f "resume/william_lorey_resume.pdf"; then
     cd ..
 else
     echo "Cloning resume..."
-    git clone https://github.com/wwlorey/resume.git
+    git clone git@github.com:wwlorey/resume.git
 fi
 
 echo "Copying resume..."
